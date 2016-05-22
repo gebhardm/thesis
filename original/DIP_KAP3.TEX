@@ -1,0 +1,1210 @@
+\chapter{Beispiele}
+
+In diesem abschlie"senden dritten Kapitel sollen nun mittels des Schemas aus
+Kapitel 2 einige CW-Komplexe bearbeitet und als Beispiele dargestellt werden.
+
+\section{Die Papposkonfiguration in der Ebene}
+
+Zu Beginn widmen wir uns als einem Rang 3 Beispiel dem Satz von Pappos, der
+besagt\idx{Pappos, Satz von}:
+\begin{quote}
+Auf zwei Geraden $g_1$ und $g_2$ seien je drei Punkte $A_1,~B_1,~C_1$ und
+$A_2,~B_2,~C_2$ gegeben, die vom Schnittpunkt $O$ der beiden Geraden
+verschieden sind. Dann liegen die Schnittpunkte
+$A=(B_1C_2\cap B_2C_1)$, $B=(A_1C_2\cap A_2C_1)$ und $C=(A_1B_2\cap A_2B_1)$
+der kreuzweisen Verbindungen auf einer Geraden $g$.
+\end{quote}
+Die entsprechende Abbildung hierzu (Abb.\ref{pappos}) liefert nun einen
+eindimensionalen CW-Komplex, dessen 0-Zellen mit den Ziffern 1 bis 9 indiziert
+seien. 
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <1cm,1cm>
+\setplotarea x from 0 to 12, y from 0 to 6
+\plot 1.5 1.5 6 4 /
+\plot 1.5 1.5 10.5 4.5 /
+\plot 1.5 1.5 8.5 0.5 /
+\plot 1.5 3.5 10.5 4.5 /
+\plot 1.5 3.5 8.5 0.5 /
+\plot 1.5 3.5 5 1 /
+\plot 5 1 10.5 4.5 /
+\plot 6 4 8.5 0.5 /
+\plot 3.1 2.38 7.15 2.38 /
+\put {\circle*{0.1}} [Bl] at 1.5 1.5
+\put {\circle*{0.1}} [Bl] at 5 1
+\put {\circle*{0.1}} [Bl] at 8.5 0.5
+\put {\circle*{0.1}} [Bl] at 1.5 3.5
+\put {\circle*{0.1}} [Bl] at 6 4
+\put {\circle*{0.1}} [Bl] at 10.5 4.5
+\put {\circle*{0.1}} [Bl] at 3.075 2.38
+\put {\circle*{0.1}} [Bl] at 4.125 2.38
+\put {\circle*{0.1}} [Bl] at 7.175 2.38
+\put {$A_1$} [br] at 1.5 3.55
+\put {$B_1$} [br] at 6 4.05
+\put {$C_1$} [br] at 10.5 4.55
+\put {$A_2$} [tr] at 1.5 1.45
+\put {$B_2$} [tr] at 5 0.95
+\put {$C_2$} [bl] at 8.5 0.55
+\put {$A$} [Bl] at 2.2 2.3
+\put {$B$} [Bl] at 4.1 1.9
+\put {$C$} [Bl] at 7.5 2.2
+\endpicture
+$$
+\caption{CW-Komplex zum Satz von Pappos}
+\label{pappos}
+\end{figure}
+
+Aus der Abbildung kann man diese Indizierung etwa nach $A_1\hat{=}1$,
+$B_1\hat{=}2$, $C_1\hat{=}3$, $A_2\hat{=}4$, $B_2\hat{=}5$, $C_2\hat{=}6$,
+$A\hat{=}7$, $B\hat{=}8$ und $C\hat{=}9$ anbringen. Zur Bestimmung der
+Symmetriegruppe "uberlegt man sich, da"s in diesem Fall jedes
+0-Zellen-Tripel einer Geraden auf ein anderes 0-Zellen-Tripel, welches
+ebenfalls auf einer Geraden liegen soll, abzubilden ist.\\
+Es sind also jene Permutationen aus der ${\cal S}_9$ gesucht, die
+die Menge
+$$\left\{\{1,2,3\},\{1,4,8\},\{1,5,9\},\{2,4,7\},\{2,6,9\},\{3,5,7\},
+\{3,6,8\},\{4,5,6\},\{7,8,9\}\right\}$$
+auf sich abbilden.
+
+Testet man nun mit einem Programm alle 9! Permutationen der 0-Zellen, so
+erh"alt man 108 Automorphismen, die die Automorphismengruppe des Papposkomplexes
+darstellen. Diese sind in Tabelle \ref{papposaut} aufgezeigt.
+
+\begin{table}%[htb]
+{\footnotesize
+$$
+\begin{array}{lllll}
+identity&(49)(58)(67)&(23)(45)(89)&(23)(48)(59)(67)&(24)(38)(59)\\
+(298354)(67)&(285)(349)&(25)(39)(67)&(28)(34)(67)&(258)(394)\\
+(245389)(67)&(29)(35)(48)&(12)(56)(78)&(12)(49)(57)(68)&(132)(456)(798)\\
+(132)(486957)&(142)(387)(569)&(198642)(357)&(187562)(349)&(157862)(39)\\
+(186572)(34)&(156872)(394)&(145792)(386)&(192)(356)(487)&(123)(465)(789)\\
+(123)(475968)&(13)(46)(79)&(13)(47)(58)(69)&(146973)(285)&(196473)(25)\\
+(183)(246)(597)&(154783)(296)&(189653)(247)&(153)(297)(468)&(147963)(28)\\
+(197463)(258)&(124)(378)(596)&(129754)(368)&(14)(37)(69)&(197364)(58)\\
+(14)(25)(36)(79)&(196374)(285)&(153624)(789)&(184)(296)(375)&(154)(237)(689)\\
+(184)(236597)&(137964)(258)&(136974)(28)&(127865)(349)&(126875)(39)\\
+(145)(273)(698)&(195)(264873)&(142635)(798)&(195)(274)(386)&(15)(26)(34)(78)\\
+(186275)(394)&(15)(27)(68)&(187265)(49)&(135)(279)(486)&(138745)(269)\\
+(176)(349)&(16)(39)(58)&(176)(245983)&(16)(295483)&(16)(24)(35)(89)\\
+(176)(295384)&(16)(25)(34)&(176)(285)(394)&(176)(258)&(16)(28)(49)\\
+(176)(235489)&(16)(238459)&(17)(34)(58)&(167)(394)&(17)(248953)\\
+(167)(298453)&(167)(238954)&(17)(235984)&(167)(285)&(17)(25)(49)\\
+(167)(258)(349)&(17)(28)(39)&(167)(248359)&(17)(29)(38)(45)&(127568)(34)\\
+(126578)(394)&(148)(279563)&(198)(263)(457)&(138)(264)(579)&(135698)(274)\\
+(18)(26)(57)&(156278)(49)&(157268)(349)&(18)(27)(39)(56)&(148)(269)(357)\\
+(192738)(456)&(124689)(375)&(129)(365)(478)&(146379)(58)&(19)(36)(47)\\
+(136479)(285)&(137469)(25)&(189)(236)(475)&(159)(237846)&(159)(247)(368)\\
+(183729)(465)&(147369)(258)&(19)(28)(37)(46)&&
+\end{array}$$}
+\caption{Die Automorphismengruppe des Papposkomplexes}
+\label{papposaut}
+\end{table}
+
+Die sich ergebenden verschiedenen zyklischen Untergruppen dieser
+Automorphismengruppe sind, wenn obige Zykel der Reihe nach durchnummeriert
+werden, aus Tabelle \ref{papposgrp} abzulesen.
+
+\begin{table}%[htb]
+{\footnotesize $$\begin{array}{ll}
+\{id,[6],[7],[4],[10],[11]\} & \{id,[16],[25],[2],[15],[26]\}\\
+\{id,[18],[44],[70],[95],[97]\} & \{id,[19],[68],[57],[81],[86]\}\\
+\{id,[20],[69],[94],[79],[50]\} & \{id,[21],[79],[55],[69],[85]\}\\
+\{id,[22],[81],[91],[68],[49]\} & \{id,[23],[105],[80],[54],[38]\}\\
+\{id,[29],[81],[100],[68],[47]\} & \{id,[30],[74],[41],[61],[102]\}\\
+\{id,[32],[95],[73],[44],[60]\} & \{id,[33],[54],[62],[105],[90]\}\\
+\{id,[35],[61],[108],[74],[48]\} & \{id,[36],[68],[39],[81],[101]\}\\
+\{id,[40],[61],[28],[74],[99]\} & \{id,[42],[81],[27],[68],[107]\}\\
+\{id,[43],[15],[67],[25],[53]\} & \{id,[46],[95],[8],[44],[87]\}\\
+\{id,[52],[105],[9],[54],[104]\} & \{id,[56],[81],[13],[68],[93]\}\\
+\{id,[58],[69],[14],[79],[92]\} & \{id,[63],[81],[12],[68],[77]\}\\
+\{id,[64],[10],[65],[7],[72]\} & \{id,[66],[81],[3],[68],[83]\}\\
+\{id,[71],[81],[5],[68],[76]\} & \{id,[75],[7],[84],[10],[78]\}\\
+\{id,[96],[25],[82],[15],[106]\} & \{id,[17],[37]\}\\
+\{id,[24],[98]\} & \{id,[31],[89]\}\\
+\{id,[34],[59]\} & \{id,[45],[51]\}\\
+\{id,[88],[103]\} & \{id\}
+\end{array}$$}
+\caption{Die zyklischen Untergruppen zum Papposkomplex}
+\label{papposgrp}
+\end{table}
+
+Nach der Bestimmung dieser Gruppen zum Papposkomplex kann nun begonnen werden
+zugeh"orige Matroide zu suchen. Dazu betrachten wir zuerst die Gestalt des
+vorgelegten CW-Komplexes, nach dem im Rang 3 die drei Punkte auf einer Geraden
+sicher eine Nichtbasis des Matroids liefern. Damit stehen folgende Brackets
+sicher f"ur die Determinanten singul"arer Matrizen und k"onnen als Nichtbasen
+sicher zu Null gesetzt werden:
+$$[123],[148],[159],[247],[269],[357],[368],[456]\mbox{ und }[789]$$
+Aus den "`benachbarten 1-Zellen"' folgt nun eine Wahl f"ur Basen, die
+ein vertr"agliches Matroid sicherlich besitzt, womit sich eine
+Grundstruktur zu
+{\tt $$
+\begin{array}{c}
+0111111111111111011110?111111111111101111?\\
+11101111111?101110111101111111111111111110
+\end{array}
+$$}
+
+ergibt. Mittels {\sc Sym2mat} erh"alt man hierzu bei Vorgabe der vollen
+Symmetriegruppe Aut($\cal C$) die beiden Matroide
+{\tt $$
+\begin{array}{c}
+011111111111111101111001111111111111011110\\
+111011111110101110111101111111111111111110
+\end{array}
+$$}
+
+und
+{\tt $$
+\begin{array}{c}
+011111111111111101111011111111111111011111\\
+111011111111101110111101111111111111111110
+\end{array}
+$$}
+
+von denen das erste eine Symmetriegruppe der Ordnung 432 und das zweite eine
+Symmetriegruppe der Ordnung 108 besitzt, die jeweils die komplette
+Automorphismengruppe des Papposkomplexes enthalten beziehungsweise zu dieser
+identisch sind.
+
+Zur Symmetrieuntergruppe mit dem erzeugenden Element $\sigma=(298354)(67)$
+erh"alt man zwei weitere, n"amlich
+{\tt $$
+\begin{array}{c}
+011111111111111101111001111111111111011111\\
+111011111111101110111101111111111111111110
+\end{array}
+$$}
+sowie
+{\tt $$
+\begin{array}{c}
+011111111111111101111011111111111111011110\\
+111011111110101110111101111111111111111110
+\end{array}
+$$}
+
+Bez"uglich der Symmetriegruppe $G=\{<(298354)(67)>\}$ sind diese Matroide
+allerdings mittels des vorgestellten Algorithmus nicht orientierbar.
+
+\clearpage
+\section{Der dreidimensionale W"urfel}
+
+Ein vielverwendetes Beispiel (vgl. \cite{Bj:93}) stellt der dreidimensionale
+W"urfel dar, der auch hier behandelt werden soll. Gegeben als ein aus
+Vierecken aufgebauter CW-Komplex, l"a"st er sich durch die Liste der Polygonz"uge
+$$\left\{\{1264\},\{2586\},\{5378\},\{3147\},\{4687\},\{1253\}\right\}$$
+beschreiben.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <1cm,1cm>
+\setplotarea x from 0 to 7, y from 0 to 6
+\plot 0.5 2 0.5 3.5 2 3.5 2 5 3.5 5 3.5 3.5 5 3.5 6.5 3.5 6.5 2 5 2 3.5 2
+      3.5 0.5 2 0.5 2 2 0.5 2 /
+\plot 2 2 2 3.5 3.5 3.5 3.5 2 2 2 /
+\plot 5 3.5 5 2 /
+\put {1} [tl] at 2.05 4.95 \put {3} [tr] at 3.45 4.95
+\put {1} [tl] at 0.55 3.45 \put {2} [tr] at 1.95 3.45
+\put {5} [tr] at 3.45 3.45 \put {3} [tr] at 4.95 3.45
+\put {1} [tr] at 6.45 3.45 \put {4} [bl] at 0.55 2.05
+\put {6} [br] at 1.95 2.05 \put {8} [br] at 3.45 2.05
+\put {7} [br] at 4.95 2.05 \put {4} [br] at 6.45 2.05
+\put {4} [bl] at 2.05 0.55 \put {7} [br] at 3.45 0.55
+\endpicture
+$$
+\caption{CW-Komplex zum 3-W"urfel}
+\label{wuerfel}
+\end{figure}
+
+Seine Symmetriegruppe hat die Ordnung 48 und setzt sich aus den
+Permutationen aus Tabelle \ref{cubeaut} zusammen. Betrachet man nun
+noch den Komplex zur Erzeugung einer Grundstruktur f"ur die vertr"aglichen
+Matroide, so ist diese wie folgt gegeben:
+
+{\small\tt
+$$10111101111111?11011111?111?111?111111?111?111?11111011?11111110111101$$
+}
+
+Bez"uglich der Symmetriegruppe $\{<(147852)(36)>\}$ erh"alt man daraus folgende
+vertr"aglichen Matroide
+{\small\tt
+$$\begin{array}{c}
+1011110111111101101111101110111011111101110111011111011011111110111101\\[1mm]
+1011110111111101101111101110111111111111110111011111011011111110111101\\[1mm]
+1011110111111101101111111110111011111101111111011111011111111110111101\\[1mm]
+1011110111111101101111111110111111111111111111011111011111111110111101\\[1mm]
+1011110111111111101111101111111011111101110111111111011011111110111101\\[1mm]
+1011110111111111101111101111111111111111110111111111011011111110111101\\[1mm]
+1011110111111111101111111111111011111101111111111111011111111110111101\\[1mm]
+1011110111111111101111111111111111111111111111111111011111111110111101
+\end{array}
+$$
+}
+
+\begin{table}%[htb]
+{\footnotesize
+$$
+\begin{array}{lllll}
+\mbox{identity}&(34)(56)&(23)(67)&(243)(567)&(234)(576)\\
+(24)(57)&(12)(35)(46)(78)&(12)(36)(45)(78)&(1352)(4786)&(147852)(36)\\
+(137862)(45)&(1462)(3785)&(1253)(4687)&(126873)(45)&(13)(25)(47)(68)\\
+(1473)(2685)&(13)(27)(45)(68)&(146853)(27)&(125874)(36)&(1264)(3587)\\
+(1374)(2586)&(14)(26)(37)(58)&(135864)(27)&(14)(27)(36)(58)&(15)(48)\\
+(165)(348)&(15)(23)(48)(67)&(1675)(2483)&(1765)(2348)&(175)(248)\\
+(156)(384)&(16)(38)&(1576)(2384)&(16)(24)(38)(57)&(176)(238)\\
+(1756)(2438)&(1567)(2843)&(167)(283)&(157)(284)&(1657)(2834)\\
+(17)(28)&(17)(28)(34)(56)&(18)(25)(36)(47)&(18)(264735)&(18)(253746)\\
+(18)(26)(37)(45)&(18)(27)(35)(46)&(18)(27)(36)(45)
+\end{array}$$}
+\caption{Die Automorphismengruppe des 3-W"urfels}
+\label{cubeaut}
+\end{table}
+
+Legt man wiederum $\{<(147852)(36)>\}$ als Symmetriegruppe f"ur vertr"agliche
+orientierte Matroide vor, so erh"alt man nur f"ur eins der oben bestimmten Matroide
+Vorzeichenlisten:
+
+{\small\tt
+$$\begin{tabular}{c}
++0+-+-0-++-+-+0-+0++-++0---0+--+---+-+--+-0-++0+-++-0++0-++--+-0--++0-\\[1mm]
+-0-+-+0+--+-+-0+-0--+--0+++0-++-+++-+-++-+0+--0-+--+0--0+--++-+0++--0+\\[1mm]
+-0++--0-+--++-0++0-++-+0++-0-+--+-+---+--+0---0++-++0+-0+-+-++-0-+-+0+\\[1mm]
++0--++0+-++--+0--0+--+-0--+0+-++-+-+++-++-0+++0--+--0-+0-+-+--+0+-+-0-
+\end{tabular}
+$$
+}
+
+Diese orientierten Matroiden besitzen die Grundstruktur des "`echten"' W"urfelmatroids
+(siehe Abbildung \ref{cube}). Dabei ist die zweite Vorzeichenliste die negative der ersten,
+sowie die vierte die negative der dritten, es liegen also nur zwei verschiedene
+Orientierungen zum CW-Komplex "`W"urfel"' mit der gegebenen Symmetriegruppe vor. Interessant
+ist hier zu erw"ahnen, da"s die erste Orientierungsvariante eine Symmetriegruppe
+der Ordnung 12 besitzt, w"ahrend die zweite Variante die volle Symmetriegruppe des
+W"urfelkomplexes der Ordnung 48 aufweist.
+
+\clearpage
+\section{Ein weiterer Torus}
+
+Als n"achstes Beispiel sei ein weiterer Torus in Gestalt des CW-Komplexes
+in Abbildung \ref{tor2} vorgelegt.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength0.75cm
+\setlinear
+\setcoordinatesystem units <0.75cm,0.75cm>
+\setplotarea x from 0 to 7, y from 0 to 7
+\setsolid
+\plot 0.5 0.5 0.5 6.5 6.5 6.5 6.5 0.5 0.5 0.5 /
+\plot 0.5 2.5 6.5 2.5 /
+\plot 0.5 4.5 6.5 4.5 /
+\plot 2.5 0.5 2.5 6.5 /
+\plot 4.5 0.5 4.5 6.5 /
+\plot 0.5 2.5 2.5 0.5 /
+\plot 0.5 4.5 4.5 0.5 /
+\plot 0.5 6.5 6.5 0.5 /
+\plot 2.5 6.5 6.5 2.5 /
+\plot 4.5 6.5 6.5 4.5 /
+\put {1} [br] at 0.45 6.55 \put {2} [br] at 2.5 6.55
+\put {3} [bl] at 4.5 6.55  \put {1} [bl] at 6.55 6.55
+\put {4} [br] at 0.45 4.5  \put {5} [tr] at 2.45 4.45
+\put {6} [tr] at 4.45 4.45 \put {4} [bl] at 6.55 4.5
+\put {8} [tr] at 0.45 2.5  \put {9} [bl] at 2.55 2.55
+\put {7} [bl] at 4.55 2.55 \put {8} [tl] at 6.55 2.5
+\put {1} [tr] at 0.45 0.45 \put {2} [tr] at 2.5 0.45
+\put {3} [tl] at 4.5 0.45  \put {1} [tl] at 6.55 0.45
+\endpicture
+$$
+\caption{Ein weiterer Torus}
+\label{tor2}
+\end{figure}
+
+Dieser CW-Komplex, der auch einen simplizialen Komplex darstellt, besitzt
+eine Symmetriegruppe der Ordnung 108. Aus dieser legen wir die Untergruppe der
+Ordnung 6 mit den Erzeugenden (123)(456)(789) und (16)(25)(34)(78)(9) als
+Symmetriegruppe vor, bez"uglich der vertr"agliche orientierte Matroide erzeugt
+werden sollen.
+
+Aus den Zellenberandungen l"a"st sich f"ur vertr"agliche Matroide zun"achst
+folgende Grundstruktur angeben,
+
+\begin{center}
+{\footnotesize\tt\begin{tabular}{c}
+??????1????1?1????1?1111?????????11????1????????????1????1???1?\\
+????1?11?????????11??????????????1????????1?????????111?1?11???
+\end{tabular}}
+\end{center}
+
+mittels der sich mit {\sc Sym2mat} insgesamt 52 vertr"agliche Matroide
+erzeugen lassen. Diese Matroide sind in den Tabellen \ref{tor6matA}
+und \ref{tor6matB} aufgezeigt.
+
+Zu diesen 52 Matroiden lassen sich nun mittels eines Orientierungsprogramms,
+welches in der in Kapitel 2 vorgestellten Vorgehensweise fu"st, zu insgesamt
+17 Matroiden Vorzeichenlisten erzeugen. Von diesen 17 sind 7 unzul"a"sig,
+da sie zu mehr als einen Symmetrietyp Vorzeichenlisten liefern, also nicht
+eindeutig bez"uglich einer Symmetriegruppe orientierbar sind.
+Die 10 verbliebenen orientierbaren Matroide sind in Tabelle \ref{mattor}
+aufgezeigt.
+
+Stellvertretend f"ur alle erzeugten Orientierungen der vertr"aglichen Matroide
+sind in Tabelle \ref{orimattor} die Orientierungen des f"unften Matroids
+von Tabelle \ref{mattor} aufgezeigt. Hierbei wurden die erzeugten negativen
+Listen zu bereits vorkommenden weggelassen.
+
+Die Auswahl gerade dieses Matroids ist nicht willk"urlich, sondern entlehnt
+sich der Kenntnis, da"s eine nichtsimpliziale Realisierung des Torus von
+Abbildung \ref{tor2} existiert, die gerade ein solches zugrunde liegendes
+Matroid besitzt. Mit dem Programm {\sc Chiman} zur Manipulation von Chirotopen
+von Peter Schuchert l"a"st sich zu den erzeugten orientierten Matroiden der
+Aufbau der induzierten konvexen H"ulle einer entsprechenden Punktkonfiguration
+ermitteln. Dadurch ist bestimmt, welche formalen Punkte die konvexe H"ulle einer
+entsprechenden Punktkonfiguration zum vorliegenden orientierten Matroid
+aufspannen. F"ur die orientierten Matroide aus Tabelle \ref{orimattor} sind
+dies f"ur das erste, zweite, vierte und f"unfte alle 9 Punkte, f"ur das dritte
+und sechste nur die Punkte 1 bis 6. F"ur die "ubrigen orientierten Matroide
+liefert {\sc Chiman} keine Ergebnisse.
+
+Abbildung \ref{tor2real} zeigt das "au"sere Erscheinungsbild der Realisierung
+des Torus in Form eines Oktaeder, in dem zwei gegen"uberliegende Dreiecke
+die "Offnungen des Henkels bilden. Im Innern befinden sich die restlichen
+drei Punkte, die auch die Spiegelsymmetrie induzieren.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <1cm,1cm>
+\setplotarea x from 0 to 6, y from 0 to 6
+\plot 3 5.5 1.5 4 0.5 2 3 0.5 4.5 2 5.5 4 3 5.5 /
+\plot 3 5.5 0.5 2 4.5 2 3 5.5 /
+\setdashes<1mm>
+\plot 1.5 4 3 0.5 5.5 4 1.5 4 /
+\setlinear
+\setshadegrid span <1.5pt>
+\vshade 0.5 2 2 <,z,,> 1.5 1.4 4 3 0.5 0.5 /
+\vshade 3 5.5 5.5 <,z,,> 4.5 2 4.6 5.5 4 4 /
+\setdashes<5mm>
+\plot 0.5 1.4 6 4.8 /
+\put {\circle*{0.1}} [Bl] at 3 5.5
+\put {\circle*{0.1}} [Bl] at 1.5 4
+\put {\circle*{0.1}} [Bl] at 5.5 4
+\put {\circle*{0.1}} [Bl] at 0.5 2
+\put {\circle*{0.1}} [Bl] at 4.5 2
+\put {\circle*{0.1}} [Bl] at 3 0.5
+\endpicture
+$$
+\caption{Realisierung des zweiten Torus}
+\label{tor2real}
+\end{figure}
+
+\begin{table}[htb]
+\begin{center}
+{\scriptsize\tt
+\begin{tabular}{c}
+000000111011110011111111011110011111010110100010111111101110111\\
+100111110110110111110000111000110111110111110000000111111011100\\[1mm]
+000000111011110011111111011110011111010110101010111111111110111\\
+100111110110110111110100111100110111110111110011000111111111111\\[1mm]
+000000111101011101111111101011101111001101111101100011101111010\\
+111011110101101111101111000001101100001101111110000111111011100\\[1mm]
+000000111101011101111111101011101111001101111101100111111111010\\
+111011110101101111101111010101101101001101111111000111111111111\\[1mm]
+000000111111111111111111111111111111011111100011111111101111111\\
+111111110111111111111000111001111111111111110000000111111011100\\[1mm]
+000000111111111111111111111111111111011111110111111011111111111\\
+111111110111111111111011101101111110111111111101000111111111111\\[1mm]
+000000111111111111111111111111111111011111110111111111111111111\\
+111111110111111111111011111101111111111111111101000111111111111\\[1mm]
+000000111111111111111111111111111111011111111111100011101111111\\
+111111110111111111111111000001111110001111111110000111111011100\\[1mm]
+000000111111111111111111111111111111011111111111111011111111111\\
+111111110111111111111111101101111110111111111111000111111111111\\[1mm]
+000000111111111111111111111111111111011111111111111111101111111\\
+111111110111111111111111111001111111111111111110000111111011100\\[1mm]
+000000111111111111111111111111111111011111111111111111111111111\\
+111111110111111111111111111101111111111111111111000111111111111\\[1mm]
+111111101011010101101111000011011110100110101001100111110111011\\
+100010111110101111100100010111100101000111110011111011101111011\\[1mm]
+111111101011011101111111100011011111101110111101100011100111011\\
+101011111110101111101111000011101100000111111110111111111011100\\[1mm]
+111111101011011101111111100011011111101110111101100111110111011\\
+101011111110101111101111010111101101000111111111111111111111111\\[1mm]
+111111101011110101111111010011011111110110100001111111100111011\\
+100111111110101111110000111011100111110111110000111111111011100\\[1mm]
+111111101011110101111111010011011111110110101001111111110111011\\
+100111111110101111110100111111100111110111110011111111111111111\\[1mm]
+111111101011111101101111110011011110111110111101111111110111011\\
+101110111110101111111111111111101111110111111111111011101111011\\[1mm]
+111111101011111101111111110011011111111110110101111011110111011\\
+101111111110101111111011101111101110110111111101111111111111111\\[1mm]
+111111101011111101111111110011011111111110110101111111110111011\\
+101111111110101111111011111111101111110111111101111111111111111\\[1mm]
+111111101011111101111111110011011111111110111101111011110111011\\
+101111111110101111111111101111101110110111111111111111111111111\\[1mm]
+111111101011111101111111110011011111111110111101111111100111011\\
+101111111110101111111111111011101111110111111110111111111011100\\[1mm]
+111111101011111101111111110011011111111110111101111111110111011\\
+101111111110101111111111111111101111110111111111111111111111111\\[1mm]
+111111100101111010101111110100100110111101010110011010010100110\\
+011110111001010001111011101110011110111000101101111011101111011\\[1mm]
+111111101111111111101111110111111110111111111111111111110111111\\
+111110111111111111111111111111111111111111111111111011101111011\\[1mm]
+111111101111111111111111110111111111111111100011111111100111111\\
+111111111111111111111000111011111111111111110000111111111011100\\[1mm]
+111111101111111111111111110111111111111111110111111011110111111\\
+111111111111111111111011101111111110111111111101111111111111111
+\end{tabular}}
+\end{center}
+\caption{\label{tor6matA} Matroide zum zweiten Torusbeispiel Teil A}
+\end{table}
+
+\begin{table}[htb]
+\begin{center}
+{\scriptsize\tt
+\begin{tabular}{c}
+111111101111111111111111110111111111111111110111111111110111111\\
+111111111111111111111011111111111111111111111101111111111111111\\[1mm]
+111111101111111111111111110111111111111111111111100011100111111\\
+111111111111111111111111000011111110001111111110111111111011100\\[1mm]
+111111101111111111111111110111111111111111111111111011110111111\\
+111111111111111111111111101111111110111111111111111111111111111\\[1mm]
+111111101111111111111111110111111111111111111111111111100111111\\
+111111111111111111111111111011111111111111111110111111111011100\\[1mm]
+111111101111111111111111110111111111111111111111111111110111111\\
+111111111111111111111111111111111111111111111111111111111111111\\[1mm]
+111111110111111110111111111101110111111111011111011110011101111\\
+011111111011011001111111111111011111111010101111111111111111111\\[1mm]
+111111111011110111111111011111011111110110100011111111101111111\\
+100111111110111111110000111011110111110111110000111111111011100\\[1mm]
+111111111011110111111111011111011111110110101011111111111111111\\
+100111111110111111110100111111110111110111110011111111111111111\\[1mm]
+111111111101111111111111111111101111111101111111100011101111110\\
+111111111101111111111111000011111110001101111110111111111011100\\[1mm]
+111111111101111111111111111111101111111101111111111011111111110\\
+111111111101111111111111101111111110111101111111111111111111111\\[1mm]
+111111111101111111111111111111101111111101111111111111101111110\\
+111111111101111111111111111011111111111101111110111111111011100\\[1mm]
+111111111101111111111111111111101111111101111111111111111111110\\
+111111111101111111111111111111111111111101111111111111111111111\\[1mm]
+111111111111011101111111101011111111101111111101100011101111011\\
+111011111111101111101111000011101100001111111110111111111011100\\[1mm]
+111111111111011101111111101011111111101111111101100111111111011\\
+111011111111101111101111010111101101001111111111111111111111111\\[1mm]
+111111111111111011111111111110111111111111100010111111101110111\\
+111111111111110111111000111010111111111111110000111111111011100\\[1mm]
+111111111111111011111111111110111111111111110110111111111110111\\
+111111111111110111111011111110111111111111111101111111111111111\\[1mm]
+111111111111111011111111111110111111111111111110111111101110111\\
+111111111111110111111111111010111111111111111110111111111011100\\[1mm]
+111111111111111011111111111110111111111111111110111111111110111\\
+111111111111110111111111111110111111111111111111111111111111111\\[1mm]
+111111111111111111101111111111111110111111111111111111111111111\\
+111110111111111111111111111111111111111111111111111011101111011\\[1mm]
+111111111111111111111111111111111111111111100011111111101111111\\
+111111111111111111111000111011111111111111110000111111111011100\\[1mm]
+111111111111111111111111111111111111111111110111111011111111111\\
+111111111111111111111011101111111110111111111101111111111111111\\[1mm]
+111111111111111111111111111111111111111111110111111111111111111\\
+111111111111111111111011111111111111111111111101111111111111111\\[1mm]
+111111111111111111111111111111111111111111111111100011101111111\\
+111111111111111111111111000011111110001111111110111111111011100\\[1mm]
+111111111111111111111111111111111111111111111111111011111111111\\
+111111111111111111111111101111111110111111111111111111111111111\\[1mm]
+111111111111111111111111111111111111111111111111111111101111111\\
+111111111111111111111111111011111111111111111110111111111011100\\[1mm]
+111111111111111111111111111111111111111111111111111111111111111\\
+111111111111111111111111111111111111111111111111111111111111111
+\end{tabular}}
+\end{center}
+\caption{\label{tor6matB} Matroide zum zweiten Torusbeispiel Teil B}
+\end{table}
+
+\begin{table}%[htb]
+\begin{center}
+{\scriptsize\tt\begin{tabular}{c}
+111111101011011101111111100011011111101110111101100111110111011\\
+101011111110101111101111010111101101000111111111111111111111111\\[1mm]
+111111101011110101111111010011011111110110101001111111110111011\\
+100111111110101111110100111111100111110111110011111111111111111\\[1mm]
+111111101011111101111111110011011111111110110101111111110111011\\
+101111111110101111111011111111101111110111111101111111111111111\\[1mm]
+111111101011111101111111110011011111111110111101111011110111011\\
+101111111110101111111111101111101110110111111111111111111111111\\[1mm]
+111111101011111101111111110011011111111110111101111111110111011\\
+101111111110101111111111111111101111110111111111111111111111111\\[1mm]
+111111101111111111101111110111111110111111111111111111110111111\\
+111110111111111111111111111111111111111111111111111011101111011\\[1mm]
+111111101111111111111111110111111111111111111111111111110111111\\
+111111111111111111111111111111111111111111111111111111111111111\\[1mm]
+111111111101111111111111111111101111111101111111111111111111110\\
+111111111101111111111111111111111111111101111111111111111111111\\[1mm]
+111111111111111011111111111110111111111111111110111111111110111\\
+111111111111110111111111111110111111111111111111111111111111111\\[1mm]
+111111111111111111111111111111111111111111111111111111111111111\\
+111111111111111111111111111111111111111111111111111111111111111
+\end{tabular}}
+\end{center}
+\caption{\label{mattor}Die orientierbaren Matroide zum zweiten Torus}
+\end{table}
+
+\begin{table}%[htb]
+\begin{center}
+{\scriptsize\tt\begin{tabular}{c}
++++++++0+0--+--+0----++++-00+-0+-+--+-++-0++++0-++-++-++0+-+0+-\\
++0-+-++-+-+0-0++-++-+--++-+++-+0--++-+0-++-++--+---++-+++--++--\\[1mm]
++++++++0+0--+--+0----++++-00+-0+-+--+-++-0++-+0-++-++-++0+-+0+-\\
++0-+-++-+-+0-0++-++-++-++-+++-+0--++-+0-++-++-++---++-+++--++--\\[1mm]
++++++++0+0-----+0----+++++00+-0+-+--++++-0++++0-+-+++-++0+-+0+-\\
++0---++-+-+0-0++-++++--+---++-+0---++-0-++-++--+---++-+++--++--\\[1mm]
++++++++0-0+---+-0+++++++-+00-+0-+-++++-++0-+-+0+-+-++-++0++-0++\\
+-0+----+++-0+0-+-+++-+-++-++++-0+--+-+0+-+-++-++-----+----+----\\[1mm]
++++++++0-0+---+-0+++++++-+00-+0-+-++++-++0-+-+0+-+--+-++0++-0++\\
+-0+----+++-0+0-+-+++-+-+++++++-0+----+0+-+-++-++-----+----+----\\[1mm]
++++++++0-0+-----0+++++++++00-+0-+-+++++++0----0+-+--+-++0++-0++\\
+-0-----+++-0+0-+-++++++-++++++-0-----+0+-+-+-+++-----+----+----\\[1mm]
++++---+0+0--++++0-+++++---00+-0+--+++----0+---0-++--+-+-0+-+0+-\\
++0+++--++-+0-0++-+---++-+++-+-+0+++--+0-++-+-++-+++--+---++--++\\[1mm]
++++---+0+0--++-+0-+++++-+-00+-0+--+++-+--0++-+0-++-++-+-0+-+0+-\\
++0-++--++-+0-0++-+--++-++-+-+-+0-+++-+0-++-++-+-+++--+---++--++\\[1mm]
++++---+0+0--++-+0-+++++-+-00+-0+--+++-+--0++-+0-++--+-+-0+-+0+-\\
++0-++--++-+0-0++-+--++-++++-+-+0-++--+0-++-++-+-+++--+---++--++\\[1mm]
++++---+0-0+-+++-0+---++---00-+0-++--+---+0-+++0+--+++-+-0++-0++\\
+-0+++++-++-0+0-+-+-----+----++-0+++++-0+-+-++---+++++-++++-++++\\[1mm]
++++---+0-0+--++-0+---++--+00-+0-++--++--+0-+++0+-+-++-+-0++-0++\\
+-0+-+++-++-0+0-+-+-+---++-+-++-0++-+-+0+-+-++---+++++-++++-++++\\[1mm]
++++---+0-0+--++-0+---++--+00-+0-++--++--+0-+-+0+-+-++-+-0++-0++\\
+-0+-+++-++-0+0-+-+-+-+-++-+-++-0++-+-+0+-+-++-+-+++++-++++-++++
+\end{tabular}}
+\end{center}
+\caption{\label{orimattor}Orientierungen f"ur ein Matroid zum zweiten Torus}
+\end{table}
+
+\clearpage
+\section{Das Dodekaeder}
+
+Als weiteren Vertreter f"ur die nichtsimplizialen Platonischen K"orper sei
+nun ein Dodekaeder als Beispiel-Komplex gew"ahlt. Mit seinen 20 Punkten stellt
+dieser Komplex schon eine Herausforderung an die Rechenzeit der implementierten
+Programme dar, was gerade bei der Bestimmung der Symmetriegruppe und der
+Erzeugung von Orientierungen von Matroiden als Behinderung ins Auge f"allt.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength0.75cm
+\setlinear
+\setcoordinatesystem units <0.75cm,0.75cm>
+\setplotarea x from -3 to 3, y from -3 to 3
+\setsolid
+\plot -0.173 2.407 1.312 1.267 /
+\plot 1.312 1.267 2.578 0.905 /
+\plot 2.578 0.905 1.874 1.821 /
+\plot 1.874 1.821 0.173 2.749 /
+\plot 0.173 2.749 -0.173 2.407 /
+\plot -1.312 1.918 0.173 2.749 /
+\plot -1.312 1.918 -2.578 1.063 /
+\plot -2.578 1.063 -1.874 1.365 /
+\plot -1.874 1.365 -0.173 2.407 /
+\plot -1.874 1.365 -1.439 -0.417 /
+\plot -1.439 -0.417 0.53 -0.477 /
+\plot 0.53 -0.477 1.312 1.267 /
+\plot -0.173 -2.749 -1.874 -1.821 /
+\plot 1.312 -1.918 -0.173 -2.749 /
+\plot 1.312 -1.918 0.53 -0.477 /
+\plot -1.439 -0.417 -1.874 -1.821 /
+\plot 2.578 -1.063 1.312 -1.918 /
+\plot 2.578 -1.063 2.578 0.905 /
+\plot -2.578 -0.905 -2.578 1.063 /
+\plot -1.874 -1.821 -2.578 -0.905 /
+\setdashes <1mm>
+\plot 1.874 1.821 1.439 0.417 /
+\plot 1.439 0.417 -0.53 0.477 /
+\plot -0.53 0.477 -1.312 1.918 /
+\plot -0.173 -2.749 0.173 -2.407 /
+\plot 0.173 -2.407 1.874 -1.365 /
+\plot 1.874 -1.365 2.578 -1.063 /
+\plot 0.173 -2.407 -1.312 -1.267 /
+\plot -1.312 -1.267 -0.53 0.477 /
+\plot 1.439 0.417 1.874 -1.365 /
+\plot -2.578 -0.905 -1.312 -1.267 /
+\endpicture
+$$
+\caption{Ein Dodekaeder}
+\label{dodeka}
+\end{figure}
+
+Von Vorteil ist allerdings, da"s die Symmetriegruppe als die Duale der
+Ikosaedergruppe der Ordnung 120 bekannt ist. Trotzdem ist bei ${20\choose 4}
+=4845$ Elementen f"ur die Matroide mit erheblichem Aufwand zu rechnen.
+Deshalb soll zun"achst die Grundstruktur der Matroide nach der Erscheinung des
+vorgelegten Komplexes angegeben werden. Diese ist in Abbildung \ref{dodegrs}
+zu sehen.
+
+\begin{figure}[htb]
+\begin{center}{\scriptsize\tt\begin{tabular}{l}
+001111111?111????01111111?111????1111111?111????????????????????????????\\
+???1111????????111????????00111???110111???11111???11???????1???????????\\
+?????????01111111?111????1111111?111????????????11?????????????????11???\\
+???????1??????????11????????1?????????11????????????1?????1?????????????\\
+?1111111?111????11??????11????1????????????11??????????1??????????11????\\
+????1?????????????????????????????1??????????????1111??????????111??????\\
+????0011?????111011?????11111?????1111??????????????????????????????????\\
+??????????1????????????11??????????1????????????????????????????????????\\
+??????????????1??????????????11???????11?1???????11?????????????????????\\
+????????????????????????????????1??011?????11111?????1111???????????????\\
+??????????????????????????1??11?????1111??????11????????????????????????\\
+?????????1?10111???11111???11???????????????????????????1111???111?????1\\
+?????1??????????????11?????11????1????????????????????1?????????????????\\
+?????????????????????????????????01111111?111????1111111?111?????????1?1\\
+11????????????????????????????????????????11?11?????1?11?????10011??111?\\
+????011??111??1??????????1111111?111????11??????11????1?????????????????\\
+??????????????????11????????1?????????11????????????1?????1?????????????\\
+?11????????????1????????????11??????????1??????????11????????1?????????1\\
+1????????????1????????????????????1?????????????????????????????????????\\
+??????????????????11????????????1?????1?????????????????????????????????\\
+???????????????????????????????????????????????????????????1??????????11\\
+????????1????????????????????????????????????????????11??????111??????11\\
+???????????????????????????????????10111???11111???11???????1???????????\\
+????????1111???111?????11????1??????????????111????1011??111??1?????????\\
+?111??111???1?????????11??11?????????1???????????????????1111111?111????\\
+11???1110011??1??????11??????????11???????????????????????????????????11\\
+1?????11????11????011??11????????11??????11????1????????????11??????????\\
+1??????????????????????????????11????????????1?????1??????????????1?????\\
+?1111????????11???????????????????????????????????111?????11????11????01\\
+1??11??1????????????????????????????????????????????????????????????????\\
+????1????11??1?????1??????????????????????????????????????????????????1?\\
+????????????????????????????????????????????????????????????????????1???\\
+??????11????????????1????????????????????111????11?????11????1??????????\\
+?????11????1011??111??1??????????111??111???1?????????11??11?????????11?\\
+???????1?????????0011????11111?011????11111?11????11111?1???????????????\\
+???????????????????????????????????1??????????????011????11111?11????111\\
+11?????????????????????????????????11?????11????11????011??11??1?????11?\\
+???11111?????????11?????????????????????????????????????????1????11??1??\\
+1??1???????11?????????????????????????????????????????1???????????1?????\\
+?????????????????????????????????????????????????1??1???????????????????\\
+????????????????????????????????????????????????????????????????????1???\\
+??1??????????????111???11???1?????????11???1?????????11????????1????????\\
+?011????11111?11????11111?1?????????????????????????????????????????????\\
+?????1????11??1?????11????11111?1???????11??????????????????????????????\\
+????????????????11??1??1??011?????11111?????111?????????????????????????\\
+?????????????????1??11?????111???????11?????????????????????????????????\\
+1?11??????11???????????????????????????????????1????????????????????????\\
+???????????1???????1????????????????????????????????????????????????????\\
+??????????????1?????????11????11111???????1111??????????????????????????\\
+????111???111??111??001101111?1???????11????????????????????????????????\\
+?????????1????11??1??1???????????????????????????????????????????????11?\\
+?1??1???????????????????????????????????????????????????????????????????\\
+???????????????????????1?????1??????????????111???11???11??11111111???11\\
+??1?????11??1?????01111?111111?1??11001???????11???????11?????????????11\\
+????????????111?11?0111??????111??????111????????????11????????????111?1\\
+1?011???????11?????????????????????????????????1?1??????????????????????\\
+???????????1?1????????????????????????????111???11???11??11111111???11??\\
+1?????11??1?????01111?111111?????111??????111????????????11?????????????\\
+11?11?0111??????11?????????????????????????????????1?1??????????????????\\
+???????????????1?1???????????????????????????????????????????111111?????\\
+????????????????????1??1??1111111??1100??????11?????11????11??????????11\\
+11011????111????11????11??????????111101?????1?????1??????????????1?????\\
+1?????????111111??????????????1??????????1??1??1111111???111????11????11\\
+??????????111101?????11????1??????????????1?????1?????????111111????????\\
+??????1????????????????11110111110111110????1???1??1?1111111011??11??111\\
+111111??11??1??1?111???????????????111111111011??11??111111111??11??1??1\\
+?111???????????????1111001110111111111011111111111111100000111111???111?\\
+??1111111???111111110               
+\end{tabular}}\end{center}
+\caption{\label{dodegrs} Die Grundstruktur zu Dodekaeder-Matroiden}
+\end{figure}
+
+Betrachtet man sich diese Grundstruktur, so erscheint es wenig sinnvoll,
+dieses Beispiel testen zu wollen, da hierzu derzeitige Computer eine
+Rechenzeit ben"otigen w"urden, die den zeitlichen Rahmen dieser Diplomarbeit
+sprengen w"urde.
+
+\clearpage
+\section{Die Dycksche Karte}
+
+In \cite{Bo:91} stellte Bokowski eine Realisierung der Dyckschen Karte
+vor, deren zugeh"origer CW-Komplex in Abbildung \ref{dyck} zu sehen ist.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <1cm,1cm>
+\setplotarea x from -6 to 6, y from -6 to 6
+\plot 0 0 3 0 3.939 0.695 4.078 1.902 4.096 2.868 /
+\plot 3 0 2.121 2.121 3.939 0.695 /
+\plot 2.121 2.121 4.078 1.902 /
+\plot 2.121 2.121 4.096 2.868 /
+\plot 0 0 2.121 2.121 2.294 3.277 1.539 4.229 0.868 4.924 /
+\plot 2.121 2.121 0 3 2.294 3.277 /
+\plot 0 3 1.539 4.229 /
+\plot 0 3 0.868 4.924 /
+\plot 0 0 0 3 -0.695 3.939 -1.902 4.078 -2.868 4.096 /
+\plot 0 3 -2.121 2.121 -0.695 3.939 /
+\plot -2.121 2.121 -1.902 4.078 /
+\plot -2.121 2.121 -2.868 4.096 /
+\plot 0 0 -2.121 2.121 -3.277 2.294 -4.229 1.539 -4.924 0.868 /
+\plot -2.121 2.121 -3 0 -3.277 2.294 /
+\plot -3 0 -4.229 1.539 /
+\plot -3 0 -4.924 0.868 /
+\plot 0 0 -3 0 -3.939 -0.695 -4.078 -1.902 -4.096 -2.868 /
+\plot -3 0 -2.121 -2.121 -3.939 -0.695 /
+\plot -2.121 -2.121 -4.078 -1.902 /
+\plot -2.121 -2.121 -4.096 -2.868 /
+\plot 0 0 -2.121 -2.121 -2.294 -3.277 -1.539 -4.229 -0.868 -4.924 /
+\plot -2.121 -2.121 0 -3 -2.294 -3.277 /
+\plot 0 -3 -1.539 -4.229 /
+\plot 0 -3 -0.868 -4.924 /
+\plot 0 0 0 -3 0.695 -3.939 1.902 -4.078 2.868 -4.096 /
+\plot 0 -3 2.121 -2.121 0.695 -3.939 /
+\plot 2.121 -2.121 1.902 -4.078 /
+\plot 2.121 -2.121 2.868 -4.096 /
+\plot 0 0 2.121 -2.121 3.277 -2.294 4.229 -1.539 4.924 -0.868 /
+\plot 2.121 -2.121 3 0 3.277 -2.294 /
+\plot 3 0 4.229 -1.539 /
+\plot 3 0 4.924 -0.868 /
+\put {\scsi 12} [bl] at 0.3 0.1
+\put {\scsi 1} [tl] at 2 2
+\put {\scsi 2} [tr] at 2.7 -0.1
+\put {\scsi 3} [bl] at 2 -2
+\put {\scsi 4} [bl] at 0.1 -2.7
+\put {\scsi 5} [br] at -2 -2
+\put {\scsi 6} [bl] at -2.7 0.1
+\put {\scsi 7} [tr] at -2 2
+\put {\scsi 8} [tr] at -0.1 2.7
+\put {\scsi 9} [bl] at 4 0.7
+\put {\scsi 4} [bl] at 4.1 2
+\put {\scsi 11} [bl] at 4.1 2.9
+\put {\scsi 10} [bl] at 2.3 3.3
+\put {\scsi 3} [bl] at 1.6 4.3
+\put {\scsi 11} [bl] at 0.9 5
+\put {\scsi 9} [br] at -0.7 4
+\put {\scsi 2} [br] at -2 4.1
+\put {\scsi 11} [br] at -2.9 4.1
+\put {\scsi 10} [br] at -3.3 2.3
+\put {\scsi 1} [br] at -4.3 1.6
+\put {\scsi 11} [br] at -5 0.9
+\put {\scsi 9} [tr] at -4 -0.7
+\put {\scsi 8} [tr] at -4.1 -2
+\put {\scsi 11} [tr] at -4.1 -2.9
+\put {\scsi 10} [tr] at -2.3 -3.3
+\put {\scsi 7} [tr] at -1.6 -4.3
+\put {\scsi 11} [tr] at -0.9 -5
+\put {\scsi 9} [tl] at 0.7 -4
+\put {\scsi 6} [tl] at 2 -4.1
+\put {\scsi 11} [tl] at 2.9 -4.1
+\put {\scsi 10} [tl] at 3.3 -2.3
+\put {\scsi 5} [tl] at 4.3 -1.6
+\put {\scsi 11} [tl] at 5 -0.9
+\endpicture
+$$
+\caption{Die Dycksche Karte}
+\label{dyck}
+\end{figure}
+
+Als Analogon zu den Platonischen K"orpern besitzt die Dycksche regul"are Karte,
+die in der "ublichen Notation f"ur kombinatorische 2-Mannigfaltigkeiten mit
+$\{3,8\}_6$ bezeichnet wird, eine flaggentransitive Automorphismengruppe.
+Ihr Aufbau ist bestimmt durch zw"olf Ecken, die mit der Valenz 8 "uber 48 Kanten
+32 Seiten in Form von Dreiecken bilden. "Uber die Eulerformel l"a"st sich hier
+als Geschlecht 3 bestimmen.\\
+Bei Vorlage einer 2-Mannigfaltigkeit als kombinatorischem Komplex, ist es
+interessant zu erfahren, ob eine Einbettung dieser in den dreidimensionalen
+euklidischen Raum existiert, die aus einer endlichen Menge ebener Polygone
+besteht, deren Vereinigung frei von Selbstdurchdringungen ist und zu der
+kombinatorischen Mannigfaltigkeit korrespondiert.\\
+Im Jahre 1986 fand nun Bokowski eine Einbettung oben beschriebener
+Karte (beschrieben in \cite{Bo:86} und \cite{HoWi:91}), die allerdings keine
+Symmetrien aufweist. Mit Hilfe des vorgestellten Schemas soll nun nach
+orientierten Matroiden gesucht werden, die eine m"ogliche symmetrische
+Einbettung der Dyckschen Karte induzieren k"onnten.
+
+"Uber den Komplex l"a"st sich zun"achst aussagen, da"s aufgrund des Aufbaus
+aus Dreiecken keine offensichtlichen Nichtbasen f"ur vertr"agliche Matroide
+existieren, aber anhand der benachbarten Zellen wohl eine (wenn auch nicht
+allzu stark besetzte) Grundstruktur induziert werden kann, die in der
+folgenden Form gegeben ist:
+
+{\tt $$
+\begin{array}{c}
+????????1????1?????????????????1??????1??1???????1?????\\
+?????????1???????1???????????????????1????1??????1?????\\
+??????????????????????1???1?????1?????1??????????1?????\\
+???????1????1??????????????1??????1?????1???????????1??\\
+??????????????????1???1????1?????????????????1????1????\\
+????????????????1??1??????????????1?????1??????????1???\\
+???????????1??1?????????????????1???????????1??1???????\\
+???1???1???????????????????1????????????????11?????1???\\
+1??????????1???????????1????1?????????????1????????????
+\end{array}
+$$}
+
+Als Symmetriegruppe f"ur den Komplex erh"alt man eine Gruppe der Ordnung 192,
+deren Elemente in Tabelle \ref{dyckaut} aufgef"uhrt sind.
+
+\begin{table}[p]
+{\scsi $$
+\begin{array}{lll}
+\mbox{identity} & (37)(48)(9C)(AB) & (2864)(9CAB)\\
+(24)(37)(68)(BC) & (26)(48)(9A)(BC) & (26)(37)(9B)(AC)\\
+(2468)(9BAC) & (28)(37)(46)(9A) & (29)(4C)(6A)(8B)\\
+(2C8A6B49)(37) & (2A)(4B)(69)(8C) & (2B896C4A)(37)\\
+(2B)(49)(6C)(8A) & (2A4C698B)(37) & (2C)(4A)(6B)(89)\\
+(294B6A8C)(37) & (12)(34)(56)(78)(9C)(AB) & (12)(38)(47)(56)\\
+(18765432)(9A) & (14765832)(9BAC) & (1652)(3874)(9B)(AC)\\
+(1652)(3478)(9A)(BC) & (14365872)(BC) & (18365472)(9CAB)\\
+(1C8792)(3A65B4) & (192)(3B8)(47C)(5A6) & (1B87A2)(3965C4)\\
+(1A2)(3C8)(47B)(596) & (1A43B2)(5987C6) & (1B2)(3A8)(479)(5C6)\\
+(1943C2)(5A87B6) & (1C2)(398)(47A)(5B6) & (13)(48)(57)(9A)\\
+(1753)(9BAC) & (13)(24)(57)(68)(9C)(AB) & (1753)(2864)\\
+(13)(26)(57)(BC) & (1753)(26)(48)(9CAB) & (13)(28)(46)(57)(9B)(AC)\\
+(1753)(2468)(9A)(BC) & (13)(2A69)(4C8B)(57) & (1753)(2B8A6C49)\\
+(13)(296A)(4B8C)(57) & (1753)(2C896B4A) & (13)(2B)(4A)(57)(6C)(89)\\
+(1753)(2A8C694B) & (13)(2C)(49)(57)(6B)(8A) & (1753)(298B6A4C)\\
+(12385674)(9CAB) & (12785634)(BC) & (14)(23)(58)(67)\\
+(1854)(2763)(9C)(AB) & (16785234)(9BAC) & (16385274)(9A)\\
+(1854)(2367)(9A)(BC) & (14)(27)(36)(58)(9B)(AC) & (1C4)(239)(5B8)(67A)\\
+(1927B4)(3C85A6) & (1B4)(23A)(5C8)(679) & (1A27C4)(3B8596)\\
+(194)(23B)(5A8)(67C) & (1C63A4)(27985B) & (1A4)(23C)(598)(67B)\\
+(1B6394)(27A85C) & (15)(48)(9B)(AC) & (15)(37)(9A)(BC)\\
+(15)(24)(68)(9A) & (15)(2864)(37)(9BAC) & (15)(26)(9C)(AB)\\
+(15)(26)(37)(48) & (15)(28)(46)(BC) & (15)(2468)(37)(9CAB)\\
+(15)(2B4A6C89) & (15)(2A69)(37)(4B8C) & (15)(2C496B8A)\\
+(15)(296A)(37)(4C8B) & (15)(298C6A4B) & (15)(2C6B)(37)(4A89)\\
+(15)(2A8B694C) & (15)(2B6C)(37)(498A) & (1256)(3874)(9A)(BC)\\
+(1256)(3478)(9B)(AC) & (14325876)(9CAB) & (18325476)(BC)\\
+(16)(25)(34)(78) & (16)(25)(38)(47)(9C)(AB) & (18725436)(9BAC)\\
+(14725836)(9A) & (1A6)(259)(3C4)(7B8) & (1B47A6)(25C839)\\
+(196)(25A)(3B4)(7C8) & (1C4796)(25B83A) & (1C6)(25B)(394)(7A8)\\
+(1983C6)(25A47B) & (1B6)(25C)(3A4)(798) & (1A83B6)(25947C)\\
+(1357)(9CAB) & (17)(35)(48)(BC) & (1357)(2864)(9A)(BC)\\
+(17)(24)(35)(68)(9B)(AC) & (1357)(26)(48)(9BAC) & (17)(26)(35)(9A)\\
+(1357)(2468) & (17)(28)(35)(46)(9C)(AB) & (1357)(2C4A6B89)\\
+(17)(29)(35)(4B)(6A)(8C) & (1357)(2B496C8A) & (17)(2A)(35)(4C)(69)(8B)\\
+(1357)(294C6A8B) & (17)(2C6B)(35)(498A) & (1357)(2A4B698C)\\
+(17)(2B6C)(35)(4A89) & (12345678)(9A) & (12745638)(9BAC)\\
+(18)(23)(45)(67)(9B)(AC) & (1458)(2763)(9A)(BC) & (16745238)(BC)\\
+(16345278)(9CAB) & (1458)(2367)(9C)(AB) & (18)(27)(36)(45)\\
+(1A67C8)(23B459) & (1B8)(279)(3A6)(45C) & (1967B8)(23C45A)\\
+(1C8)(27A)(396)(45B) & (1B2398)(45C67A) & (1A8)(27B)(3C6)(459)\\
+(1C23A8)(45B679) & (198)(27C)(3B6)(45A) & (129)(38B)(4C7)(56A)\\
+(12C349)(56B78A) & (19)(3B)(5A)(7C) & (1C3A5B79)(48)\\
+(149)(2B3)(58A)(6C7) & (18B769)(2A54C3) & (1C7A5B39)(2864)\\
+(19)(24)(3C)(5A)(68)(7B) & (169)(2A5)(34B)(78C) & (16C389)(2B74A5)\\
+(1A59)(26)(3C7B)(48) & (1B7A5C39)(26) & (189)(2C7)(36B)(4A5)\\
+(14B729)(36A58C) & (1B3A5C79)(2468) & (1A59)(28)(3B7C)(46)\\
+(12B34A)(56C789) & (12A)(38C)(4B7)(569) & (1B395C7A)(48)\\
+(1A)(3C)(59)(7B) & (18C76A)(2954B3) & (14A)(2C3)(589)(6B7)\\
+(1A)(24)(3B)(59)(68)(7C) & (1B795C3A)(2864) & (16B38A)(2C7495)\\
+(16A)(295)(34C)(78B) & (1C795B3A)(26) & (195A)(26)(3B7C)(48)\\
+(14C72A)(36958B) & (18A)(2B7)(36C)(495) & (195A)(28)(3C7B)(46)\\
+(1C395B7A)(2468) & (12A78B)(34C569) & (12B)(38A)(497)(56C)\\
+(1A7C593B)(48) & (1B)(3A)(5C)(79) & (18932B)(4A76C5)\\
+(14B)(2A3)(58C)(697) & (1C5B)(24)(3A79)(68) & (197C5A3B)(2864)\\
+(16A74B)(2938C5) & (16B)(2C5)(34A)(789) & (193C5A7B)(26)\\
+(1C5B)(26)(397A)(48) & (14936B)(2C58A7) & (18B)(297)(36A)(4C5)\\
+(1B)(28)(39)(46)(5C)(7A) & (1A3C597B)(2468) & (12C)(389)(4A7)(56B)\\
+(12978C)(34B56A) & (1C)(39)(5B)(7A) & (197B5A3C)(48)\\
+(14C)(293)(58B)(6A7) & (18A32C)(4976B5) & (1A7B593C)(2864)\\
+(1B5C)(24)(397A)(68) & (16C)(2B5)(349)(78A) & (16974C)(2A38B5)\\
+(1B5C)(26)(3A79)(48) & (1A3B597C)(26) & (18C)(2A7)(369)(4B5)\\
+(14A36C)(2B5897) & (193B5A7C)(2468) & (1C)(28)(3A)(46)(5B)(79)
+\end{array}$$}
+\caption{Die Symmetriegruppe der Dyckschen Karte}
+\label{dyckaut}
+\end{table}
+
+Zur Erzeugung vertr"aglicher Matroide sei hieraus eine zyklische
+Untergruppe der Ordnung sechs, etwa $\{<(1C8792)(3A65B4)>\}$
+als Symmetriegruppe ausgew"ahlt. Zu dieser wurden nach 10 Stunden Rechenzeit
+auf einem i486-66 bereits 1332 verschiedene vertr"agliche Matroide mit oben
+angegebener Grundstruktur erzeugt, wobei noch nicht alle zugeh"origen
+Matroide erzeugt wurden. Vier willk"urlich ausgew"ahlte von diesen sind in
+Abbildung \ref{dyckmat} als Beispiele angegeben.
+
+\begin{figure}%[htb]
+{\tt $$\begin{array}{c}
+0000011110000111100000000000000111111110111100000111100\\
+0000000111100000111100000000000000011110111100000111100\\
+0000000000000000000001111111101111011110000000111100000\\
+0000111100011110000000000011110111100001111000000011110\\
+0000000000000000111111110111100000000000000001111011110\\
+0000000000000111100111100000000001111000111100000111100\\
+0000000001111011110000000000001111000000011110111100000\\
+1111001111000000000000000111100000000000011111111011110\\
+1111000000011110000011110111100000000000011110000000000\\
+\end{array}$$
+$$\begin{array}{c}
+0101111111011111101111100000001110111110111111011111111\\
+1101011111110111111111110111101101111110101110111101111\\
+1111011110110011010011101111101111110111111111111101111\\
+1011111111111111111111001111000111101111111111111011111\\
+1110010111111101111100110111111110111110111111111011111\\
+0111100011111111111111100111011111111111111110101111110\\
+1101101101111110111011100011111111011110011110111111111\\
+1011101111111111111100001111101111100111011111111111111\\
+1111101111011110111111111101111110001110111110111111001\\
+\end{array}$$
+$$\begin{array}{c}
+0101111111011111111101111111111111111111111101011111111\\
+1101011111111111111111110111111111111111111111101111111\\
+1111111111111111110111111111111111111111111111111111111\\
+1011111111111111111111111111111111111111111111111111111\\
+1110010111111111111111111111111011111111111111111111111\\
+1111110111111111111111111111111111111111111110101111110\\
+1101111111111111111111010111111111111110011110111111111\\
+1111101111111111111111111111111111110111011111111111111\\
+1111101111111111111111111111111110001110011111111111101\\
+\end{array}$$
+$$\begin{array}{c}
+0111011111110111111111111111101111111110111111110111111\\
+1111111011111010111111110111111110111111111111111111111\\
+1111110101111010111111111110111111111111011011111111111\\
+1110111111111111111111011111111111111111111111111110111\\
+1111001100011110111111111111010111111111111111111111111\\
+1110111101111111111111111111111111111111111111111111111\\
+0111111111111111111111111110110111111111111111111011111\\
+1111111111111111111101111111111111111101011111111111111\\
+1111101111111111111111111111110101011011111110111110111\\
+\end{array}$$}
+\caption{Vertr"agliche Matroide zur Dyckschen Karte}
+\label{dyckmat}
+\end{figure}
+
+Versucht man nun der Reihe nach alle erzeugten Matroide zu orientieren,
+so erh"alt man schon f"ur die ersten beiden mit {\sc Sym2mat} erzeugten
+Matroide vertr"agliche Vorzeichenlisten, die in den Tabellen \ref{dyckori1}
+bis \ref{dyckori2B} zu sehen sind.
+Hier wurden wiederum nur die "'positiven"' Listen aufgef"uhrt, so da"s sich
+im ersten Fall zwei vertr"agliche Chirotope und im zweiten Fall acht
+verschiedene Vorzeichenlisten ergeben.
+
+\begin{table}%[htb]
+{\tt
+\begin{center}
+\begin{tabular}{c}
+0000011110000111100000000000000111111110111100000111100\\
+0000000111100000111100000000000000011110111100000111100\\
+0000000000000000000001111111101111011110000000111100000\\
+0000111100011110000000000011110111100001111000000011110\\
+0000000000000000111111110111100000000000000001111011110\\
+0000000000000111100111100000000001111000111100000111100\\
+0000000001111011110000000000001111000000011110111100000\\
+1111001111000000000000000111100000000000011111111011110\\
+1111000000011110000011110111100000000000011110000000000\\[2mm]
+00000++++0000----00000000000000++++----0----00000----00\\
+0000000----00000----000000000000000++++0++++00000----00\\
+000000000000000000000++++----0----0----0000000----00000\\
+0000++++000++++00000000000++++0++++0000----0000000----0\\
+0000000000000000----++++0++++0000000000000000++++0++++0\\
+0000000000000----00++++0000000000----000++++00000++++00\\
+000000000----0----000000000000----0000000----0----00000\\
+++++00++++000000000000000++++000000000000++++----0----0\\
+----0000000----00000++++0++++000000000000----0000000000\\[2mm]
+00000-++-0000+--+00000000000000+--+-++-0+--+00000-++-00\\
+0000000-++-00000+--+000000000000000+--+0-++-00000-++-00\\
+000000000000000000000-++-+--+0-++-0-++-0000000+--+00000\\
+0000+--+000+--+00000000000-++-0+--+0000-++-0000000+--+0\\
+0000000000000000+--+-++-0+--+0000000000000000+--+0-++-0\\
+0000000000000+--+00-++-0000000000+--+000-++-00000+--+00\\
+000000000-++-0+--+000000000000-++-0000000+--+0-++-00000\\
+-++-00+--+000000000000000+--+000000000000+--+-++-0+--+0\\
++--+0000000-++-00000-++-0+--+000000000000+--+0000000000\\
+\end{tabular}
+\end{center}
+}
+\caption{\label{dyckori1}Das erste orientierbare Matroid zur Dyckschen Karte}
+\end{table}
+
+\begin{table}%[htb]
+{\footnotesize\tt
+\begin{center}\begin{tabular}{c}
+00000++++0000----000++++00----0++++-------+--0000----00\\
+0000000----00000----000000000++++00----0++++-------+--0\\
+0----00000----0000000++++-------+------000000---+--0000\\
+0000++++000----00++++0----+++++++-++000----0000000----0\\
+00000000000++++0----+++++++-++0----0000000000+++++++-++\\
+0000000000000++++00----0++++-------+--00----00000----00\\
+00000++++-------+------000000---+--000000++++0----+++++\\
+++-++0----0000000000+++++++-++00000000000++++-------+--\\
+----000000---+--0000+++++++-++0000000000---+--000000000\\[2mm]
+00000++++0000----000++++00----0++++----------0000----00\\
+0000000----00000----000000000++++00++++0++++----------0\\
+0----00000----0000000++++--------------000000------0000\\
+0000++++000++++00++++0----++++++++++000----0000000----0\\
+00000000000++++0----++++++++++0----0000000000++++++++++\\
+0000000000000----00++++0++++----------00++++00000++++00\\
+00000++++--------------000000------000000----0----+++++\\
++++++0++++0000000000++++++++++00000000000++++----------\\
+----000000------0000++++++++++0000000000------000000000\\[2mm]
+00000++++0000----000----00++++0++++----+----+0000----00\\
+0000000----00000----000000000----00++++0+++++++++----+0\\
+0++++00000++++0000000++++----+----+----000000+----+0000\\
+0000++++000++++00----0++++++++-++++-000----0000000----0\\
+00000000000----0----++++-++++-0++++0000000000++++-++++-\\
+0000000000000----00++++0----+++++----+00++++00000++++00\\
+00000--------+----+++++000000+----+000000----0---------\\
+++++-0++++0000000000-----++++-00000000000++++----+----+\\
+----000000+----+0000++++-++++-0000000000+----+000000000\\[2mm]
+00000+--+0000-++-000-++-00+--+0+--+-++-+--+-+0000+--+00\\
+0000000+--+00000-++-000000000+--+00-++-0-++-+--+-++-+-0\\
+0-++-00000+--+0000000-++--++--++-+--++-000000+--+-+0000\\
+0000-++-000-++-00+--+0+--+-++-+--+-+000+--+0000000-++-0\\
+00000000000+--+0-++--++-+--+-+0+--+0000000000+--+-++-+-\\
+0000000000000-++-00+--+0+--+-++-+--+-+00+--+00000-++-00\\
+00000+--++--++--+-++--+000000-++-+-000000-++-0+--++--+-\\
+++-+-0-++-0000000000-++-+--+-+00000000000-++-+--++--+-+\\
+-++-000000-++-+-0000+--++--+-+0000000000+--+-+000000000
+\end{tabular}
+\end{center}
+}
+\caption{\label{dyckori2A}Orientierungen eines Matroids zur Dyckschen Karte
+         Teil A}
+\end{table}
+
+\begin{table}%[htb]
+{\footnotesize\tt
+\begin{center}\begin{tabular}{c}
+00000-++-0000+--+000+--+00-++-0+--+-++--+--+-0000-++-00\\
+0000000-++-00000+--+000000000-++-00+--+0-++--++-+-++-+0\\
+0+--+00000-++-0000000-++-+--++-++-+-++-000000-+--+-0000\\
+0000+--+000+--+00-++-0-++--++--+--+-000-++-0000000+--+0\\
+00000000000-++-0+--+-++--+--+-0-++-0000000000+--++-++-+\\
+0000000000000+--+00-++-0-++-+--+-+--+-00-++-00000+--+00\\
+00000-++--++--+--+--++-000000+-++-+000000+--+0-++--++-+\\
+-++-+0+--+0000000000+--+-+--+-00000000000+--+-++--+--+-\\
++--+000000+-++-+0000-++--+--+-0000000000-+--+-000000000\\[2mm]
+00000-++-0000+--+000-++-00+--+0+--+-++-++-+++0000-++-00\\
+0000000-++-00000+--+000000000+--+00-++-0-++-+--+--+---0\\
+0-++-00000+--+0000000-++-+--+--+----++-000000++-+++0000\\
+0000+--+000-++-00+--+0+--+-++-++-+++000-++-0000000+--+0\\
+00000000000+--+0+--+-++-++-+++0+--+0000000000+--+--+---\\
+0000000000000-++-00+--+0+--+-++-++-+++00+--+00000-++-00\\
+00000+--+-++-++-++++--+000000--+---000000-++-0-++-+--+-\\
+-+---0-++-0000000000-++-++-+++00000000000+--+-++-++-+++\\
++--+000000--+---0000-++-++-+++0000000000++-+++000000000\\[2mm]
+00000-++-0000+--+000-++-00+--+0+--+-++-++--++0000-++-00\\
+0000000-++-00000+--+000000000+--+00+--+0-++-+--+--++--0\\
+0-++-00000+--+0000000-++-+--+--++---++-000000++--++0000\\
+0000+--+000+--+00+--+0+--+-++-++--++000-++-0000000+--+0\\
+00000000000+--+0+--+-++-++--++0+--+0000000000+--+--++--\\
+0000000000000+--+00-++-0+--+-++-++--++00-++-00000+--+00\\
+00000+--+-++-++--+++--+000000--++--000000+--+0-++-+--+-\\
+-++--0+--+0000000000-++-++--++00000000000+--+-++-++--++\\
++--+000000--++--0000-++-++--++0000000000++--++000000000\\[2mm]
+00000----0000++++000++++00----0++++-----+-++-0000++++00\\
+0000000++++00000++++000000000++++00----0++++-----+-++-0\\
+0----00000----0000000++++++++-+-++-----000000-+-++-0000\\
+0000----000----00++++0----+++++-+--+000++++0000000++++0\\
+00000000000++++0+++++++++-+--+0----0000000000+++++-+--+\\
+0000000000000++++00----0++++-----+-++-00----00000----00\\
+00000++++++++-+-++-----000000-+-++-000000++++0+++++++++\\
+-+--+0----0000000000+++++-+--+00000000000----++++-+-++-\\
+++++000000-+-++-0000----+-+--+0000000000-+-++-000000000
+\end{tabular}
+\end{center}
+}
+\caption{\label{dyckori2B}Weitere Orientierungen eines Matroids zur Dyckschen
+         Karte Teil B}
+\end{table}
+
+Es gilt abzuwarten, wieviele orientierte Matroide zur Dyckschen Karte
+insgesamt existieren, die bez"uglich der vorgelegten Symmetriegruppe
+vertr"aglich sind. Schon aufgrund des Ergebnisses f"ur die ersten beiden
+erzeugten Matroide kann man optimistisch sein, da"s eine symmetrische
+Einbettung zumindest nicht ausgeschlossen ist. (U. Brehm gibt eine symmetrische
+Einbettung der Dyckschen Karte mit einer Symmetrie der Ordnung sechs an, die
+sicher auch hier zu finden ist.)
+
+\clearpage
+\section{Schlu"sgedanken}
+
+Bei der Bearbeitung der Dyckschen Karte, oder beim Herangehen an einen
+Komplex der Gr"o"senordnung eines Dodekaeder, zeigt sich, da"s sich unter
+Ber"ucksichtigung von Symmetrieeigenschaften die aufzuwendende Rechenzeit
+zur Bearbeitung eines solchen Komplexes um Potenzen verringern l"a"st.
+Gerade bei der Bereitstellung einer Grundstruktur f"ur vertr"agliche Matroide
+l"a"st sich hier mittels der Ber"ucksichtigung von Symmetrien mehr erreichen,
+als zur Zeit implementiert ist. Nutzt man weitere m"ogliche Vereinfachungen und
+Reduktionen aus, so kann hier weiter optimiert werden, gerade wenn es um
+gr"o"sere Beispiele geht.
+Kleine Beispiele lassen sich aber ohne weiteres mittels des vorgestellten
+Vorgehens in vertretbarer Zeit interessanten Ergebnissen zuf"uhren.
+
+Hat man vertr"agliche orientierte Matroide zu einem Komplex erzeugt,
+stellt sich nun die Frage, wie man die erzeugten orientierten Matroide
+realisiert, um letztendlich Einbettungen zu den vorgelegten Komplexen zu
+bekommen.\\
+In Anbetracht dessen, da"s die erforderliche Rechenzeit f"ur Komplexe mit mehr
+als zehn 0-Zellen weiter verringert werden kann und der technische
+Fortschritt stetig schnellere Prozessoren f"ur "`Rechenmaschinen"' liefert,
+wird es in absehbarer Zeit auch m"oglich sein, etwa die duale
+Mannigfaltigkeit zur Dyckschen Karte mit immerhin schon 32 0-Zellen und
+Achtecken als 2-Zellenberandungen f"ur die Welt der orientierten Matroide zu
+erschlie"sen und "uber diese die noch offene Frage der Einbettbarkeit zu
+kl"aren.
+
+\section{Die verwendeten Programme}
+
+Die in dieser Arbeit vorgestellten Algorithmen sind als ANSI-C Programme
+implementiert und sollten mit einem ANSI-C Compiler (etwa GCC) auf jeder
+Rechnerplattform lauff"ahig sein.
+
+Trotz sorgf"altiger Tests kann es passiert sein, das die Programme nicht
+v"ollig fehlerfrei sind, gerade da bei der Speicherausnutzung zur h"oheren
+Effizienz auf Pointer und dynamische Allokierung zur"uckgegriffen wurde.
+Daher ist die Nutzung der erstellten Programme -- es handelt sich
+schlie"slich um Mittel zum Zweck -- auf eigene Gefahr und ohne jegliche
+Gew"ahr von Seiten des Autors. Sollten Fehler aufgetreten sein, so ist
+der Autor f"ur jeden Hinweis dankbar. Der Quelltext zu den Programmen
+ist, da auf keinerlei Urheberrechte geachtet wurde, im Rahmen weiterer
+Forschung frei zu ver"andern und weiterzugeben -- ein Urheberrechtsanspruch
+besteht von Seiten des Autors nicht.
+
+Folgende Programme fanden f"ur diese Arbeit Verwendung:
+
+\begin{verbatim}
+VRZSYM.C      berechnet zu einer Vorzeichenliste (Chirotop) deren
+              Symmetrien
+              Format der Eingabedatei: Name.chi
+              #n Anzahl der Punkte
+              #d Rang
+              ............... (n ueber d) Vorzeichen +,-,0 *
+
+MATSYM.C      berechnet zu einer Matroidliste deren Symmetrien
+              Format der Eingabedatei: Name.mat wie Name.chi,
+              Liste besteht aus Eintraegen 0 und 1
+
+GONSYM.C      berechnet zu einem Polygon-Komplex dessen
+              Automorphismen
+              Format der Eingabedatei: Name.gon
+              #n Anzahl der Punkte pro 2-Zelle
+              a_1a_2...a_n b_1b_2...b_n ...
+              (Liste der Polygone mit Umlaufsinn)
+              a_i kann 0..9A..Z sein
+
+SUREBASE.C    berechnet zu einer Datei Name.gon eine Grundstruktur
+              fuer zugehoerige Matroide
+
+SYM2MAT.C     Erzeugt Matroide zu einer Automorphismendatei
+              Name.aut : #n Anzahl der Punkte
+                         #m Anzahl der folgenden Symmetrien
+                         1  2  3  4  5  ...  n  (Identitaet)
+                         s1 s2 s3 s4 s5 ...  sn (eine Permutation)
+                         usw.
+
+ORIMAT.C      Erzeugt orientierte Matroide zu einer Datei Name.mat
+              mit einer Automorphismendatei Name.aut
+\end{verbatim}

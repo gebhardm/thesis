@@ -1,0 +1,19 @@
+\newbox\tritorbox
+\newdimen\tritorw
+\font\tritora=tritora
+\font\tritorb=tritorb
+\setbox\tritorbox=\vbox{\hbox{%
+\tritora !()+,}}
+\tritorw=\wd\tritorbox
+\setbox\tritorbox=\hbox{\vbox{\hsize=\tritorw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\tritora !()+,}
+\hbox{\tritora -./01}
+\hbox{\tritora 23456}
+\hbox{\tritora 789:;}
+\hbox{\tritora <\tritorb !()+}}}
+\ifx\parbox\undefined
+    \def\settritor{\box\tritorbox}
+\else
+    \def\settritor{\parbox{\wd\tritorbox}{\box\tritorbox}}
+\fi

@@ -1,0 +1,1696 @@
+\chapter{Grundlagen}
+
+\section{Grundbegriffe der Topologie}
+
+Um Komplexe allgemein und CW-Komplexe im besonderen definieren zu k"onnen,
+ist es n"otig, einige grundlegende Definitionen und Eigenschaften
+topologischer R"aume bereitzustellen, die nicht nur hier, sondern in vielen
+anderen Bereichen der Mathematik zum "`Grundvokabular"' geh"oren.
+
+\subsection{Topologische R"aume}
+
+Ist X eine beliebige Menge, so kann man auf dieser die Potenzmenge
+${\cal P}(X)$, die Menge aller Teilmengen von X, betrachten. W"ahlt man aus
+${\cal P}(X)$ eine Teilmenge $\T$ aus, deren Elemente die drei Bedingungen
+
+\bcent
+\btab{ll}
+1. & $\emptyset\in\T$ und $X\in\T$\\
+2. & $T_1,T_2\in\T~\fol~T_1\cap T_2\in\T$\\
+3. & $T_i\in\T$ f"ur alle i aus einer Indexmenge I
+     $\fol~\Cup\limits_{i\in I} T_i~\in~\T$\\
+\etab
+\ecent
+
+erf"ullen, so nennt man $\T$ eine {\bf Topologie} auf X\idx{Topologie auf X}
+und Elemente $T\in\T$ {\bf offene Mengen}\idx{offene Mengen} des {\bf
+topologischen Raumes}\idx{topologischer Raum} (X,$\T$), des Paares X zusammen
+mit der Topologie $\T$. Die Komplemente offener Mengen nennt man {\bf
+abgeschlossen}\idx{abgeschlossen}.\\
+{\scsi
+Ebenso k"onnte man eine Topologie $\T$ auf X auch mittels abgeschlossener Mengen
+definieren. In diesem Fall w"are dann das Enthaltensein endlicher Vereinigungen
+und beliebiger Durchschnitte abgeschlossener Mengen aus $\T$ zu fordern,
+was der Komplementbildung obiger Bedingungen entspricht.
+}\\
+Ist Y eine Teilmenge eines topologischen Raumes (X,$\T$), so wird diese
+selbst zu einem topologischen Raum, wenn man auf ihr die Topologie von X
+induziert, das hei"st als offene Mengen der Topologie $\T|Y$ die Mengen
+$\{T\cap Y~|~T\in\T\}$ w"ahlt. $\T|Y$ nennt man dann die von X auf Y
+{\bf induzierte Topologie}, die oft auch als {\bf Spurtopologie} auf
+Y\idx{Spurtopologie}\idx{induzierte Topologie} bezeichnet wird.
+
+Als Beispiele f"ur Topologien k"onnen etwa die durch Metriken
+d metrischer R"aume (X,d) induzierten Topologien angef"uhrt werden.\\
+{\scsi
+Zur Erinnerung hier die Definition einer Metrik und eines metrischen Raumes.
+Sei dazu X eine Menge. Eine Funktion $d:X\times X\to\R$ hei"st Metrik, wenn\\
+1. d(x,y) = d(y,x) $\geq$ 0\\
+2. d(x,y) = 0 $\iff$ x = y\\
+3. d(x,z) $\leq$ d(x,y) + d(y,z),\\
+gilt. Das Paar (X,d) hei"st dann ein metrischer Raum. Betrachtet man etwa
+$(\R,\|\cdot\|_2)$, so stellen metrische R"aume oft verwendete Spezialf"alle
+topologischer R"aume dar.
+}\\
+Die offenen Mengen dieser durch Metriken induzierten Topologien sind gegeben
+durch
+$$\T_d=\{U\subseteq X:(\forall~p\in U) (\exists~\varepsilon > 0)
+\mbox{ mit } \{y:d(y,p)<\varepsilon\}\subseteq U\}.$$
+Sei $\|\cdot\|:V\to\R$ eine Abbildung eines Vektorraumes V "uber einem K"orper
+$\K$ in die reellen Zahlen. $\|\cdot\|$ hei"st eine {\bf Norm}\idx{Norm} auf V,
+wenn f"ur alle $v,w\in V$ und $k\in\K$ $\|v\|$ dann und nur dann gleich 0 ist,
+wenn $v=0$ gilt, $\|k\cdot v\|$ gleich $|k|\cdot\|v\|$ ist, sowie $\|v+w\|\leq
+\|v\|+\|w\|$ gilt. (V,$\|\cdot\|$) hei"st dann ein {\bf normierter Raum}.
+\idx{normierter Raum} Normierte R"aume sind metrische R"aume, wenn man f"ur
+die d(x,y) die Norm der Differenz $\|x-y\|$ von x und y setzt.
+
+Der $\R^n$ ist bez"uglich der durch die Euklidische Norm $\|x\|_2 :=
+\sqrt{\sum_{i=1}^n x_i^2}$ und der so induzierten Metrik gegebenen
+offenen Mengen ein topologischer Raum, der auch als {\bf Euklidischer Raum}
+$\E^n$ bezeichnet wird. Oft spricht man hier auch von der "`"ublichen"'
+Topologie auf $\R^n$. (Im folgenden sei $\R$ und $\E$ synonym verwendet, da immer
+der Euklidische Raum gemeint sein wird.)
+
+Spielt es keine Rolle, wie die Topologie eines topologischen Raumes
+geartet ist, werden Aussagen "uber beliebige topologische R"aume gemacht
+oder ist es klar, welche Topologie (die "`"ubliche"') gemeint ist, so spricht
+man oft der Einfachheit halber von einem topologischen Raum X, ohne
+zus"atzliche Angabe von $\T$.
+
+Eine Abbildung $f:X\to Y$ zwischen topologischen R"aumen X und Y hei"st
+{\bf stetig},\idx{stetig} wenn die Urbilder offener Mengen in Y offen in X sind.
+Dies bedeutet, da"s es zu jeder offenen Menge V in Y eine offene Menge U in X
+so gibt, da"s f(U) = V gilt.
+Ist $f:X\to Y$ eine bijektive Abbildung zwischen X und Y, die selbst
+und deren Umkehrabbildung $f^{-1}:Y\to X$ stetig sind, so hei"st f ein
+{\bf Hom"oomorphismus}\idx{Hom\"oomorphismus}. Gibt es zwischen zwei
+topologischen R"aume X und Y solch einen Hom"oomorphismus, so hei"sen X und Y
+{\bf hom"oomorph}\idx{hom\"oomorph}.
+Als wichtiges Beispiel sei angef"uhrt, da"s die n-dimensionale offene Vollkugel
+(in einem normierten Raum) $\stackrel{\circ}{B^n} := \{x~:~\|x\|< 1\}$
+hom"oomorph dem $\R^n$ ist (als Abbildung w"ahle man etwa
+$\phi:\stackrel{\circ}{B^n}\to\R^n$ mit $\phi(x)=\frac{1}{1-\|x\|}x$). Weiter
+ist die (n$-$1)-Sph"are $\S^{n-1}:=\{x~:~\|x\|=1\}$, der Rand der Vollkugel
+$B^n$, von der man einen Punkt wegl"a"st, sie "`punktiert"', hom"oomorph dem
+$\R^{n-1}$. (Man nutze die stereographische Projektion
+$\phi:\S^{n-1}-\{e_n\}\to\R^{n-1}$ mit
+$y=(\frac{x_1}{1-x_n},\ldots,\frac{x_{n-1}}{1-x_n})$).
+
+Bestimmte Teilmengen topologischer R"aume k"onnen nun durch folgende Begriffe
+charakterisiert werden. Ist M eine beliebige Teilmenge eines
+topologischen Raumes (X,$\T$), so hei"st eine weitere Teilmenge $U\subset X$
+eine {\bf Umgebung}\idx{Umgebung} von M, falls es eine offene Menge T in $\T$
+gibt, so da"s $M\subset T\subset U$ gilt.
+Ein Punkt p aus M ist {\bf innerer Punkt}\idx{innerer Punkt} von M, falls M
+Umgebung von  $\{$p$\}$ ist, p ist {\bf Ber"uhrungspunkt}\idx{Ber\"uhrungspunkt}
+von M, falls jede Umgebung von p nichtleeren Schnitt mit M hat und p ist ein
+{\bf H"aufungspunkt}\idx{H\"aufungspunkt}, falls p Ber"uhrungspunkt von
+M$-\{$p$\}$ (M ohne den Punkt p) ist. Ein Punkt p hei"st {\bf Randpunkt}
+\idx{Randpunkt} von M, wenn er Ber"uhrungspunkt von M und X$-$M ist.
+Aus der Definition einer Topologie mittels abgeschlossener Mengen
+folgt, da"s jede offene Menge $T\in\T$ in einer kleinsten abgeschlossenen
+Menge, dem {\bf Abschlu"s} $\ol{T}$\idx{Abschlu\3} von T, enthalten ist. Dieser
+Abschlu"s oder auch diese {\bf abgeschlossene H"ulle} von T ist der Durchschnitt
+aller abgeschlossenen Mengen, die T enthalten.
+
+Eine Teilmenge eines topologischen Raumes soll {\bf kompakt} hei"sen, wenn sie
+das "Uberdeckungskriterium von Heine-Borel erf"ullt. Dieses besagt, da"s
+eine Menge K in einem topologischen Raum X genau dann kompakt\idx{kompakt}
+ist, wenn jede offene "Uberdeckung (jede Vereinigung offener Mengen aus X, die
+eine Obermenge von K ist) die Auswahl einer endlichen Teil"uberdeckung
+(also eine "Uberdeckung mit nur endlich vielen offenen Mengen) zul"a"st.
+{\bf Konvex} hei"st eine Teilmenge K eines topologischen Vektorraumes (eines
+Vektorraumes mit Topologie, bez"uglich der Addition und Multiplikation mit
+Skalaren stetig sind)\idx{konvex}, wenn f"ur je zwei Punkte a und b aus K
+die Verbindungsstrecke $\{x=\lambda a +(1-\lambda) b:\lambda\in [0,1]\}$
+der beiden auch in K liegt. Eine nichtleere Teilmenge S einer Teilmenge K
+eines Vektorraumes hei"st {\bf Extremmenge} von K\idx{Extremmenge}
+falls f"ur alle $x,y\in K,~0<t<1$, und $(1-t)x+ty\in S$ die Punkte x und y aus
+S stammen. Die {\bf Extrempunkte}\idx{Extrempunkt} von K sind die einpunktigen
+Extremmengen von K (vgl.\cite{Ru:91}, Seite 74).
+Eine kompakte, konvexe Teilmenge K des $\R^d$ hei"st nun {\bf Polytop} oder
+Polyedermenge, falls die Menge ihrer Extrempunkte endlich ist.
+(vgl.\cite{Gr:67}, S.31)\idx{Polytop}
+
+\subsection{Produkttopologie}
+
+Betrachtet man eine Mengenfamilie $\{X_j:j\in J\}$, eine Menge, die zu jedem
+Element j einer Indexmenge J eine Menge X$_j$ enth"alt, so ist das {\bf
+kartesische Produkt}\idx{kartesisches Produkt} der X$_j$ die Menge aller
+Auswahlfunktionen $f:J\to\Cup\limits_{j\in J} X_j$ mit $f(j)\in X_j$,
+geschrieben als
+$$
+\prod\limits_{j\in J}X_j:=
+\left\{f~|~f:J\to\Cup\limits_{j\in J} X_j,f(j)\in X_j\right\}.
+$$
+F"ur $\{f(j):j\in J\}$ schreibt man kurz $(x_j)_{j\in J}$, was dem Sachverhalt
+der Auswahl eines Elements aus allen $X_j$ wohl gerechter wird.
+Da"s ein unendliches kartesisches Produkt nichtleer ist, ist nicht ohne weiteres
+einsichtig und wird durch das Auswahlaxiom sichergestellt, welches besagt:
+\begin{quote}
+{\bf
+F"ur jede Mengenfamilie $\{X_j:j\in J\}$ nichtleerer Mengen ist das Produkt
+$\prod\limits_{j\in J}X_j$ nichtleer.
+}
+\end{quote}
+Bei Betrachtung endlicher Produkte kommt dieses Axiom nicht zum tragen, ist
+aber bei der "Ubertragung auf den allgemeinen Fall unendlicher Mengenfamilien
+unerl"a"slich, weswegen es hier bei der Darstellung allgemeiner topologischer
+Grundlagen auch nicht fehlen soll.
+
+W"ahlt man die $X_j$ als topologische R"aume, so ist mit den Topologien
+$\T_j$ der $X_j$ auch auf dem Produkt eine Topologie, die
+{\bf Produkttopologie}, \idx{Produkttopologie} gegeben. Setzt man
+$$\B:=\left\{\prod\limits_{j\in J}U_j~:~U_j\in\T_j, U_j=X_j,\mbox{ bis auf
+endlich viele Ausnahmen } j\in J\right\},$$
+so ist die Produkttopologie gerade $\T := \left\{\Cup B~:~B\in\B\right\}.$
+$\B$ hei"st eine {\bf Basis}\idx{Basis einer Topologie} der Topologie, da jede
+offene Menge als Vereinigung von Mengen aus $\B$ dargestellt werden kann. Die
+Formulierung "`bis auf endlich viele Ausnahmen"' ist dabei eine Folge des
+Auswahlaxioms.
+
+\subsection{Teilweise geordnete Mengen und Verb"ande}
+
+Da gerade vom Auswahlaxiom die Rede war, soll an dieser Stelle die Terminologie
+geordneter Mengen dargestellt werden, da auf Komplexen eine nat"urliche Ordnung
+existiert, diese Mengen aber auch sonst eine hilfreiche Erg"anzung bieten.
+
+Eine Relation "`$\leq$"' auf einer Menge X hei"st {\bf Partialordnung} oder
+einfach nur Ordnung, wenn sie transitiv ($x\leq y, y\leq z\fol x\leq z~\forall
+x,y,z\in X$), reflexiv ($x\leq x~\forall x\in X$) und antisymmetrisch ($x\leq y,
+y\leq x\fol x = y~\forall x,y\in X$) ist. Die Menge X hei"st zusammen mit
+$\leq$ eine {\bf teilweise geordnete Menge} oder {\bf Poset} (partial ordered
+set) (X,$\leq$).\idx{Ordnung}\idx{Poset}\idx{teilweise geordnete Menge}
+(X,$\leq$) hei"st {\bf totalgeordnet},\idx{totalgeordnet} wenn f"ur alle
+x,y$\in$X allemal x$\leq$y oder y$\leq$x gilt. Jede totalgeordnete Teilmenge
+einer teilweise geordneten Menge hei"st {\bf Kette} oder Turm.\idx{Kette}
+\idx{Turm} Ist jede Kette in (X,$\leq$) nach oben beschr"ankt, so hei"st
+(X,$\leq$) auch induktiv geordnet.
+Hier kann nun ein zum Auswahlaxiom "aquivalentes Lemma, das Lemma von Zorn
+angef"uhrt werden, das den gegenw"artigen Bezug zu den topologischen R"aumen
+darstellt.\idx{Lemma von Zorn}
+\begin{quote}
+{\bf Jede induktiv geordnete Menge besitzt maximale Elemente.}
+\end{quote}
+Besitzt eine teilweise geordnete Menge (X,$\leq$) ein eindeutiges minimales
+Element, so sei dieses mit \^0 bezeichnet, analog ein eindeutiges maximales
+Element mit \^1. Gibt es in einer teilweise geordneten Menge (X,$\leq$) diese
+Elemente, so hei"st (X,$\leq$) {\bf beschr"ankt}. Gilt f"ur zwei Elemente x
+und y aus einer beschr"ankten teilweise geordneten Menge X, da"s x$<$y ist, und
+existiert kein weiteres Element z in X, welches zwischen x und y liegt
+(x$<$z$<$y), so bezeichnet man y als {\bf Decke}\idx{Decke} von x
+beziehungsweise x als {\bf Kodecke} von y. Die Decken von \^0 hei"sen dann
+{\bf Atome}\idx{Atome} und die Kodecken von \^1 {\bf Koatome} von X.
+Besitzen alle maximalen Ketten $x_0<x_1<\ldots<x_l$ die gleiche L"ange $\ell$,
+so hei"st (X,$\leq$) rein und $\ell$ ist die L"ange
+von X. In diesem Fall ist der Rang $\rho(x)$ eines x$\in$X die L"ange der
+geordneten Teilmenge $X_{\leq x}:=\{y\in X:y\leq x\}$. Wie diese Teilmengen
+teilweise geordneter Mengen, so k"onnen auch {\bf Ordnungsintervalle}
+\idx{Ordnungsintervalle} $[x,y]\subseteq X$ mit $x,y\in X$ als Mengen
+$\{z\in X:x\leq z\leq y\}$ definiert werden, analog offene Ordnungsintervalle
+$(x,y) := \{z\in X:x<z<y\}$ im "ublichen Sinne.
+
+Eine teilweise geordnete Menge (X,$\leq$) hei"st {\bf Verband},\idx{Verband}
+wenn zu allen Paaren x,y$\in$ X kleinste obere Schranken $x\vee y$ (Joins) und
+gr"o"ste untere Schranken $x\wedge y$ (Meets) existieren. In einem endlichen
+Verband L existieren Joins und Meets f"ur beliebige Teilmengen von L, deshalb
+ist L beschr"ankt und es ist \^0 = $\wedge$L und \^1 = $\vee$L.
+K"urzer kann man sagen, da"s eine teilweise geordnete Menge L genau dann ein
+Verband ist, wenn \^0 existiert und wenn f"ur alle Paare x,y$\in$L die Joins
+$x\vee y$ existieren. 
+
+\subsection{Quotientenr"aume}
+
+Nach diesem Abstecher nun zur"uck zu den topologischen R"aumen. Hier ist
+ein weiterer wichtiger Begriff, gerade im Zusammenhang mit Komplexen und
+darauf induzierten Topologien, der des Quotientenraumes, welcher im folgenden
+eingef"uhrt werden soll.
+
+Sind X und Y Mengen, so kann mittels eines Tricks die Summe oder {\bf disjunkte
+Vereinigung}\idx{Summe von Mengen}\idx{disjunkte Vereinigung} der beiden
+Mengen definiert werden, wobei X und Y als Teilmengen erhalten bleiben
+(Bei der "`normalen"' Vereinigung ist ja $X\cup X = X$).
+Diese Summe $X+Y$ wird so als Vereinigung $X\times \{0\} \cup Y\times \{1\}$
+erkl"art. Analog ist die {\bf Summe topologischer R"aume} zu bilden,
+wenn die offenen Mengen der Topologie der Summe zu
+$\{U+V|U\in\cS,V\in\T\}$ gew"ahlt werden, wobei $\cS$ die Topologie auf X und
+$\T$ die Topologie auf Y bezeichnet.
+
+Sei $\sim$ eine "Aquivalenzrelation (reflexiv (x $\sim$ x), symmetrisch
+(x $\sim$ y $\iff$ y $\sim$ x) und transitiv (x $\sim$ y, y $\sim$ z
+$\fol$ x $\sim$ z)) auf einem topologischen Raum $(X,\T)$,
+$\tilde{x}:=\{y\in X:x\sim y\}$ eine und $\tilde{X}:=X/_\sim =
+\{\tilde{x}|x\in X\}$ die Menge aller $\sim-$"Aquivalenzklassen. Die Abbildung
+$\pi:X\to\tilde{X}$, die jedes Element x aus X auf seine "Aquivalenzklasse
+abbildet hei"st {\bf Quotientenabbildung}\idx{Quotientenabbildung} des
+topologischen Raumes (X,$\T$) in den {\bf Quotientenraum}
+$(\tilde{X},\tilde{\T})$ \idx{Quotientenraum} von X modulo $\sim$ mit der
+{\bf Quotiententopologie} \idx{Quotiententopologie} $\tilde{\T} :=
+\{\tilde{\T}\subset\tilde{X}:\pi^{-1}(\tilde{\T})\in\T\}$.
+Die Quotientenabbildung $\pi$ ist stetig und $\tilde{\T}$ ist die feinste
+Topologie bez"uglich der $\pi$ stetig ist.\\
+{\scsi
+Seien $\cS$ und $\T$ zwei Topologien auf X. $\cS$ hei"st feiner als $\T$,
+wenn sie mehr offene Mengen enth"alt, also $\cS\supseteq\T$ gilt. Analog
+hei"st $\T$ gr"ober als $\cS$.
+}\\
+Ein Beispiel hierf"ur ist im Abschnitt zu den Abbildungen von CW-Komplexen
+angegeben. (siehe Abb.\ref{inzidenz})
+
+Da allein mit Angabe einer Topologie zu einer Menge X noch nicht viel
+"uber Eigenschaften der Punkte in X ausgesagt werden kann, fordert man
+in Form von Axiomen zus"atzliche "`Trennungseigenschaften"'.
+
+In dieser Arbeit wird folgendes Axiom, das zweite Trennungsaxiom oder
+auch {\bf Hausdorffbedingung}, v"ollig gen"ugen, weshalb auf die Auflistung
+der weiteren Axiome verzichtet werden soll (vgl. dazu etwa \cite{Os:92},
+Seite 50).\idx{Hausdorff-Axiom}
+\begin{quote}
+(T$_2$) Zu je zwei Punkten x und y in X gibt es disjunkte Umgebungen.
+\end{quote}
+Ein topologischer Raum, der dieses Axiom erf"ullt wird auch als
+{\bf Hausdorff-Raum}\idx{Hausdorff-Raum} bezeichnet.
+
+Nun aber zu den eigentlichen Objekten, um die es in dieser Arbeit gehen soll.
+
+\section{CW-Komplexe}
+
+Nach der doch recht abstrakten Einf"uhrung topologischer R"aume, von
+Produkttopologien und Quotientenr"aumen wollen wir uns nun einer konkreten
+Klasse solcher R"aume zuwenden, die veranschaulichen, was man mit oben
+definierten Begriffen "uberhaupt anfangen kann. Um allerdings die CW-Komplexe
+definieren zu k"onnen, werden noch einige zus"atzliche Eigenschaften ben"otigt.
+
+So versteht man unter einer {\bf Zerlegung}\idx{Zerlegung} eines topologischen
+Raumes X eine Menge paarweise disjunkter offener Teilmengen von X (versehen mit
+der Spurtopologie selbst topologische R"aume), deren Vereinigung ganz X ergibt.
+Zu jedem x$\in$X kann man also einen eindeutigen Teilraum in der Zerlegung
+angeben. Eine {\bf n-Zelle}\idx{Zelle}\idx{n-Zelle} ist ein topologischer Raum,
+der hom"oomorph dem $\R^n$ ist. Damit kann eine {\bf Zellenzerlegung}
+\idx{Zellenzerlegung} als eine Zerlegung eines topologischen Raumes in
+Teilr"aume definiert werden, die Zellen sind. "Uber die Hom"oomorphie der
+d-Zellen zu $\R^d$ kann die {\bf Dimension eines zellenzerlegten Raumes} als die
+maximale Dimension n der auftretenden Zellen definiert werden.
+
+Die Vereinigung aller Zellen der Dimension $\leq$ d eines zellenzerlegten
+Raumes hei"st dabei {\bf d-Ger"ust} oder {\bf d-Skelett} des betreffenden Raumes.
+\idx{Ger\"ust}\idx{Skelett}\\
+Weiterhin sollen zwei Zellen {\bf benachbart} hei"sen,\idx{benachbart} wenn der
+Durchschnitt ihrer Abschl"usse nichtleer ist.
+
+Im Jahre 1949 f"uhrte J.H.C. Whitehead den Begriff des CW-Komplexes (C f"ur
+closure finite und W f"ur weak topology) (vgl. \cite{Ja:90}, Seite 109ff.)
+ein, der eine sehr flexible Struktur innerhalb der Topologie darstellt.
+Ein {\bf CW-Komplex}\idx{CW-Komplex} ($X,\cal E$) ist ein Hausdorff-Raum X
+zusammen mit einer Zellenzerlegung $\cal E$ von X, der folgende drei Axiome
+erf"ullt:
+\bn
+\item (Charakteristische Abbildungen): Zu jeder n-Zelle $e\in\cal E$ existiert
+      eine stetige Abbildung $\Phi_e:B^n\to X$ der n-Kugel in X,
+      die einen Hom"oomorphismus zwischen der offenen n-Kugel
+      (dem $\R^n$) und e induziert und die die (n-1)-Sph"are $\S^{n-1}$
+      in das (n-1)-Skelett von $\cal E$ abbildet.
+\item (H"ullenendlichkeit): Jeder Punkt der abgeschlossenen H"ulle $\ol{e}$
+      einer jeden Zelle $e\in\cal E$ besitzt einen Umgebung, die nur endlich
+      viele andere Zellen trifft.
+\item (Schwache Topologie): Teilmengen $A\subset X$ sind genau dann
+      abgeschlossen, wenn f"ur alle $e\in\cal E$ auch die Mengen $A\cap\ol{e}$
+      abgeschlossen sind.
+\en
+
+Da es in dieser Arbeit nur um endliche CW-Komplexe gehen soll, ist das
+zweite Axiom trivialerweise immer erf"ullt.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <1cm,1cm>
+\setplotarea x from -1 to 6, y from -0.5 to 3.5
+\setsolid \thicklines
+\setquadratic
+\plot 1.0 1.5 1.5 2.5 2.5 2.5 3.5 2.5 3.5 1.5 2.0 1.0 1.0 1.5 /
+\plot 3.5 1.5 4.5 1.5 5.5 1.0 /
+\plot 1.0 1.5 1.0 0.5 2.0 1.0 /
+\plot 2.5 2.5 3.0 3.0 2.8 3.5 /
+\setlinear \thinlines
+\put {\circle*{0.15}} [Bl] at 1.0 1.5
+\put {\circle*{0.15}} [Bl] at 2.0 1.0
+\put {\circle*{0.15}} [Bl] at 3.5 1.5
+\put {\circle*{0.15}} [Bl] at 5.5 1.0
+\put {\circle*{0.15}} [Bl] at 2.5 2.5
+\put {\circle*{0.15}} [Bl] at 2.8 3.5
+\put {\scsi sechs 0-Zellen} [bl] at 4.0 2.5
+\put {\scsi sieben 1-Zellen} [tl] at 2.0 0.0
+\put {\scsi zwei 2-Zellen} [bl] at -1.0 2.5
+\endpicture
+$$
+\caption{Beispiel eines CW-Komplexes im $\E^2$}
+\label{CW-Komplex}
+\end{figure}
+
+Ein {\bf Unterkomplex} $(X',{\cal E}')$ eines CW-Komplexes (X,$\cal E$)
+\idx{CW-Komplex!Unterkomplex eines $\sim$} ist nun die Vereinigung X$'$ aller
+Zellen aus einer Teilmenge $\cal E'$ von Zellen aus $\cal E$ zusammen mit
+$\cal E'$, wenn eine der folgenden drei "aquivalenten Bedingungen erf"ullt ist:
+
+\btab{ll}
+(1) & $(X',{\cal E}')$ ist ein CW-Komplex.\\
+(2) & X$'$ ist abgeschlossen in X.\\
+(3) & Der Abschlu"s $\ol{e}$ jeder Zelle e aus $\cal E'$ liegt in X$'$.
+\etab
+
+Zum Beweis von $(1)\follows (2)$ ist zu zeigen, da"s f"ur alle
+$e\in{\cal E}$ die Mengen $\ol{e}\cap X'$ abgeschlossen in X sind.
+Da $(X,{\cal E})$ h"ullenendlich ist, bedeutet dies, die Abgeschlossenheit
+von $\ol{e}\cap (\Cup_{e'\in {\cal E}'}e')=
+\ol{e}\cap (e'_1\cup\ldots\cup e'_l)$ f"ur $e'_i\in{\cal E}',~1\leq i\leq l$
+und alle $e\in\cal E$ zu kl"aren. Hilfreich dazu ist folgende Bemerkung
+(vgl.\cite{Ja:90},S. 110).\\
+Ist $\cal E$ eine Zerlegung eines Hausdorff-Raumes X, die das erste Axiom f"ur
+CW-Komplexe erf"ullt, so ist $\ol{e}=\Phi_e(B^n)$ f"ur jedes $e\in\cal E$
+kompakt und der Zellenrand $\ol{e}\backslash e=\Phi_e(\S^{n-1})$ liegt im
+(n-1)-Ger"ust von X.\\
+Zum Beweis dieser Bemerkung nutzt man, da"s f"ur stetige Abbildungen f und
+Mengen M die Inklusion $f(\ol{M})\subset \ol{f(M)}$ gilt. Damit erh"alt man hier
+$e\subset\Phi_e(B^n)\subseteq\ol{\Phi_e(\stackrel{\circ}{B^n}})=\ol{e}$.
+$\Phi_e(B^n)$ ist als stetiges Bild eines Kompaktums in X abgeschlossen und nach
+obiger Inklusion gleich $\ol{e}$. Nun aber zur"uck zum "Aquivalenzbeweis. Da die
+$\Phi_e$ von $(X',{\cal E}')$ auch charakteristisch bez"uglich $(X,{\cal E})$
+sind, liefert die Bemerkung simultan den Nachweis von $(1)\follows (3)$, da
+$\ol{e}$ in $X$ H"ulle von e in $X$, damit aber auch in $X'$ ist. Nutzt man
+dies, so ist auch $\ol{e}\cap (e'_1\cup\ldots\cup e'_l)=\ol{e}\cap
+(\ol{e}'_1\cup\ldots\cup \ol{e}'_l)$ abgeschlossen.
+$(3)\follows (2)$ ist wegen der Betrachtung abgeschlossener Zellen in $X'$
+unmittelbar einsichtig. Zum Nachweis von $(2),(3)\follows (1)$ sind die drei
+CW-Komplex-Axiome zu "uberpr"ufen. Die $\Phi_e$ von $(X,{\cal E})$ sind wegen
+${\cal E'}\subset {\cal E}$ auch f"ur $(X',{\cal E'})$ verwendbar. Ebenso
+l"a"st sich f"ur die H"ullenendlichkeit argumentieren.
+Da alle in $X'$ abgeschlossenen Mengen dies auch in $X$ sind, m"ussen f"ur
+den Nachweis des dritten Axioms nur $e\in{\cal E}\backslash \cal E'$ betrachtet
+werden. F"ur ein $A\subset X'$ und ein $e\in{\cal E}\backslash{\cal E'}$ ist
+dazu $A\cap\ol{e}$ zu betrachten. Zellen $e\in{\cal E}\backslash{\cal E'}$
+tragen nichts zum Schnitt mit A bei. Wegen der H"ullenendlichkeit von X gibt
+es aber eine endliche Anzahl von $e'_i\in{\cal E'}$, mit denen
+$A\cap\ol{e}=A\cap (\Cup e'_i)\cap\ol{e}$ gilt. Nach oben ist
+$A\cap\ol{e}=A\cap (\Cup \ol{e'_i})\cap\ol{e}$.
+$A\cap\ol{e}=A\cap (\Cup \ol{e'_i})$ ist nach Voraussetzung abgeschlossen,
+somit auch $A\cap\ol{e}$.\hfill $\Box$
+
+Betrachtet man zweidimensionale CW-Komplexe, so kann man, wie gewohnt, die
+auftretenden 0-Zellen als "`{\bf Ecken}"', die 1-Zellen als "`{\bf Kanten}"'
+und die 2-Zellen als "`{\bf Fl"achen}"' bezeichnen -- als Beispiel sei etwa
+der Randkomplex eines W"urfels angef"uhrt, der aus sechs "`Fl"achen"', zw"olf
+"`Kanten"' und acht "`Ecken"' besteht.
+
+\subsection{Simpliziale Komplexe}
+
+Als eine spezielle Art von CW-Komplexen k"onnen die simplizialen Komplexe
+aufgefa"st werden, die aufgrund ihrer einfacher zu beschreibenden Struktur
+in der Vergangenheit oftmals eher eingesetzt wurden, als die
+allgemeinen (nichtsimplizialen) CW-Komplexe. Diese seien hier, obwohl sie nicht
+direkter Gegenstand dieser Arbeit sein sollen, der Vollst"andigkeit halber,
+sowie als zus"atzliche Beispielklasse aufgef"uhrt.
+
+Um Simplizes definieren zu k"onnen, mu"s gesagt werden, wann ein Punkt
+x aus einer Teilmenge X des $\E^d$ {\bf linear abh"angig} hei"sen soll, n"amlich
+dann, wenn Punkte $x_1,\ldots,x_r\in X$ und Skalare $\lambda_1,\ldots,\lambda_r$
+so existieren, da"s $x=\lambda_1x_1+\ldots+\lambda_rx_r$ gilt. Ist
+$\lambda_1+\ldots+\lambda_r=1$, so hei"st x {\bf affin abh"angig}, sind zudem
+alle $\lambda_i\geq 0$, so {\bf konvex abh"angig}. Eine Teilmenge
+$X\subseteq\E^d$ hei"st {\bf affin abh"angig}, falls f"ur $x_1,\ldots,x_r\in X$
+und Skalare $\lambda_1,\ldots,\lambda_r$ mit mindestens einem $\lambda_i\neq 0$
+eine Relation von der Form $\lambda_1x_1+\ldots+\lambda_rx_r=0$ und
+$\lambda_1+\ldots+\lambda_r=0$ existiert. Ansonsten hei"st X affin unabh"angig.
+(Alle obigen Ausf"uhrungen gelten auch f"ur allgemeine Vektorr"aume, wie
+so oft wird aber der Anschaulichkeit wegen der $\R^d$ verwendet.)
+
+Ein {\bf m-dimensionales Simplex}\idx{m-Simplex}\idx{Simplex} (kurz m-Sim\-plex)
+im $\R^n$ ist die {\bf konvexe H"ulle} von m+1 affin unabh"angigen Punkten, m+1
+Punkten in allgemeiner Lage, also f"ur $p_0,p_1,\ldots,p_m\in\R^n$, $p_i$
+affin unabh"angig mit $1\leq i\leq m$
+$$
+   \Delta(p_0,p_1,\ldots,p_m) =
+   \left\{ p\in\R^n~:~p = \sum\limits_{i=0}^m \lambda_i p_i, \lambda_i\geq 0,
+   \sum\limits_{i=0}^m \lambda_i = 1\right\}.
+$$
+Die konvexe H"ulle von m+1 Einheitsvektoren im $\R^n$ (vgl. Abb.\ref{simplex})
+hei"st {\bf Standard-m-Simplex},\idx{Standard-m-Simplex} die $p_i$ hei"sen
+{\bf Eckpunkte} (vertices) des Simplex.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from -2 to 2, y from -2 to 2
+\put{ \beginpicture
+\setsolid
+\put {\circle*{0.1}} [Bl] at 0 0
+\put {$p_0$} [tr] at 0 0
+\endpicture } at -6 0
+\put{ \beginpicture
+\setsolid
+\plot -0.75 -0.75 0.75 0.75 /
+\put {\circle*{0.1}} [Bl] at -0.75 -0.75
+\put {$p_0$} [tr] at -0.75 -0.75
+\put {\circle*{0.1}} [Bl] at 0.75 0.75
+\put {$p_1$} [bl] at 0.75 0.75
+\endpicture } at -2 0
+\put{ \beginpicture
+\setsolid
+\plot -1 -1 1 -1 0 0.732 -1 -1 /
+\put {\circle*{0.1}} [Bl] at -1 -1
+\put {$p_0$} [tr] at -1 -1
+\put {\circle*{0.1}} [Bl] at 1 -1
+\put {$p_1$} [tl] at 1 -1
+\put {\circle*{0.1}} [Bl] at 0 0.732
+\put {$p_2$} [bl] at 0 0.732
+\endpicture } at 2 0
+\put{ \beginpicture
+\setsolid
+\plot -0.884 -0.257 1.085 -0.376 /
+\plot 0 1.023 1.085 -0.376 /
+\plot -0.884 -0.257 0 1.023 /
+\plot -0.2 -0.9 -0.884 -0.257 /
+\plot 1.085 -0.376 -0.2 -0.9 /
+\setdashes <1mm>
+\plot -0.2 -0.9 0 1.023 /
+\put {\circle*{0.1}} [Bl] at -0.884 -0.257
+\put {$p_0$} [tr] at -0.884 -0.257
+\put {\circle*{0.1}} [Bl] at 1.085 -0.376
+\put {$p_1$} [bl] at 1.085 -0.376
+\put {\circle*{0.1}} [Bl] at 0 1.023
+\put {$p_2$} [bl] at 0 1.023
+\put {\circle*{0.1}} [Bl] at -0.2 -0.9
+\put {$p_3$} [tl] at -0.2 -0.9
+\endpicture } at 6 0
+\endpicture
+$$
+\caption{Einige Simplizes}
+\label{simplex}
+\end{figure}
+
+Die konvexe H"ulle einer Auswahl von r paarweise verschiedenen Eckpunkten
+eines m-Simplex S hei"st {\bf r-dimensionales Teilsimplex}\idx{Teilsimplex} oder
+{\bf r-Seite}\idx{Simplex!Seite eines $\sim$} von S. Der {\bf Rand} $\partial S$
+eines m-Simplex S ist die Vereinigung aller (m-1)-dimensionalen Teilsimplizes
+von S. Das {\bf offene Simplex}\idx{offenes Simplex} $\stackrel{\circ}{S}$ ist
+dann S ohne dessen Rand, also $S\backslash\partial S$.
+
+Es sei angemerkt, da"s jedes m-Simplex S hom"oomorph zur m-Vollkugel $B^m$
+und der Rand von S hom"oomorph zur (m-1)-Sph"are ist. Da die offene Vollkugel
+$\stackrel{\circ}{B^n}$ hom"oomorph zu $\R^n$ ist, ist das offene n-Simplex 
+eine n-Zelle nach obiger Definition.
+
+Ein {\bf simplizialer Komplex}\idx{simplizialer Komplex} $\cal C$ im $\R^n$ ist
+nun eine Menge von Simplizes, die folgende Bedingungen erf"ullt:
+
+\btab{ll}
+1. & $\cal C$ enth"alt mit jedem Simplex auch dessen s"amtliche Teilsimplizes.\\
+2. & Der Durchschnitt zweier Simplizes aus $\cal C$ ist leer oder\\
+   & gemeinsames Teilsimplex der beiden.\\
+3. & Enth"alt $\cal C$ unendlich viele Simplizes, so ist $\cal C$ lokal\\
+   & endlich, das hei"st jeder Punkt in einem Simplex aus $\cal C$ besitzt\\
+   & eine Umgebung, die nur endlich viele Simplizes aus $\cal C$ schneidet.
+\etab
+
+(Wiederum steht hier der $\R^n$ beziehungsweise $\E^n$ als Synonym f"ur einen
+beliebigen Vektorraum "uber einem K"orper $\K$, in dem o.a. Konzepte "ahnlich
+definierbar sind.)
+
+Betrachtet man die offenen Simplizes eines simplizialen Komplexes, so
+erf"ullen diese auch die Axiome eines CW-Komplexes. Folglich ist der {\bf einem
+simplizialen Komplex} $\cal C$ {\bf zugrundeliegende topologische Raum}
+\idx{simplizialer Komplex!zugrundeliegender Raum} oder {\bf Tr"agerraum}
+\idx{simplizialer Komplex!Tr\"agerraum} gegeben durch
+$$|{\cal C}| := \bigcup\limits_{S\in{\cal C}} S \subset \R^n,$$
+analog der Zellenzerlegung des einem CW-Komplex zugrundeliegenden
+Hausdorff-Raumes.
+
+Verschiedene Komplexe k"onnen so den gleichen zugrundeliegenden Teilraum des
+$\R^n$ besitzen. Simpliziale Komplexe werden auch als "`Polyeder"', gem"a"s
+ihrer Darstellung im Anschauungsraum, bezeichnet.\\
+Der {\bf Randkomplex} eines simplizialen k-Komplexes $\cal C$ ist der Komplex
+der aus allen Simplizes besteht, deren Dimension k-1 nicht "ubersteigt, wenn
+die maximale Dimension der Simplizes aus $\cal C$ k ist, also das
+(k-1)-Skelett.\idx{simplizialer Komplex!Randkomplex}\\
+{\bf Unterkomplexe} sind allgemein Teilmengen des Komplexes, die
+selbst wieder Komplexe sind.\idx{simplizialer Komplex!Unterkomplex}
+
+Ist $\cal C$ ein simplizialer Komplex und C $\subset\cal C$, so ist der
+{\bf Stern}\idx{simplizialer Komplex!Stern} st(C;$\cal C$) von C der kleinste
+Unterkomplex von Elementen aus $\cal C$, der C enth"alt. Der {\bf Antistern}
+\idx{simplizialer Komplex!Antistern} ast(C;$\cal C$) von C ist der
+Unterkomplex von $\cal C$ aller Elemente, deren Schnitt mit C leer ist. Damit
+kann der {\bf Link}\idx{simplizialer Komplex!Link}
+link(C;$\cal C$) als der Durchschnitt von Stern und Antistern von C definiert
+werden. In gleicher Weise l"a"st sich dies auch f"ur die Abschl"usse der Zellen
+in CW-Komplexen definieren.
+
+\subsection{Abbildungen von CW-Komplexen}
+
+Eine stetige Abbildung f zwischen zwei simplizialen Komplexen $\cal C$
+und ${\cal D}$ hei"st {\bf simplizial},\idx{simpliziale Abbildung} wenn
+Simplizes aus $\cal C$ affin auf Simplizes aus ${\cal D}$ abgebildet werden.
+Analog kann eine Abbildung $f:(X,{\cal E})\to (Y,{\cal F})$
+zwischen CW-Komplexen als {\bf zellul"ar}\idx{zellul\"are Abbildung} bezeichnet
+werden, wenn sie surjektiv ist und Zellen auf Zellen abbildet.\\
+Eine simpliziale oder zellul"are Abbildung f hei"st {\bf nicht-degenerierend},
+\idx{nicht-degenerierend} falls f die Dimension einer jeden Zelle erh"alt,
+wenn also die Dimension von S und f(S) f"ur jede Zelle S aus $\cal C$
+"ubereinstimmt.\\
+Eine simpliziale Abbildung $f:{\cal C} \to {\cal C}$ eines simplizialen
+Komplexes $\cal C$ auf sich, hei"st {\bf Symmetrie},\idx{Symmetrie!simplizialer
+Komplexe}\label{symm} falls sie bijektiv ist und die Dimension aller Simplizes
+erh"alt. Somit sind die Automorphismen von $\cal C$ gerade dessen Symmetrien.
+Analog ist eine Symmetrie eines CW-Komplexes wieder eine bijektive zellul"are
+Abbildung eines CW-Komplexes auf sich, die die Dimension aller Zellen erh"alt.
+
+Um sich den Tr"agerraum eines Komplexes genauer anschauen zu k"onnen und
+diesen zu beschreiben, ist es sinnvoll hier den Begriff der
+{\bf Mannigfaltigkeit}\idx{Mannigfaltigkeit} der Dimension d einzuf"uhren.
+Dabei handelt es sich um einen Hausdorff-Raum mit abz"ahlbarer Basis
+(eine Basis der Topologie bestehe aus abz"ahlbar vielen offenen Mengen),
+in dem jeder Punkt eine offene Umgebung besitzt, die zu einer offenen Teilmenge
+des $\R^d$ hom"oomorph ist. Insbesondere bezeichnet man einen Hausdorff-Raum,
+in dem jeder Punkt eine zu einer Kreisscheibe hom"oomorphe Umgebung besitzt
+als {\bf Fl"ache}\idx{Fl\"ache}. In bezug auf simpliziale Komplexe ist eine
+{\bf 2-Pseudo-Mannigfaltigkeit}\idx{Pseudo-Mannigfaltigkeit} ein endlicher
+geschlossener simplizialer 2-Komplex, das hei"st ein Komplex, in dem jede Kante
+(jedes 1-Simplex) an genau zwei Dreiecken (2-Simplizes) beteiligt ist.
+
+{\scsi
+Das Bild eines simplizialen 2-Komplexes unter einer stetigen Abbildung
+$f:{\cal C}\to \R^3$ mu"s nicht durchdringungsfrei sein. Im Falle von
+Triangulierungen der Kleinschen Flasche etwa (vgl. die Dissertation von Cervone,
+\cite{Ce:93}) ist die beschriebene (nicht orientierbare) Mannigfaltigkeit nur
+mit Selbstdurchdringung im $\R^3$ darstellbar, was aus dem 2-Komplex
+nicht ohne weiteres ersichtlich ist. Bijektive Abbildungen f, deren Bild
+durchdringungsfrei ist, hei"sen Einbettung von $\cal C$ in den $\R^3$.
+Ist f nur lokal bijektiv, also in einer Umgebung jedes Punktes, so hei"st f
+Immersion.
+}
+
+Da wir uns im dritten Kapitel mit regul"aren Karten besch"aftigen wollen,
+sei hier noch die Definition dieser angegeben. Zerlegt man eine geschlossene
+reelle 2-Man\-nig\-fal\-tig\-keit in $f_2$ einfach zusammenh"angende
+(wegzusammenh"angend und jede Schleife nullhomotop, das hei"st zu einem Punkt
+zusammenziehbar), nicht-"uberlappende Gebiete (Seiten), deren Durchschnitte
+$f_1$ Kanten bilden, die sich in $f_0$ Ecken schneiden, so nennt man diese
+Unterteilung eine {\bf Karte} der 2-Mannigfaltigkeit. {\bf Regul"ar} hei"st die
+Karte, wenn ihre Automorphismengruppe Flaggen-transitiv ist, aber dazu sp"ater
+mehr (vgl. Symmetriebegriffe Seite \pageref{flag}, eine kurze Beschreibung
+findet sich in \cite{BoWi:87}).
+
+Wie oben erw"ahnt, sind die Zellen von CW-Komplexen und die Simplizes
+simplizialer Komplexe selbst topologische R"aume mit der durch den Tr"agerraum
+induzierten Topologie. Speziell kennt man aber umgekehrt bei einem
+simplizialen Komplex auch dessen Tr"agerraum schon dann bis auf Hom"oomorphie,
+wenn die Anzahl der wesentlichen Simplizes (solche, die nicht schon als
+Seiten gr"o"serer Simplizes vorkommen), sowie deren Inzidenzen, bekannt ist.
+Dazu beachte man, da"s der Tr"agerraum X eines simplizialen n-Komplexes als
+disjunkte Vereinigung der d-Simplizes $S_d$ des Kom\-plex\-es dargestellt werden
+kann.
+$$X=(S_0+\ldots+S_0)+\ldots+(S_n+\ldots+S_n)$$
+Indiziert man die 0-Simplizes mit positiven ganzen Zahlen, den sogenannte
+Simplexzahlen,\idx{Simplexzahl} so ist damit eine "Aquivalenzrelation $\sim$ :=
+"`zu identifizierende 0-Simplizes"' gegeben, die mit den Simplizes den
+Quotientenraum X$/_\sim$ beschreibt und so einem Hom"oomorphismus in X
+bereitstellt. In Abbildung \ref{inzidenz} entsteht so aus acht disjunkten
+Teilr"aumen des $\E^2$, den Dreiecken, mittels Eckenidentifikation der
+Quotientenraum "`Rand eines Oktaeder"' und damit als Tr"agerraum eine
+2-Mannigfaltigkeit. Wieder gilt eine Analogie zu zweidimensionalen CW-Komplexen,
+deren 2-Zellen durch Polygonz"uge (Ecken und Kanten) begrenzt sind.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from -2.5 to 2.5, y from -2.5 to 2.5
+\put{ \beginpicture
+\setsolid
+\plot -0.909 0.188 -1.083 -0.157 /
+\plot -1.083 -0.157 0 1.5 /
+\plot 0 1.5 -0.909 0.188 /
+\plot -1.083 -0.157 0.909 -0.188 /
+\plot 0.909 -0.188 0 1.5 /
+\plot 0.909 -0.188 1.083 0.157 /
+\plot 1.083 0.157 0 1.5 /
+\plot 0 -1.5 -1.083 -0.157 /
+\plot 0 -1.5 0.909 -0.188 /
+\setdashes <1mm>
+\plot 1.083 0.157 -0.909 0.188 /
+\plot -0.909 0.188 0 -1.5 /
+\plot 0 -1.5 1.083 0.157 /
+\put {\scsi 1} [Br] at -1.2 0.2
+\put {\scsi 2} [Br] at -1.4 -0.2
+\put {\scsi 3} [Bl] at 1.2 -0.2
+\put {\scsi 4} [Bl] at 1.3 0.2
+\put {\scsi 5} [bl] at 0 1.6
+\put {\scsi 6} [tl] at 0 -1.7
+\endpicture } at 3 0
+\put{ \beginpicture
+\setsolid
+\plot -1 0 -1.5 -0.866 -1 -1.732 -0.5 -0.866 0.5 -0.866 1 0 2 0 1.5 0.866 0.5 0.866 0 0 -1 0 /
+\plot -1 0 -0.5 -0.866 /
+\plot 0 0 0.5 -0.866 /
+\plot 0.5 0.866 1 0 /
+\plot 1.5 0.866 1 0 /
+\plot -1.5 -0.866 -0.5 -0.866 0 0 1 0 /
+\put {\scsi 5} [br] at -1 0
+\put {\scsi 1} [Br] at -1.5 -0.866
+\put {\scsi 6} [tl] at -1 -1.732
+\put {\scsi 2} [tl] at -0.5 -0.9
+\put {\scsi 6} [tl] at 0.5 -0.866
+\put {\scsi 4} [tl] at 1 -0.05
+\put {\scsi 6} [tl] at 2 0
+\put {\scsi 1} [bl] at 1.5 0.9
+\put {\scsi 5} [br] at 0.5 0.9
+\put {\scsi 3} [br] at 0 0.05
+\endpicture } at -3 0
+\endpicture
+$$
+\caption{Der Quotientenraum "`Oktaeder"'}
+\label{inzidenz}
+\end{figure}
+
+Unter Ausnutzung der Nummerierung der 0-Simplizes eines simplizialen Komplexes
+(bei Betrachtung des Quotientenraumes) kann jede Symmetrie
+\idx{Symmetrie!eines simplizialen Komplexes} als Element der Permutationsgruppe
+$S_n$ dargestellt werden, wenn n die Anzahl der verschiedenen 0-Simplizes
+beziehungsweise Eckpunkte bezeichnet.
+
+\subsection{Inzidenzen und Anheftungen}
+
+Die Betrachtung von allgemeinen CW-Komplexen hat gegen"uber simplizialen
+Komplexen den Vorteil eine gr"o"sere Vielfalt bei der Beschreibung von
+Zellenberandungen zu haben. Auch besteht etwa ein zu \S$^2$ hom"oomorpher
+simplizialer Komplex aus mindestens 14 Simplizes (zum Aufbau des Randes eines
+3-Simplex braucht man vier 0-Simplizes, sechs 1-Simplizes und vier 2-Simplizes),
+w"ahrend zu einem hom"oomorphen allgemeinen CW-Komplex ganze zwei Zellen
+ben"otigt werden (eine 2-Zelle und eine 0-Zelle). Zudem sind CW-Komplexe als
+ein Axiomensystem erf"ullende Hausdorff-R"aume nicht von vornherein auf
+Vektorr"aume beschr"ankt, wie dies bei den simplizialen Komplexen der Fall ist.
+Gerade in bezug auf die orientierten Matroide kann f"ur diese so eine
+nat"urliche Topologie angegeben werden, die unabh"angig von simplizialen
+Eigenschaften ist.\\
+Nat"urlich haben CW-Komplexe nicht nur Vorteile. Aufgrund ihrer gr"o"seren
+Allgemeinheit ist eine algebraische Beschreibung nicht so elegant
+m"oglich, wie es bei den simplizialen Komplexen mittels der Simplexzahlen
+geschehen kann. Was hier bei den simplizialen Komplexen die Inzidenzangaben
+sind, sind in gewisser Hinsicht die {\bf Anheftungsabbildungen} bei den
+CW-Komplexen (X,$\cal E$). Dabei handelt es sich um
+\idx{CW-Komplex!Anheftungsabbildung} stetige Abbildungen
+$\varphi:\S^{n-1}\to X^{n-1}$ der (n-1)-Sph"are in das (n-1)-Skelett von X, so
+da"s der Quotientenraum $X\cup_{\varphi} B^n$, nach
+dem x und $\varphi$(x) f"ur "aquivalent erkl"art werden, wieder ein CW-Komplex,
+jetzt mit einer n-Zelle mehr ist. Der Zellenrand der neuen Zelle ist
+$\varphi(\S^{n-1})\subset X^{n-1}$, ein stetiges Bild der (n-1)-Sph"are.
+(Das Anheften kann man sich bildlich so vorstellen, da"s zwei Luftballons
+zusammengeklebt werden, wobei man die Ber"uhrungspunkte der beiden Ballons
+identifiziert.) Mittels Anheftungsabbildungen k"onnen so alle Ger"uste
+von CW-Komplexen erzeugt werden. Genau dies ist eine der Schwierigkeiten beim
+Umgang mit CW-Komplexen, denn eine Algebraisierung der Anheftungsabbildungen
+(im Gegensatz zu den genauen Inzidenzvorschriften der simplizialen Komplexe) ist
+erst durch Einsatz der Homologietheorie zu erreichen. Deren Darstellung w"urde
+an dieser Stelle allerdings etwas zu weit f"uhren. Als einf"uhrende Lekt"ure sei
+hier stellvertretend das Topologiebuch von Ossa (vgl.\cite{Os:92}, Seite 159ff.)
+genannt.
+
+Als eine der Wurzeln der Homologietheorie und als fundamentales Ergebnis bei
+der Untersuchung von Polyedern darf allerdings der Begriff der
+Euler-Charakteristik\idx{Euler-Charakteristik} und der Eulersche Polyedersatz
+\idx{Eulerscher Polyedersatz} nicht fehlen.\\
+Mit $f_k(\cal C)$ f"ur $0\leq k\leq d$ seien dabei die Anzahlen der
+k-dimensionalen Elemente eines d-Komplexes $\cal C$ (entweder eines simplizialen
+oder CW-Komplexes) bezeichnet. Die Folge $f({\cal C})=(f_0,f_1,\ldots,f_d)$
+wird {\bf f-Vektor}\idx{f-Vektor} von $\cal C$ genannt.\\
+"Uber den f-Vektor l"a"st sich die {\bf Euler-Charakteristik} $\chi(\cal C)$
+eines d-Komplexes als
+$$ \chi({\cal C}) = \sum\limits_{k=0}^{d-1} (-1)^k f_k({\cal C})=2-2g, $$
+definieren. Der {\bf Eulersche Polyedersatz} besagt dazu
+\begin{satz}
+Die Euler-Charakteristik ist eine Hom"oomorphieinvariante.
+\end{satz}
+Dies bedeutet, da"s hom"oomorphe d-Komplexe die gleiche Eulercharakteristik
+besitzen. Die Konstante g beschreibt dabei das {\bf Geschlecht} des
+\idx{Geschlecht} topologischen Gebildes, das hei"st die Anzahl der Henkel
+beziehungsweise L"ocher, die das Objekt hat. (Hier tiefer einzusteigen, w"urde
+in die Homotopietheorie, die Theorie der stetigen Verformbarkeit, f"uhren, zu
+der wieder der Verweis auf \cite{Os:92}, Seite 70ff., gegeben sei.)
+F"ur Polyeder P ohne Henkel im $\R^3$, das hei"st Polyeder vom Geschlecht
+Null, gilt nach oben also
+$\chi(P)=\#\mbox{Ecken}-\#\mbox{Kanten}+\#\mbox{Fl"achen}=2$.
+F"ur endliche CW-Komplexe kann die Euler-Charakteristik als
+Wechselsumme ihrer Zellenanzahlen in den einzelnen Dimensionen leicht
+berechnet werden. So ist etwa $\chi(\S^n) = 1 + (-1)^n$ und
+$\chi(\S^1\times\S^1) = 1 - 2 + 1 = 0$.
+
+\section{Orientierte Matroide}
+
+Die Autoren Bj"orner, Las Vergnas, Sturmfels, White und Ziegler beginnen ihr
+Buch "uber orientierte Matroide (vgl. \cite{Bj:93}) mit dem Satz
+\begin{quote}{\sf
+"`{\it Oriented matroids} can be thought of as a combinatorical abstraction
+of point configurations over the reals, of real hyperplane arrangements, of
+convex polytopes, and of directed graphs."'
+}\end{quote}
+Eine Verbindung zwischen CW-Komplexen und orientierten Matroiden zu suchen
+erscheint nach diesem Satz nicht schwierig, da mit reellen Hyperebenen schon
+etwas in der Art der ben"otigten n-Zellen gegeben ist und mit den spezielleren
+simplizialen Komplexen sowohl konvexe Polytope, als auch Punktkonfigurationen
+erfa"st werden k"onnen.
+
+Nun fu"st die Theorie der orientierten Matroide in einer Vielzahl
+unterschiedlicher Axiomensysteme, die untereinander "aquivalent (Die Beweise
+der "Aquivalenz sind nach \cite{Bj:93} alles andere als trivial) doch, wie
+in dem einf"uhrenden Satz angedeutet, die unterschiedlichsten Ausgangsebenen
+beschreiben. In \cite{Bj:93} werden vier fundamentale Axiomensysteme
+\idx{orientiertes Matroid!Axiomensysteme} hervorgehoben:
+
+\btab{ll}
+(1) & Kreisaxiome aus der Motivation gerichteter Graphen,\\
+(2) & Orthogonalit"atsaxiome orthogonaler Paare reeller Vektorunterr"aume,\\
+(3) & Chirotope von Punktkonfigurationen und konvexen Polytopen, sowie\\
+(4) & Vektoraxiome reeller Hyperebenenarrangements.
+\etab
+
+{\scsi
+Der Begriff Chirotop ist eine Abwandlung des Begriffs Chiralit"at nach
+Dreiding und Dress. In der organischen Chemie bezeichnet Chiralit"at
+(H"andigkeit) eine Dissymmetrie im r"aumlichen Aufbau chemischer
+Verbindungen und stellt eine notwendige und hinreichende Voraussetzung f"ur das
+Auftreten optischer Aktivit"at dar. (vgl. Literatur zur organischen Chemie,
+etwa Fl"orke/Wolff, Kursthemen Chemie, Organische Chemie und Biochemie, D"ummler
+Verlag, Bonn 1984)
+}
+
+In \cite{Bj:93} werden orientierte Matroide "uber alle vier Axiomensysteme
+studiert und mit Beispielen untermauert. Da hier auch mittels orientierter
+Matroide argumentiert werden soll, sei zun"achst eine Einf"uhrung gegeben,
+was orientierte Matroide "uberhaupt darstellen und wie sie, f"ur diese Arbeit
+n"utzlich, eingesetzt werden k"onnen.
+
+Wie auch in anderen Publikationen, so m"ochte ich auch hier zun"achst anhand
+der Chiro\-top\-axiome orientierte Matroide einf"uhren, um dann mit den
+"`Vektoraxiomen f"ur reelle Hyperebenenarrangements"', die schon in Richtung
+dessen gehen, was f"ur allgemeine CW-Komplexe ben"otigt wird, das
+Einsatzgebiet f"ur diese Arbeit abzustecken.
+
+\subsection{Orientierte Matroide von Punktkonfigurationen}
+
+Orientierte Matroide beziehen sich immer auf eine endliche Menge E,
+die der Einfachheit halber als eine geordnete Indexmenge $\{1,2,\ldots,n\}$
+beschrieben sein soll. Die Elemente von E k"onnen als Indizes von Punkten im
+reellen euklidischen Raum, von Hyperebenen oder auch abstrakt, ohne direkten
+Bezug zu etwas "`Realisiertem"' aufgefa"st werden.
+
+Zun"achst seien die Elemente von E als Indizes von n Punkten
+$p_1,\ldots,p_n$ im $\R^{r-1}$ in allgemeiner Lage aufzufassen oder einfacher
+als die Punkte selbst. Verwendet man homogene Koordinaten {(jeder affine Punkt
+$p_i$ im $\R^{r-1}$ mit den Koordinaten $(p_i^1,p_i^2,\ldots,p_i^{r-1})$ wird
+anschaulich als Vektor $(1,p_i)$ im $\R^r$ aufgefa"st)}, so definieren die n
+Punkte eine (n$\times$r)-Matrix "uber $\R$.
+$$\left(\begin{array}{cccc}
+        1 & p_1^1 & \ldots & p_1^{r-1} \\
+        1 & p_2^1 & \ldots & p_2^{r-1} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        1 & p_n^1 & \ldots & p_n^{r-1} \end{array}\right)$$
+
+{\scsi
+Motivation des Einsatzes homogener Koordinaten ist die, da"s Punkte des
+affinen euklidischen (r-1)-Raumes durch Einbettung in den projektiven r-Raum
+$\P^r$ bez"uglich ihrer Lage besser beschrieben werden k"onnen. Stichwort
+ist hierbei die Kompaktifizierung des euklidischen Raumes, in dem Sinne,
+da"s nun unendlich ferne Punkte ebenfalls erfa"st werden k"onnen. Man
+vergleiche dies mit der stereographischen Projektion der 2-Sph"are ohne den
+Nordpol N auf $\R^2$, die mittels des Zusatzes $N \mapsto \{\infty\}$ einen
+Hom"oomorphismus zwischen dem (nun kompakten) $\R^2\cup\{\infty\}$ und der
+kompakten $S^2$ darstellt.
+}
+
+Eine Auswahl $(\lambda_1,\ldots,\lambda_r)$, mit $\lambda_i\in E$, von r
+paarweise verschiedenen Punkten aus E bildet ein r-Simplex, dessen
+Orientierung mittels des Vorzeichens der (r$\times$r)-Unterdeterminante
+sign(det$(\lambda_1,\ldots,\lambda_r)$) oben definierter Matrix aus den
+$\lambda_i$-ten Zeilen, analog dem Umlaufsinn eines Dreiecks (vgl.
+Abb.\ref{orient}), beschrieben werden kann (vgl. \cite{BoEg:91}).
+Genauer beschreibt die Determinante
+$\det(\lambda_1,\ldots,\lambda_k,\ldots,\lambda_r)$ die Seite der
+orientierten Hyperebene
+$\mbox{aff}\{\lambda_1,\ldots,\lambda_{k-1},\lambda_{k+1},\ldots,\lambda_r\}$,
+auf der der Punkt $\lambda_k$, f"ur alle k aus $\{1,\ldots,r\}$, liegt.
+
+\begin{figure}[hbt]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from 0 to 5, y from -1 to 3
+\put{ \beginpicture
+\setsolid
+\plot 0 0 2 0 0 2 0 0 /
+\put {\circle*{0.1}} [Bl] at 0 0
+\put {\circle*{0.1}} [Bl] at 0 2
+\put {\circle*{0.1}} [Bl] at 2 0
+\put {\circle{0.5}} [Bl] at 0.6 0.6
+\put {\vector(0,1){0.15}} [Bl] at 1 0.5
+\put {\scsi (0,0)} [tr] at 0 0
+\put {\scsi (1,0)} [tl] at 2 0
+\put {\scsi (0,1)} [br] at 0 2
+\put {$\left|\begin{array}{ccc} 1 & 0 & 0 \\
+                                1 & 1 & 0 \\
+                                1 & 0 & 1
+             \end{array}\right|= +1$} [Bl] at 3 1
+\endpicture } at -5.5 0
+\put{ \beginpicture
+\setsolid
+\plot 0 0 2 0 0 2 0 0 /
+\put {\circle*{0.1}} [Bl] at 0 0
+\put {\circle*{0.1}} [Bl] at 0 2
+\put {\circle*{0.1}} [Bl] at 2 0
+\put {\circle{0.5}} [Bl] at 0.6 0.6
+\put {\vector(0,-1){0.15}} [Bl] at 1 0.7
+\put {\scsi (0,0)} [tr] at 0 0
+\put {\scsi (1,0)} [tl] at 2 0
+\put {\scsi (0,1)} [br] at 0 2
+\put {$\left|\begin{array}{ccc} 1 & 0 & 0 \\
+                                1 & 0 & 1 \\
+                                1 & 1 & 0
+             \end{array}\right|= -1$} [Bl] at 3 1
+\endpicture } at 5.5 0
+\endpicture
+$$
+\caption{Orientierung eines Dreiecks}
+\label{orient}
+\end{figure}
+
+Als {\bf orientiertes Matroid zur Punktmenge E} wird nun die Information
+bezeichnet, die sich aus den Vorzeichen der Determinanten zu allen
+r-elementigen Untermengen $\{\lambda_1,\ldots,\lambda_r\}$ von E ergibt.
+Bezeichnet $\Lambda (n,r)$ die Menge aller geordneten r-Tupel
+\idx{geordnete r-Tupel} von n Elementen, das hei"st
+$$\Lambda (n,r) := \left\{(\lambda_1,\ldots,\lambda_r)~|~1\leq\lambda_1
+<\ldots<\lambda_r \leq n,\lambda_i\in\{1,\ldots,n\},1\leq i\leq r \right\},$$
+so kann folgende Definition gegeben werden:
+\bcent
+\fbox{\parbox{14.2cm}{
+  Eine Abbildung $\chi:\Lambda (n,r)\to\{-1,0,+1\}$ oder deren eindeutige
+  alternierende Erweiterung $\chi:\{1,\ldots,n\}^r\to\{-1,0,+1\}$ hei"st
+  {\bf orientiertes Matroid} vom Rang r mit n Punkten, wenn f"ur alle
+  $\lambda\in\Lambda (n,r+1)$ und f"ur alle $\mu\in\lambda (n,r-1)$ die Menge
+  $$\left\{(-1)^i\cdot\chi (\lambda_1,\ldots,\lambda_{i-1},\lambda_{i+1},
+  \ldots,\lambda_{r+1})\cdot\chi (\mu_1,\ldots,\mu_{r-1},\lambda_i)~|~i\in\{1,
+  \ldots,r+1\}\right\}$$
+  entweder $\{-1,+1\}$ enth"alt oder gleich $\{0\}$ ist.
+}}\ecent
+
+Dabei hei"st $\chi:E^r\to\{-1,0,+1\}$ {\bf alternierend},\idx{alternierend} wenn
+$$\chi(x_{\sigma_1},x_{\sigma_2},\ldots,x_{\sigma_r}) =
+\mbox{sign}(\sigma)\chi(x_1,x_2,\ldots,x_r)$$
+f"ur alle $x_i~(1\leq i\leq r)$ aus E und jede Permutation $\sigma$ aus der
+Menge S$_E$ aller Permutationen der Elemente aus E gilt. Das entstehende
+orientierte Matroid hei"st {\bf simplizial},
+\idx{orientiertes Matroid!simpliziales $\sim$} wenn die Abbildung $\chi$
+E$^r$ in $\{-1,+1\}$ abbildet, das hei"st, wenn $\chi(\lambda )\neq 0$ f"ur
+alle $\lambda\in\Lambda (n,r)$ ist (vgl. \cite{BoEg:91}). Es hei"st
+{\bf affin} oder {\bf azyklisch},\idx{orientiertes Matroid!affines $\sim$}
+\idx{orientiertes Matroid!azyklisches $\sim$} wenn f"ur alle
+$\lambda\in\Lambda(n,r+1)$ die Menge
+$$\left\{(-1)^i\cdot\chi (\lambda_1,\ldots,\lambda_{i-1},\lambda_{i+1},
+\ldots,\lambda_{r+1})~|~i\in\{1,\ldots,r+1\}\right\}$$
+entweder $\{-1,+1\}$ enth"alt oder gleich $\{0\}$ ist. Abbildung \ref{cube}
+zeigt ein orientiertes Matroid zum dreisimensionalen W"urfel. Die Schreibweise
+von $\chi(\Lambda)$ ist so zu verstehen, da"s zeilenweise alle Vorzeichen zu
+den kanonisch geordneten (elementweise "`$\leq$"') Tupeln aus $\Lambda$
+aufgef"uhrt sind.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength1cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from -3 to 5, y from -2 to 2
+\setsolid \thicklines
+\put {\beginpicture
+\setsolid
+\plot 0.597 -1.378 -1.281 -1.144 /
+\plot 0.597 -1.378 0.597 0.501 /
+\plot 0.597 0.501 -1.281 0.735 /
+\plot -1.281 0.735 -1.281 -1.144 /
+\plot 1.281 -0.735 0.597 -1.378 /
+\plot 1.281 -0.735 1.281 1.144 /
+\plot 1.281 1.144 0.597 0.501 /
+\plot -0.597 1.378 1.281 1.144 /
+\plot -1.281 0.735 -0.597 1.378 /
+\setdashes <1mm>
+\plot -0.597 -0.501 1.281 -0.735 /
+\plot -1.281 -1.144 -0.597 -0.501 /
+\plot -0.597 -0.501 -0.597 1.378 /
+\endpicture} at -2.5 0
+\put {\scsi$\left(\begin{array}{cccc}
+             1 & 0 & 0 & 0 \\
+             1 & 1 & 0 & 0 \\
+             1 & 0 & 1 & 0 \\
+             1 & 0 & 0 & 1 \\
+             1 & 1 & 1 & 0 \\
+             1 & 1 & 0 & 1 \\
+             1 & 0 & 1 & 1 \\
+             1 & 1 & 1 & 1
+      \end{array}\right)$} [Bl] at 0 0
+\put {\scsi$\chi(\Lambda)=\left.\begin{array}{cccccccccccccccc}
+          \{&+&0&+&+&+&-&0&-&-&+&+&+&-&-&\\
+            &0&+&+&0&+&-&-&-&-&0&+&-&+&0&\\
+            &+&+&-&-&-&+&-&+&+&+&+&-&-&-&\\
+            &0&+&+&-&0&-&+&+&-&-&0&+&-&0&\\
+            &+&+&+&+&-&-&-&0&-&-&-&+&0&-&\}
+            \end{array}\right.$} [Bl] at 4.8 0
+\endpicture
+$$
+\caption{Ein W"urfel mit seinem Chirotop}
+\label{cube}
+\end{figure}
+
+Der {\bf Satz von Radon} besagt, da"s f"ur jede endliche Punktmenge X im $\E^r$
+mit einer Punkteanzahl $\geq r+2$ eine Zerlegung von X in disjunkte Teilmengen
+X$_1$ und X$_2$ existiert, f"ur die
+$\mbox{conv X}_1~\cap\mbox{conv X}_2~\neq~\emptyset$ gilt. Eine solche
+Zerlegung hei"st {\bf Radonpartition}.\idx{Radonpartition}
+Die Radonpartitionen oben definierter Punktmenge E liefern die sogenannten
+{\bf Kreise} (eine Bezeichnung, die von der Motivation "uber gerichtete
+Graphen her stammt) des orientierten Matroids. Diese sind f"ur
+$\mu\in\Lambda(n,r+1)$ und $1\leq i\leq n$ gegeben durch
+\idx{orientiertes Matroid!Kreis eines $\sim$}
+$$ C_\mu(i) := \left\{\begin{array}{ll}
+   (-1)^j\chi(\mu_1,\ldots,\mu_{j-1},\mu_{j+1},\ldots,\mu_{r+1}) &
+   \mbox{f"ur } i=\mu_j\\
+   0 & \mbox{sonst} \end{array} \right.$$
+Die Menge ${\cal K}(\chi):=\{\pm C_\mu|\mu\in \Lambda (n,r+1)\}$ beschreibt
+damit alle Kreise des orientierten Matroids $\chi$.
+
+Ist analog $\lambda\in\Lambda (n,d-1)$, so hei"st
+$C^*_\lambda(i) := \chi(\lambda_1,\ldots,\lambda_{r-1},i)$ f"ur
+$1\leq i\leq n$ {\bf Kokreis}\idx{orientiertes Matroid!Kokreis eines $\sim$}
+von $\chi$\label{kokreis} und
+${\cal K}^*(\chi) := \{\pm C^*_\lambda|\lambda\in\Lambda (n,r-1)\}$
+ist die Menge aller Kokreise.
+
+Ist $\chi$ durch eine konkrete Punktkonfiguration gegeben, so entsprechen
+die Kokreise den Hyperebenen, die durch die Punkte mit $C^*_\lambda(i)=0$
+gegeben sind. Am Beispiel des Chirotops zum W"urfel (Abb.\ref{cube}) ergibt sich
+etwa ein Kreis $C_\mu$ mit $\mu=(2,4,5,7,8)$ als $(0-0++0-0)$.\\
+Der Kokreis $C^*_\lambda$ mit $\lambda=(1,3,7)$ hat die Darstellung
+$(0+00++0+)$, woraus sich ablesen l"a"st, da"s es sich um eine St"utzhyperebene
+handelt, da alle Punkte auf einer Seite der durch die Punkte 1,3 und 7
+induzierten Hyperebene H (angezeigt durch vier +, sowie den Punkt 4 auf H) liegen.
+
+Setzt man Mittel der linearen Algebra ein und untersucht die Eigenschaften
+der verwendeten Determinanten genauer, so kann obige Situation auch
+unabh"angig von einer konkreten Punktkonfiguration beziehungsweise einer
+konkreten Matrix als Definition f"ur abstrakt aufzufassende {\bf Chirotope}
+\idx{Chirotop} vom Rang r auf E dienen. Dies f"uhrt(e) zu den folgenden
+"`Chirotopaxiomen"'\idx{Chirotopaxiome}
+
+\bcent
+\fbox{\parbox{13cm}{
+\btab{ll}
+(B0) & $\chi$ ist nicht identisch mit der Nullabbildung\\
+(B1) & $\chi$ ist alternierend\\
+(B2) & F"ur alle $x_1,x_2,\ldots,x_r,y_1,y_2,\ldots,y_r,$ aus E mit\\
+     & $\chi(y_i,x_2,x_3,\ldots,x_r)\cdot\chi(y_1,y_2,\ldots,y_{i-1},x_i,
+       y_{i+1},y_{i+2},\ldots,y_r) \geq 0$\\
+     & bei $i=1,2,\ldots,r$ gilt
+       $\chi(x_1,x_2,\ldots,x_r)\cdot\chi(y_1,y_2,\ldots,y_r) \geq 0$
+\etab}}
+\ecent
+
+Die "Aquivalenz von Chirotopen und orientierten Matroiden wurde 1982 durch
+Lawrence mit folgendem Satz gesichert.
+
+\begin{satz}
+Sei $r\in\N$ und E sei eine Menge. Eine Abbildung
+$\chi:E^r\to\{-1,0,+1\}$ ist genau dann "aquivalent zu einem orientierten
+Matroid vom Rang r auf E, wenn sie ein Chirotop ist.
+\end{satz}
+
+Der Beweis ist nachzulesen in \cite{Bj:93}, Seite 128ff. Wie oben angedeutet,
+fordert Axiom B2 die Erf"ullung abstrakter Gra"smann-Pl"ucker-Relationen,
+\idx{Gra\3\-mann-Pl\"ucker-Relation} die in ihrer expliziten Form mit
+Determinanten f"ur alle $x_1,x_2,\ldots,x_r,y_1,\ldots,y_r \in \R^r$ die
+Identit"at
+$$\det(x_1,x_2,\ldots,x_r) \cdot \det(y_1,y_2,\ldots,y_r)$$
+$$= \sum\limits_{i=1}^r (-1)^{i-1} \det(y_i,x_2,\ldots,x_r) \cdot
+    \det(x_1,y_1,\ldots,y_{i-1},y_{i+1},\ldots,y_r)$$
+liefert (vgl.\cite{Na:72}, Stichwort "`Gra"smannsche Mannigfaltigkeit"').
+
+Mittels formaler Brackets (formaler Determinanten) lassen sich die allgemeinen
+{\bf k-summandigen Gra"smann-Pl"ucker-Relationen} f"ur 3$\leq$k$\leq$r+1, mit
+\idx{Gra\3\-mann-Pl\"ucker-Relation!k-summandige}
+Mengen paarweise verschiedener Elemente $A=\{a_1,\ldots,a_{d-k+1}\}$,
+$B=\{b_1,\ldots,b_{k-2}\}$ und C=$\{c_1,\ldots,c_k\}$ aus E schreiben als
+
+{\small
+$$\{A|B|C\}=$$
+$$\sum\limits_{i=1}^k(-1)^{i+1}\cdot
+[a_1,\ldots,a_{d-k+1},c_1,\ldots,c_{i-1},c_{i+1},\ldots,c_k]\cdot
+[a_1,\ldots,a_{d-k+1},b_1,\ldots,b_{k-2},c_i]=0$$}
+
+Unabh"angig von gegebenen Punkten kann so ein orientiertes Matroid mittels
+einer Vorzeichenliste definiert werden, die zu den
+formalen Brackets $[\lambda_1,\ldots,\lambda_r]$ geh"ort und mit der die
+abstrakten Gra"s\-mann-Pl"ucker-Relationen B2 gelten.
+
+Die oben angef"uhrten Gra"smann-Pl"ucker-Relationen liefern also eine weitere
+Charakterisierung f"ur orientierte Matroide. Bemerkenswert ist, da"s der
+folgende Satz (siehe \cite{Bj:93}, Seite 138) "uber dreisummandige
+Gra"smann-Pl"ucker-Relationen
+\idx{Gra\3\-mann-Pl\"ucker-Relation!dreisummandige $\sim$en}
+gilt.
+
+Bevor wir allerdings zur Formulierung des Satzes kommen, seien an dieser Stelle
+zun"achst die Definitionen der verwendeten Begriffe Matroid und Basen eines
+Matroids eingef"ugt (vgl. dazu auch Aigner, Kombinatorik Bd.II (\cite{Aig:76}),
+Seite 17ff., sowie \cite{Schu:92}, Seite 30).\label{matroid}
+
+Der {\bf Steinitzsche Austauschsatz}\idx{Steinitz, Austauschsatz von} besagt,
+da"s wenn in einem endlichdimensionalen Vektorraum V ein Vektor v nicht linear
+abh"angig von einer unabh"angigen Menge von Vektoren $\{u_1,\ldots,u_n\}$, aber
+abh"angig von $\{u_1,\ldots,u_n,w\}$ ist, so ist der Vektor w linear abh"angig
+von $\{u_1,\ldots,u_n,v\}$.\\
+Als Verallgemeinerung hiervon wird mit E=$\{1,\ldots,n\}$ und einer Teilmenge
+$\B$ der Potenzmenge von E das geordnete Paar (E,$\B$) als ein {\bf Matroid}
+\idx{Matroid} bezeichnet, wenn die leere Menge \O\ in $\B$ liegt, mit jeder
+Menge $B\in\B$ auch deren Teilmengen in $\B$ liegen, sowie f"ur alle $B_1,
+B_2\in\B$ und $x\in B_1\backslash B_2$ ein y aus $B_2\backslash B_1$ existiert,
+so da"s $(B_1\backslash\{x\})\cup\{y\}$ Element von $\B$ ist. Die Mengen aus
+$\B$ hei"sen {\bf unabh"angig}, maximale Mengen in $\B$ werden aufgrund ihrer
+gemeinsamen M"achtigkeit {\bf Basen des Matroids} genannt. Diese M"achtigkeit
+wird auch als {\bf Rang des Matroids} bezeichnet. Ist E zusammen mit einer
+(wie oben definierten) Abbildung $\chi$ ein orientiertes Matroid, so kann man
+alle (formalen) Brackets betrachten, die unter $\chi$ ungleich Null sind. Die
+Menge der zugeh"origen r-Tupel aus $\Lambda(n,r)$ all dieser Brackets nennt man
+supp($\chi$). Dieser {\bf Tr"ager} supp($\chi$) bildet die Menge der Basen eines
+Matroids, das dem {\bf orientierten Matroid} (E,$\chi$) {\bf zugrundeliegende
+Matroid}. In bezug auf die zu erf"ullenden Gra"smann-Pl"ucker-Relationen ist ein
+Matroid die Einschr"ankung eines "uber dem K"orper GF(3) definierten
+orientierten Matroids auf GF(2), was sich auch aus dem folgenden ableiten
+l"a"st.
+\begin{satz}\label{dgpr}
+Eine Abbildung $\chi:E^r\to\{-1,0,+1\}$ (in der bisherigen Notation) ist genau
+dann ein Chirotop, wenn folgende zwei Bedingungen erf"ullt sind:
+
+\btab{ll}
+(B1$'$) & $\chi$ ist alternierend, und die Menge der r-Untermengen
+          $\{x_1,\ldots,x_r\}$ aus E\\
+        & mit $\chi(x_1,\ldots,x_r)\neq 0$ ist die Menge der Basen eines
+          Matroids vom \\
+        & Rang r auf E.\\
+(B2$''$) & F"ur alle $x_1,\ldots,x_r,y_1,y_2\in E$ gilt, falls\\
+         & $\chi(y_1,x_2,\ldots,x_r)\cdot\chi(x_1,y_2,x_3,\ldots,x_r)\geq 0$
+           und\\
+         & $\chi(y_2,x_2,\ldots,x_r)\cdot\chi(y_1,x_1,x_3,\ldots,x_r)\geq 0$
+           erf"ullt sind, auch\\
+         & $\chi(x_1,x_2,\ldots,x_r)\cdot\chi(y_1,y_2,x_3,\ldots,x_r)\geq 0$
+\etab
+\end{satz}
+
+Die dreisummandigen Gra"smann-Pl"ucker-Relationen k"onnen im Rang r f"ur
+disjunkte Teilmengen $A=\{a_1,\ldots,a_{d-2}\}$ und $B=\{b_1,\ldots,b_4\}$
+von E mittels (formaler) Brackets geschrieben werden als
+$$\{a_1,\ldots,a_{d-2}|b_1,\ldots,b_4\}:=
+  \begin{array}{l}
+    +[a_1,\ldots,a_{d-2},b_1,b_2]\cdot [a_1,\ldots,a_{d-2},b_3,b_4]\\
+    -[a_1,\ldots,a_{d-2},b_1,b_3]\cdot [a_1,\ldots,a_{d-2},b_2,b_4]\\
+    +[a_1,\ldots,a_{d-2},b_1,b_4]\cdot [a_1,\ldots,a_{d-2},b_2,b_3]
+  \end{array}=0$$
+Im Falle von $\chi:E^d\to\{-1,+1\}$ l"a"st sich so in einem Programm testen,
+ob bei Vorgabe von $\chi$ ein Chirotop und damit ein orientiertes Matroid
+vorliegt. Allgemein mu"s hier zus"atzlich "uberpr"uft werden, ob durch eine
+vorgelegte Vorzeichenliste die nach B1$'$ geforderten Basen eines Matroids
+gegeben sind --- als Alternative kann man hier auch die k-summandigen
+Gra"smann-Pl"ucker-Relationen von B2 nachrechnen.
+
+Wie man sich "uberlegen kann, ist aus einer Punktkonfiguration "uber die
+zugeh"orige Punktmatrix f"ur n $\geq$ d Punkte immer ein orientiertes Matroid
+durch ein Chirotop gegeben, da hierbei die k-summandigen
+Gra"smann-Pl"ucker-Relationen immer erf"ullt sind (nachweisbar ist dies mittels
+des Laplaceschen Entwicklungssatzes f"ur Determinanten). Umgekehrt kann
+zu diesem auch wieder eine (zumindest isomorphe) Punktkonfiguration angeben
+werden, da man ja wei"s, da"s eine solche existiert. Im allgemeinen Fall kann
+allerdings von einem Chirotop nicht auf eine zugeh"orige Punktkonfiguration
+geschlossen werden. Dieses Problem, zu einem orientierten Matroid eine
+entsprechende Punktmatrix zu finden, bezeichnet man als Suche nach einer
+Realisierung.\label{real}
+
+Als eine {\bf Realisierung}\idx{Realisierung} eines orientierten Matroids
+${\cal M}=(E,\chi)$ vom Rang r "uber einer totalgeordneten n-elementigen Menge
+E bezeichnet man eine Abbildung $\Phi$, die E in den $\R^r$ abbildet, so da"s
+$\chi(e_1,e_2,\ldots,e_r)=\mbox{sign det}(\Phi(e_1),\Phi(e_2),\ldots,\Phi(e_r))$
+f"ur alle $e_i\in E$ gilt, wenn $\chi:E^r\to\{-1,0,+1\}$ das zugeh"orige
+Chirotop bezeichnet. Existiert solch ein $\Phi$, so hei"st $\cal M$
+realisierbar.
+
+{\scsi
+Eine wichtige Eigenschaft im Zusammenhang mit der Realisierung von
+orientierten Matroiden ist, da"s diese immer (zumindest) lokal realisierbar
+sind (in diesem Sinne sind sie lokal in den Euklidischen Raum einbettbar). Dazu
+wird in \cite{Bj:93} (Korollar 3.6.3, Seite 140) gezeigt, da"s jedes azyklische
+Rang r orientierte Matroid als abstrakte (r-1)-dimensionale affine
+Punktkonfiguration angesehen werden kann, von der jede (r+2)-punktige
+Unterkonfiguration koordinatisierbar ist. Bokowski und Richter-Gebert haben
+zu diesem Themenbereich interessante Arbeiten beigesteuert.
+}
+
+Die Suche nach Realisierungen beliebiger orientierter Matroide ist als eine
+wichtige Fragestellung in \cite{Bj:93} angesprochen und Gegenstand aktueller
+Arbeiten, wie zum Beispiel auch \cite{Schu:92} und \cite{Dau:89}, in denen von
+simplizialen orientierten Matroiden ausgegangen wird. Hier soll nun das Problem
+der Realisierbarkeit von allgemeinen CW-Komplexen, im Sinne durchdringungsfreier
+Darstellung im euklidischen Raum, auf die Problematik bei orientierten Matroiden
+"ubertragen werden, wobei nun auch der nichtsimpliziale Fall zuzulassen ist.
+Gibt es n"amlich zu einem beliebigen CW-Komplex $\cal C$ ein realisierbares
+orientiertes Matroid $(E,\chi)$, das gewisse Eigenschaften von $\cal C$
+bewahrt, so sind durch $\Phi$ Punkte im $\R^r$ gegeben, mit denen $\cal C$ ohne
+Selbstdurchdringungen dargestellt werden kann. Solch ein $(E,\chi)$ hei"st eine
+{\bf Matroideinbettung} von $\cal C$.\idx{Matroideinbettung} Zun"achst mu"s
+hierzu aber eine Verbindung zwischen CW-Komplexen und orientierten Matroiden
+angegeben werden, die gerade diese "`gewissen Eigenschaften"' beschreibt.\\
+Da wir es bei CW-Komplexen mit zum $\R^n$ hom"oomorphen Hausdorff-R"aumen,
+zutun haben, soll nun eine weitere Repr"asentationsm"oglichkeit orientierter
+Matroide angegeben werden, die (Pseudo-)Hyperebenen nutzt, welche dazu dienen
+sollen, oben geforderte Verbindung zwischen den beiden betrachteten
+Objektklassen zu schaffen.
+
+\subsection{Orientierte Matroide von Hy\-per\-ebe\-nen- und
+            Pseu\-do\-hy\-per\-ebe\-nen\-arrange\-ments}
+
+Zur Motivation betrachte man wieder eine endliche Menge $E=\{1,2,\ldots,n\}$
+und ein zentrales (den Nullpunkt enthaltendes) Arrangement orientierter
+Hyperebenen im $\R^r$ (Beispiel Abb.\ref{hyper}), das gegeben sei durch
+$${\cal A}=(H_e=\{x\in \R^r:<x,a_e>=0\})_{e\in E}$$ mit
+einer Familie $(a_e)_{e\in E}$ von Normalenvektoren ungleich dem Nullvektor
+und dem "ublichen Skalarprodukt $<x,y>:=\sum_{i=1}^rx_i\cdot y_i$ f"ur x und
+y aus $\R^r$ (beziehungsweise einem Vektorraum "uber $\K$).
+Um Orientierungen unterscheiden zu k"onnen, seien die durch die Hyperebenen
+gegebenen Halbr"aume in Richtung der Normalen als positiv ausgezeichnet.
+Zu allen $x\in\R^r$ sei $\sigma(x)=(\sigma_e(x)=\mbox{sign}<x,a_e>)_{e\in E}$
+ein Vorzeichenvektor mit $|E|=n$ Komponenten der Gestalt $+$, $-$ oder $0$,
+als Abk"urzung f"ur $+1$, $-1$ und $0$ entsprechend der Signumfunktion,
+der die Lage von x bez"uglich jeder Hyperebene $H_e$ beschreibt.
+Die Abbildung $\sigma$ bildet dabei den $\R^r$ in $\{+,-,0\}^E$, die Menge
+aller Vorzeichenvektoren mit $|E|$ Komponenten, ab.
+Jene Punkte des $\R^r$, die gleiche Vorzeichenvektoren besitzen, bilden
+Zellen der Zerlegung, die durch $\cal A$ auf $\R^r$ induziert wird. Diese Zellen
+sind konvexe offene Teilmengen linearer Teilr"aume des $\R^r$, und hei"sen
+{\bf Topes}\idx{Tope} beziehungsweise {\bf Regionen}.\label{cell}
+Mit $\sigma$ ist so eine "Aquivalenzrelation gegeben, denn es gilt f"ur
+Punkte $x,y\in\R^r$ die Gleichheit $\sigma(x)=\sigma(y)$ genau dann, wenn
+x und y aus der gleichen Zelle der Zerlegung des $\R^r$ durch $\cal A$ stammen.
+Anstelle aller $x\in \R^r$ brauchen so nur deren "Aquivalenzklassen
+bez"uglich $\sigma$ betrachtet werden, denn die Vorzeichenvektoren im Bild des
+$\R^r$ unter $\sigma$ induzieren genau die Zellen, was eine kombinatorische
+Beschreibung von $\cal A$ durch $\sigma$ darstellt.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength0.6cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from 0 to 14, y from 0 to 9.5
+\setsolid
+\plot 5 8 5 5 4 4 4 7 6 9 6 8.35 /
+\plot 4 4.65 3.5 4.5 3.5 7.5 6.5 8.5 6.5 7.5 /
+\plot 3.5 7.5 3.5 8.5 6.5 7.5 6.5 4.5 6 4.65 /
+\plot 4 8.35 4 9 6 7 6 4.2 5 5 /
+\plot 6.5 6.85 7 7 8.5 5 2.5 3 1 5 3.5 5.8 /
+\plot 3.5 3.35 3.5 2 4 2.2 /
+\plot 4 3.5 4 1.5 5 2.5 5 3.85 /
+\plot 5 2.5 6 1.5 6 4.15 /
+\plot 6 2.2 6.5 2 6.5 4.3 /
+\put {\scsi H$_1$} [Bl] at 2 4.5
+\put {\scsi H$_2$} [Bl] at 4.3 5.7
+\put {\scsi H$_3$} [Bl] at 2.8 7
+\put {\scsi H$_4$} [Bl] at 2.8 8
+\put {\scsi H$_5$} [Bl] at 3.5 9.2
+\put {\scsi $+$} [Bl] at 2.5 3.5 \put {\scsi $-$} [Bl] at 2.5 2.7
+\put {\scsi $+$} [Bl] at 4.5 7
+\put {\scsi $-$} [Bl] at 5.25 7
+\put {\scsi $+$} [Bl] at 3.75 7.25
+\put {\scsi $+$} [Bl] at 3.75 8
+\put {\scsi Regionen} [Bl] at 9 9
+\put {\scsi $++++-$, $+-++-$,} [Bl] at 9 8
+\put {\scsi $+--+-$, $+----$,} [Bl] at 9 7.5
+\put {\scsi $+---+$, $++--+$,} [Bl] at 9 7
+\put {\scsi $+++-+$, $+++++$,} [Bl] at 9 6.5
+\put {\scsi $-+++-$, $--++-$,} [Bl] at 9 6
+\put {\scsi $---+-$, $-----$,} [Bl] at 9 5.5
+\put {\scsi $----+$, $-+--+$,} [Bl] at 9 5
+\put {\scsi $-++-+$, $-++++$} [Bl] at 9 4.5
+\endpicture
+$$
+\caption{F"unf Hyperebenen im $\R^3$}
+\label{hyper}
+\end{figure}
+
+Nun betrachte man zu einer endlichen Menge E allgemeiner zun"achst beliebige,
+das hei"st nicht "uber eine Abbildung $\sigma$ an Hyperebenen gekoppelte,
+Vorzeichenvektoren\idx{Vorzeichenvektor} $X,Y\in\{+,-,0\}^E$.
+Der {\bf Tr"ager}\idx{Vorzeichenvektor!Tr\"ager} eines solchen Vektors X ist
+$\ul{X}=\{e\in E:X_e\neq 0\}$, seine {\bf Nullmenge}
+\idx{Vorzeichenvektor!Nullmenge} $z(X)=X^0=E\backslash\ul{X}=\{e\in E:X_e=0\}$,
+die Menge seiner positiven Elemente $X^+=\{e\in E:X_e=+\}$ und analog die Menge
+seiner negativen Elemente $X^-=\{e\in E:X_e=-\}$. Der Vektor, der f"ur alle
+$e\in E$ aus 0 besteht, hei"se analog dem $\R^d$ Nullvektor und sei mit 0
+bezeichnet. Zu $X$ sei $-X$ gegeben durch die Vorzeichenumkehrung von X, also
+$(-X_e)=-$ f"ur $X_e=+$, $(-X_e)=+$ f"ur $X_e=-$ und $(-X_e)=0$ f"ur $X_e=0$.
+Weiter sei eine {\bf Zusammensetzung}\idx{Vorzeichenvektor!Zusammensetzung}
+$X\circ Y$ von X und Y dadurch gegeben, da"s $(X\circ Y)_e=X_e$ f"ur
+$X_e\neq 0$ und $Y_e$ sonst gelte. Die {\bf Trennungsmenge}
+\idx{Vorzeichenvektor!Trennungsmenge} von X und Y sei
+$S(X,Y)=\{e\in E:X_e=-Y_e\neq 0\}$.
+
+Mit diesen Vorgaben hei"st eine Menge ${\cal L}\subseteq\{+,-,0\}^E$ {\bf Menge
+der Kovektoren eines orientierten Matroids}, wenn folgende Axiome erf"ullt
+sind, die dementsprechend als {\bf Kovektoraxiome}\idx{Kovektoraxiome}
+bezeichnet werden.
+
+\bcent
+\fbox{\parbox{14cm}{
+\btab{ll}
+(L0) & ${\cal L}$ enth"alt den Nullvektor 0.\\
+(L1) & Mit $X\in\cal L$ ist auch $-X$ in ${\cal L}$ enthalten.\\
+(L2) & Sind X und Y aus $\cal L$, so auch deren Zusammensetzung $X\circ Y$\\
+(L3) & Zu X und Y aus $\cal L$ und e aus S(X,Y) existiert ein Z in
+       ${\cal L}$ mit Z$_e=0$\\
+     & und Z$_f=(X\circ Y)_f=(Y\circ X)_f$ f"ur alle f $\notin$ S(X,Y).
+\etab}}
+\ecent
+
+Um die Begriffswahl der Vorzeichenvektoren als "`\ul{Ko}vektoren eines
+orientierten Matroids"' verstehen zu k"onnen, m"ussen an dieser Stelle die
+Begriffe Polarit"at und Dualit"at eingef"uhrt werden, wie sie im gegenw"artigen
+Zusammenhang zu verstehen sein sollen. Dazu ist ein kurzer Abstecher in die
+Welt der topologischen Vektorr"aume n"otig, der uns die Definition der
+gew"unschten Begriffe liefert.
+
+Allgemein werden zwei topologische Vektorr"aume F und G "uber einem gemeinsamen
+K"orper $\K$ als ein {\bf duales Paar}\idx{duales Paar} (F,G) bezeichnet, wenn
+es zwischen ihnen eine Bilinearform $f:F\times G\to\K$ gibt, f"ur die zum einem
+f"ur jedes feste $0\neq x_0\in F$ ein $y\in G$ existiert, so da"s
+$f(x_0,y)\neq 0$ gilt, und zum anderen analog zu jedem festen $0\neq y_0\in G$
+ein $x\in F$ gew"ahlt werden kann, mit $f(x,y_0)\neq 0$. Ist nun (F,G) solch
+ein duales Paar, so ist die {\bf Polare}\idx{Polare} $A^*$ einer Menge
+$A\subseteq F$ definiert als
+$$ A^*=\{y\in G~:~|f(x,y)|\leq 1,~\forall x\in A\}.$$
+
+Nach Gr"unbaum (vgl. \cite{Gr:67}, Seite 46ff.) hei"sen zwei d-dimensionale
+Polytope $P$ und $P^*$ dual\idx{dual} wenn zwischen ihnen eine bijektive
+Abbildung $\Psi$ der r-Seiten ($1\leq r\leq d$) von $P$ auf die Seiten von
+$P^*$ existiert, die Inklusionen umkehrt. Dies bedeutet, da"s f"ur zwei Seiten
+$F_1$ und $F_2$ von $P$ mit $F_1\subset F_2$ unter $\Psi$ gilt, da"s
+$\Psi(F_1)\supset\Psi(F_2)$ ist. In der Theorie der orientierten Matroide
+wird dieser Sachverhalt als {\bf Polarit"at}\idx{Polarit\"at} bezeichnet.\\
+Da hier Vektorr"aume "uber $\R$ betrachtet werden, ist eine Bilinearform f
+durch das "ubliche Skalarprodukt auf $\R^d$ gegeben. Damit ist die zu einem
+Polytop $P$ geh"orige polare Menge $P^*$ gerade
+$\{y\in\R^d~|~<x,y>\leq 1,~\forall x\in P\}$.
+Bildet man die konvexe H"ulle der Extrempunkte von $P^*$, so ist diese ebenfalls
+ein Polytop, das als das zu P polare bezeichnet wird und entsprechend seiner
+Herkunft ebenfalls die Bezeichnung $"`P^*"'$ erh"alt. Nach obiger Definition ist
+$P^*$ auch dual zu $P$, da sich eine inklusionsumkehrende Abbildung der
+Seiten von $P$ auf die Seiten von $P^*$ angeben l"a"st. Anschaulicher ist dieser
+Sachverhalt darzustellen, wenn man die Situation betrachtet, da"s der einen
+Punkt P im $\R^d$ beschreibende Ortsvektor $x_P$ zum einen den Punkt als solchen
+bezeichnet, aber auch als Normale einer zu $x_P$ orthogonalen (Hyper-)Ebene mit
+der Hesseschen Normalform $<x_P,x>=1$ aufgefa"st werden kann (vgl. obige
+Definition der Hyperebenenarrangements). Betrachtet man nun einerseits die
+konvexe H"ulle einer endlichen Anzahl von Punkten $x_P$ und andererseits die
+durch die (Hyper-)Ebenen mit den Normalen $x_P$ eingeschlossene Zelle
+(gerade der Durchschnitt der Halbr"aume, die durch $<x_P,x>\leq 1$ gegeben sind,
+so ergibt sich gerade die oben eingef"uhrte Polarit"at zwischen einer
+Punktkonfiguration und der entsprechenden polaren (Hyper-)Ebenenkonfiguration.
+\label{polar} Eindrucksvolle Beispiele sind die Polarit"aten der platonischen
+K"orper im $\R^3$ (das selbstpolare Tetraeder, die polaren Paare W"urfel und
+Oktaeder, sowie Dodekaeder und Ikosaeder).
+Speziell entsprechen unter Polarit"at im $\R^3$ also Punkte Fl"achen, Kanten
+Kanten und Fl"achen Punkten. Verallgemeinert auf h"ohere Dimensionen
+bedeutet dies gerade, da"s im $\R^d$ (d-i)-Seiten von $P$ im polaren Fall zu
+i-Seiten von $P^*$ werden (was gleichzeitig Dualit"at induziert).\\
+Bei orientierten Matroiden sei mit Dualit"at\idx{Dualit\"at} die Situation
+bezeichnet, wenn man, wie Bokowski in seinem Beitrag zum "`Handbook of Convex
+Geometry"' (\cite{Bo:93}) angibt, etwa die Kreise eines orientierten Matroids
+$\cal M$ als Kokreise eines anderen orientierten Matroids $\cal M^*$ ansieht,
+welches dann das zu $\cal M$ Duale darstellt (vgl. Kreis-Definitionen von
+Seite \pageref{kokreis}).\\
+Wenn also von Vektoren und Kovektoren orientierter Matroide die Rede ist, so
+spiegelt dies gerade die dualen Versionen wider. (Da die Dualit"at orientierter
+Matroide in dieser Arbeit nicht weiter vertieft wird, m"ochte ich auf
+\cite{Bj:93},S.115ff.,S.157ff. und \cite{Schu:92}, Seite 40ff. verweisen.)
+
+Der Einfachheit halber sei im folgenden eine Menge ${\cal L}$, die die
+Kovektoraxiome erf"ullt beziehungsweise ein Paar $(E,{\cal L})$ als
+orientiertes Matroid bezeichnet. Dieses habe den Rang r, entsprechend der
+Dimension des Raumes, in dem die Hyperebenen liegen und n$=|E|$ Elemente.
+
+Eine Teilordnung "`$\leq$"' auf $\{+,-,0\}$ mit $0<+$, $0<-$ und bez"uglich
+der $+$ und $-$ nicht vergleichbar sind, induziert auf $\{+,-,0\}^E$ "uber
+den komponentenweisen Vergleich der Vorzeichenvektoren eine Produktteilordnung.
+(Es gilt $y\leq x$, wenn f"ur alle $e\in E$ die Komponente $y_e\in\{0,x_e\}$
+ist.) Ist ${\cal L}$ ein orientiertes Matroid nach obiger Definition, so wird
+dieses, wenn man es mit einem abstrakten \^1-Element vereinigt und mit
+eben definierter Teilordnung betrachtet zu einem Verband, dem (gro"sen)
+Seitenverband $\hat{\cal L}={\cal L}\cup \{\hat{1}\}$\idx{Seitenverband} von
+$\cal L$. Bez"uglich "`$\leq$"' maximale Elemente in $\cal L$ hei"sen
+{\bf Topes} oder auch Regionen\idx{Topes!eines orientierten Matroids} von
+$\cal L$ und entsprechen gerade den im realisierbaren Fall von Hyperebenen
+"`ausgeschnittenen"' Teilr"aumen. (vgl. Abb.\ref{hyper})
+
+Bei der Untersuchung orientierter Matroide sind auch Teilstrukturen dieser
+interessant, die aus Operationen auf einem orientierten Matroid entstehen. So
+ist eine {\bf Restriktion}\idx{Restriktion} eines Vorzeichenvektors
+$X\in\{+,-,0\}^E$ auf eine Teilmenge F$\subset$E der Vorzeichenvektor
+$X|_F\in\{+,-,0\}^F$, definiert durch $(X|_F)_e=X_e$ f"ur alle e$\in$F. Ist
+${\cal L}\subseteq\{+,-,0\}^E$
+die Menge der Kovektoren eines orientierten Matroids $\cal M$ auf E und ist
+A$\subseteq$E, so ist die Menge der Kovektoren der {\bf Deletion}\idx{Deletion}
+${\cal M}\backslash A$ die Menge ${\cal L}\backslash A
+:=\{X|_{E\backslash A}:X\in{\cal L}\}\subseteq\{+,-,0\}^{E\backslash A}$.
+Die Menge der Kovektoren der {\bf Kontraktion}\idx{Kontraktion} ${\cal M}/A$
+ist die Menge ${\cal L}/ A:=\{X|_{E\backslash A}:X\in{\cal L}\mbox{ und }
+A\subseteq X^0\}\subseteq\{+,-,0\}^{E\backslash A}$.
+Unter einer {\bf Reorientierung}\idx{Reorientierung} $_{-A}{\cal M}$ versteht
+man die Menge $_{-A}{\cal L}:=\{_{-A}X:X\in{\cal L}\}$, wobei $_{-A}X$ definiert
+ist durch $(_{-A}X)^+=(X^+\backslash A)\cup (X^-\cap A), (_{-A}X)^0=X^0$ und
+$(_{-A}X)^-=(X^-\backslash A)\cup (X^+\cap A)$, also einer lokalen
+Vorzeichenumkehrung.
+
+Gehen wir nochmals zur"uck zum Ausgangspunkt eines zentralen
+Hyperebenenarrangements $\cal A$. Da Mengen von Hyperebenen
+H$_e=\{x\in\R^r:<x,a_e>=0\}$ betrachtet werden, kann man "aquivalent statt der
+H$_e$ auch deren Einschr"ankung auf die Einheitssph"are $\S^{r-1}\subset\R^r$
+heranziehen (Gro"skreise auf der $\S^2$ oder im allgemeinen Fall (r-2)-Sph"aren
+auf der $\S^{r-1}$), ohne da"s an der Repr"asentation der Schnitteigenschaften
+etwas ver"andert wird. (Dies ist m"oglich, da durch die "`zentralen"'
+Hyperebenen schon der lineare respektive projektive Fall betrachtet wird,
+eine Kompaktifizierung der Hyperebenen also nur formal vollzogen werden mu"s,
+eben durch den "Ubergang zu einem Sph"arensystem.)
+Die durch die $\{x\in\R^r:<x,a_e>=0,\|x\|=1\}$ induzierte Zerlegung der
+$\S^{r-1}$ l"a"st sich nun analog den Hyperebenen orientieren, indem man jene
+Hemisph"aren als positiv annimmt, die in Richtung der Normalen $(a_e)_{e\in E}$
+der H$_e$ liegen. Werden die Schnitteigenschaften der (r-2)-Sph"aren
+untereinander nicht ver"andert, so k"onnen diese sogar mittels stetiger
+Abbildungen (in \cite{Bj:93} werden diese als "`zahm"' bezeichnet, vgl. S. 225)
+deformiert werden, wobei die Information des zugeh"origen orientierten Matroids
+erhalten bleibt. So gelangt man zur Definition von Pseudosph"aren. Dabei wird
+eine Teilmenge $S\subset\S^{r-1}$ als {\bf Pseudosph"are}\idx{Pseudosph\"are}
+bezeichnet, wenn ein Hom"oomorphismus $h:\S^{r-1}\to\S^{r-1}$ existiert, so
+da"s $S=h(S^{r-2})$ gilt. Hierbei ist $S^{r-2}=\{x\in\S^{r-1}:x_r=0\}$ der
+"Aquator der $\S^{r-1}$ (vgl. Abb.\ref{pseudo}). Ein {\bf
+Pseudosph"arenarrangement} in $\S^r$ ist dann als ein endliches Mengensystem
+${\cal A}=(S_e)_{e\in E}$ definiert, wenn (vgl. \cite{Bj:93}, S.227) zum einen
+$S_A=\Cap_{e\in A} S_e$ f"ur alle $A\subseteq E$ eine Sph"are darstellt und zum
+anderen f"ur $S_A\not\subseteq S_e$ mit $A\subseteq E,e\in E$, sowie $S^+_e$ und
+$S^-_e$ den beiden Hemisph"aren von $S_e$, $S_A\cap S_e$ eine Pseudosph"are in
+$S_A$ mit den Seiten $S_A\cap S^+_e$ und $S_A\cap S^-_e$ ist.
+
+Ein Ergebnis von Folkman und Lawrence aus dem Jahre 1978 liefert nun den
+Zusammenhang zwischen Pseudosph"arenarrangements und orientierten Matroiden.
+\begin{satz}
+Sei ${\cal A}=(S_e)_{e\in E}$ ein orientiertes Pseudosph"arenarrangement in
+der $\S^r$ und $\sigma:\S^r\to\{+,-,0\}^E$ die Abbildung, die definiert
+sei "uber
+$$\sigma(x)_e=\left\{\begin{array}{ll}
+                        +, & \mbox{ f"ur } x\in S^+_e\\
+                        -, & \mbox{ f"ur } x\in S^-_e\\
+                        0, & \mbox{ f"ur } x\in S_e\end{array}\right.$$
+Dann ist ${\cal L(A)} := \{\sigma(x):x\in\S^r\}\cup\{0\}\subseteq\{+,-,0\}^E$
+die Menge der Kovektoren eines orientierten Matroids. Ist dim($S_e$)=k, so
+ist der Rang von $\cal L(A)$ gleich r-k. Ist $\cal A$ essentiell, das hei"st
+$S_E=\Cap_{e\in E} S_e$ ist leer, so ist der Rang von $\cal L(A)$ gleich r+1.
+\end{satz}
+
+Mit dem Beweis der Umkehrung schlie"st sich hier der Topologische
+Repr"asentationssatz nach Folkman und Lawrence f"ur orientierte Matroide an
+(vgl \cite{Bj:93}, Seite 233). Dieser besagt
+\idx{Topologischer Repr\"asentationssatz}
+\begin{satz}
+{\bf Topologischer Repr"asentationssatz:} Ist ${\cal L}\subseteq\{+,-,0\}^E$, so
+ist $\cal L$ genau dann die Menge der Kovektoren eines schleifenfreien
+orientierten Matroids vom Rang r+1, wenn ein orientiertes
+Pseudosph"arenarrangement $\cal A$ auf der $\S^{r+1+k}$ existiert, f"ur das
+$k=\mbox{dim}(\Cap_{e\in E}\S_e)$ gilt und bez"uglich dem $\cal L$ gleich
+$\cal L(A)$ ist.
+\end{satz}
+
+Schleifenfrei bedeutet, da"s die Vorzeichenstruktur jedes Topes keine Null
+enth"alt. Als Folgerung hieraus l"a"st sich zeigen, da"s schleifenfreie
+orientierte Matroide vom Rang r+1 (bis auf Reorientierung und Isomorphie)
+bijektiv zu essentiellen orientierten Arrangements von Pseudosph"aren auf
+$\S^r$ (bis auf topologische "Aquivalenz) korrespondieren.
+
+Dieses herausragende Ergebnis liefert also die "Aquivalenz von
+Pseudosph"arenarrangements und orientierten Matroiden respektive der gew"ahlten
+Axiomatik. Hier ist es wichtig, da"s von \ul{Pseu\-do}\-sph"aren die Rede ist,
+da ein topologisches Arrangement (im Sinne informationserhaltender stetiger
+Verformung) nicht hom"oomorph zu einem Sph"arensystem sein mu"s.
+Ist dies aber der Fall, so handelt es sich um die Darstellung eines
+realisierbaren orientierten Matroids, analog der Definition der Realisierung,
+wie sie im Abschnitt "uber die Chirotope angegeben wurde (Seite \pageref{real}).
+
+Zu bemerken ist, da"s der reelle projektive Raum $\P^d$ der Dimension d aus
+der $\S^d$ durch Identifikation aller antipodischen (diametral
+gegen"uberliegenden) Punkte hervorgeht. Ist $\pi(x)=\{x,-x\}:\S^d\to \P^d$,
+so werden in nat"urlicher Weise die Nullpunkt-symmetrischen Teilmengen
+der d-Sph"are mit allgemeinen Teilmengen des projektiven Raumes
+identifiziert. Hier"uber k"onnen oben eingef"uhrte Pseudosph"aren auch als
+Pseudohyperebenen in $\P^d$ aufgefa"st werden, womit auch eine Klassifikation
+orientierter Matroide im projektiven Raum mittels Pseudohyperebenen gegeben ist.
+
+\begin{figure}[htb]
+$$
+\beginpicture
+\unitlength0.6cm
+\setlinear
+\setcoordinatesystem units <0.6cm,0.6cm>
+\setplotarea x from -3 to 3, y from -3 to 3
+\put {\beginpicture
+  \setsolid
+  \circulararc 180 degrees from 2 0 center at 0 0
+  \ellipticalarc axes ratio 4:1 180 degrees from -2 0 center at 0 0
+  \setdashes<1.5mm>
+  \ellipticalarc axes ratio 4:1 -180 degrees from -2 0 center at 0 0
+  \setsolid
+  \plot -1.73 1 -3 1 -4 -1 3 -1 4 1 1.73 1 /
+  \circulararc 120 degrees from -1.73 -1 center at 0 0
+  \put {\vector(0,1){1.5}} [Bl] at 0 0
+  \put {\vector(1,0){0.2}} [Bl] at 0 -0.5
+  \put {\scsi $\S^{d-1}$} [Bl] at 1.5 2
+  \put {\scsi $\S^{d-2}_a$} [Bl] at 1.5 -0.8
+  \put {\scsi a} [Bl] at 0.3 1.5
+  \put {\scsi $H_a$} [Bl] at 2.5 0.5
+  \setquadratic
+  \plot -2 0 -1.3 0.3 -0.7 0.1 0.2 -0.1 1.2 0.15 1.6 0.2 2 0 /
+  \setdashes<1mm>
+  \plot 2 0 1.3 -0.3 0.7 -0.1 -0.2 0.1 -1.2 -0.15 -1.6 -0.2 -2 0 /
+\endpicture} at -4 1
+\put {\beginpicture
+  \setsolid \setlinear
+  \circulararc 360 degrees from 2 0 center at 0 0
+  \setquadratic
+  \plot -1.732 -1 -0.5 -1 0.5 -0.2 1 0.5 1.732 1 /
+  \plot 0 -2 0.35 -1 0 0 -0.5 1 0 2 /
+  \plot 1.732 -1 1 0 0.3 0.3 -1 0.5 -1.732 1 /
+  \setdashes<1mm>
+  \plot 1.732 1 0.5 1 -0.5 0.2 -1 -0.5 -1.732 -1 /
+  \plot 0 2 -0.35 1 0 0 0.5 -1 0 -2 /
+  \plot -1.732 1 -1 0 -0.3 -0.3 1 -0.5 1.732 -1 /
+  \setdots<1mm> \setlinear
+  \plot 0.5 1.95 0.5 3 -0.5 2 -0.5 -3 0.5 -2 0.5 -1.95 /
+  \plot -2 0.4 -3 1 -2 2 3 -1 2 -2 1.35 -1.55 /
+  \plot -2 -0.4 -3 -1 -2 -2 3 1 2 2 1.35 1.55 /
+\endpicture} at 4 0
+\endpicture
+$$
+\caption{Von einer Hyperebene zu einer Pseudosph"are}
+\label{pseudo}
+\end{figure}
+
+Zusammenfassend kann man sagen, da"s sich orientierte Matroide als
+Verallgemeinerung aus den verschiedensten Bereichen der Mathematik motivieren
+lassen. Dabei f"uhrt in verschiedenen F"allen die allgemeinste Struktur
+bez"uglich einer zu erf"ullenden Eigenschaft unabh"angig von der gew"ahlten
+Ausgangssituation zu diesem Konzept. Der Name "`Matroid"' stammt dabei von
+Whitney aus dem Jahre 1935 und leitet sich von einer Klasse fundamentaler
+Beispiele solcher Objekte ab, die aus Matrizen hervorgehen. (Als
+"Ubersichtsartikel sei hierzu \cite{Bo:93} genannt.)
+
+\section{Symmetriebegriffe}
+
+Ist ein allgemeiner CW-Komplex realisierbar, so ist es erstrebenswert,
+m"oglichst viele Symmetrieeigenschaften von diesem in die Realisierung
+"`hin"uberzuretten"'. Was man hierunter versteht, soll im folgenden
+beschrieben werden.
+
+Wenn man im $\E^d$ von {\bf Symmetrien}\idx{Symmetrie} spricht, so meint man
+damit die Automorphismen von $\E^d$, die Abst"ande und Orthogonalit"at
+invariant lassen. Dies sind gerade die orthogonalen Transformationen.
+Die Menge aller orthogonalen Transformationen ist bez"uglich der
+Hintereinanderausf"uhrung eine Gruppe, die {\bf orthogonale Gruppe}
+${\cal O}(d)$.\idx{orthogonale Gruppe} Elemente aus ${\cal O}(d)$ lassen sich
+als orthogonale (d$\times$d)-Matrizen "uber $\R$ darstellen und stellen damit
+eine Untergruppe der allgemeinen linearen Gruppe $\mbox{GL}_d(\R)$, der Gruppe
+aller (d$\times$d)-Matrizen "uber $\R$, dar.
+$${\cal O}(d) = \{ A\in\mbox{GL}_d(\R)~|~A^T A = I_d\}$$
+{\scsi
+Eine Matrix hei"st orthogonal, wenn sie die kanonischen Einheitsvektoren auf
+eine Orthonormalbasis abbildet, das hei"st, wenn ihre Spaltenvektoren
+auf L"ange Eins normiert sind, sowie das Skalarprodukt von je zwei
+verschiedenen Spaltenvektoren Null ergibt. Als Folgerung hieraus ist die
+Determinante einer orthogonalen Matrix immer $\pm 1$. Wie mit linearer Algebra
+gezeigt werden kann, haben orthogonale Matrizen die Eigenschaft, da"s ihre
+Inversen gerade ihre Transponierten sind, was zur Charakterisierung
+der orthogonalen Gruppe dient.\\
+Zur Erinnerung ist eine Gruppe eine Menge G zusammen mit einer Abbildung
+$*:G\times G\to G$, der Gruppenoperation, die folgendes Axiomensystem erf"ullt.
+So ist G bez"uglich $*$ abgeschlossen, besitzt ein neutrales Element e
+($g*e=e*g$ f"ur alle $g\in G$) und zu jedem $g\in G$ existiert ein inverses
+Element $g^{-1}$ ($g*g^{-1}=e=g^{-1}*g$). Als Literatur zur Linearen Algebra
+sei Herrn Artmanns Buch \cite{Art:89}, sowie zur Einf"uhrung in die
+Algebra Serge Langs Buch \cite{La:79} empfohlen.
+}\\
+Damit wird die Matrizenmultiplikation zur Gruppenoperation.
+Matrizen aus ${\cal O}(d)$ mit Determinante -1 hei"sen {\bf Spiegelungen} oder
+auch {\bf Reflektionen},\idx{Reflektion}\idx{Spiegelung} Matrizen mit
+Determinante +1 werden als {\bf Drehungen}\idx{Drehung} oder {\bf Rotationen}
+\idx{Rotation} bezeichnet. Die Drehungen bilden dabei eine Untergruppe der
+${\cal O}(d)$, die als spezielle orthogonale Gruppe ${\cal SO}(d)$ bezeichnet
+wird.\idx{spezielle orthogonale Gruppe}\\
+{\scsi
+Die Untergruppe ${\cal SO}(d)$ ist gesondert ausgezeichnet, da es sich bei
+ihr um die Komponente des Eins-Elements (das hei"st Neutralelement) von
+${\cal O}(d)$ handelt, wenn diese in ihre zwei Zusammenhangskomponenten
+zerlegt wird. (vgl. \cite{Os:92}, Seite 130ff.)}
+
+Einen geometrischen d-Komplex $\cal C$, das hei"st die metrische Realisierung
+eines kombinatorisch vorgelegten allgemeinen CW- oder simplizialen d-Komplexes,
+bezeichnet man als {\bf symmetrisch},\idx{kombinatorischer Komplex}
+\idx{geometrischer Komplex}\idx{geometrischer Komplex!symmetrischer $\sim$}
+wenn eine Untergruppe G der ${\cal O}(d)$ existiert, deren s"amtliche
+Elemente $g\in G$ Automorphismen auf $\cal C$ sind, das hei"st f"ur die
+s"amtlich $g({\cal C}) = {\cal C}$ gilt. Die $g\in G$ hei"sen Symmetrien
+von $\cal C$, G selbst hei"st, gem"a"s der Gruppenstruktur, die Symmetriegruppe
+\idx{Symmetriegruppe} von $\cal C$.\idx{Symmetriegruppe!$\sim$ geometrischer
+Komplexe}
+Die Anzahl der Elemente einer Symmetriegruppe bezeichnet man als deren
+(Symmetrie-){\bf Ordnung}. Dies ist nicht mit der Ordnung einer Symmetrie, das
+hei"st eines Elements einer Symmetriegruppe, zu verwechseln, die angibt, wie oft
+die betreffende Symmetrie angewendet werden mu"s, um wieder die Identit"at zu
+erreichen. Mit "`hoher Symmetrie"' bezeichnet man dabei die Situation, da"s
+die Anzahl der Elemente der betreffenden Symmetriegruppe, gemessen an
+der Anzahl der permutierten Ecken eines Komplexes, gro"s ist
+\idx{Symmetrieordnung} (etwa auch die Situation, da"s die Symmetriegruppe des
+geometrischen eine "`gro"se"' Untergruppe der Symmetriegruppe des kombinatorische
+Komplexes ist).
+
+Betrachtet man, wie auf Seite \pageref{symm}, die Inzidenzstrukturen
+simplizialer Komplexe, die durch die Simplexzahlen impliziert werden, so
+hei"st die sich durch Umnummerierung (Permutation) der Ecken (Menge der
+0-Simplizes) ergebende Automorphismengruppe des Komplexes, deren Elemente
+nicht-degenerierend auf den Simplizes des Komplexes wirken, Symmetriegruppe
+des simplizialen Komplexes.\idx{Symmetriegruppe!$\sim$ simplizialer Komplexe}
+Mittels der Simplexzahlen kann jede solche Symmetrie, wie schon erw"ahnt,
+als Element der Permutationsgruppe $S_n$, mit der Anzahl n der auftretenden
+verschiedenen 0-Simplizes, beschrieben werden, also als Permutation auf der
+Eckenmenge $E=\{1,\ldots,n\}$. Auch hier hei"st die Gesamtheit der Symmetrien
+des Komplexes entsprechend ihrer Gruppenstruktur Symmetriegruppe des
+simplizialen Komplexes.
+
+Da simpliziale Komplexe einen Spezialfall von CW-Komplexen darstellen, kann
+man in einfacher Weise den Symmetriebegriff f"ur simpliziale Komplexe
+auf die CW-Komplexe erweitern. Wie im einen Fall bei nicht-degenerierenden,
+bijektiven simplizialen Abbildungen von Symmetrien gesprochen wird, so k"onnen
+dimensionserhaltende bijektive Selbstabbildungen von CW-Komplexen auch als
+Symmetrien bezeichnet werden, wie dies schon im Abschnitt "uber CW-Komplexe
+beschrieben wurde (in jedem Fall betrachtet man die Automorphismen des
+Komplexes).
+
+F"ur (zun"achst) simpliziale d-Komplexe kann man den Begriff der Flagge
+\idx{Flagge} f"ur das $d+1$-Tupel (0-Simplex, 1-Simplex, $\ldots$, d-Simplex)
+einf"uhren, dessen Elemente paarweise inzidieren (Im Falle von 2-Kom\-plexen
+ist dies ein Tripel (Ecke, Kante, Seite)). Automorphismen kombinatorischer
+Komplexe\label{flag} erhalten solche Flaggen. Eine Gruppe G kombinatorischer
+Automorphismen hei"st nun {\bf Flaggen-transitiv},\idx{Flaggen-transitiv}
+falls es zu jedem Paar von Flaggen des Komplexes einen Automorphismus aus G
+gibt, der die erste auf die zweite Flagge abbildet. Ist die Symmetriegruppe
+eines kombinatorischen Komplexes flaggentransitiv, so bezeichnet man den
+betreffenden Komplex als {\bf regul"ar}.
+\idx{kombinatorischer Komplex!$\sim$regul\"arer}
+Bekannt ist diese Eigenschaft vor allem von den (regul"aren) Platonischen
+K"orpern, zu denen Analoga gesucht werden, indem man M"oglichkeiten der
+Realisierung regul"arer (CW-)Komplexe untersucht, wie etwa die Dycksche Karte
+(vgl. Kap.3).
+
+Jede Symmetrie eines geometrischen Komplexes (eine als Matrix "`darstellbare"'
+Symmetrie) induziert nun eine kombinatorische Symmetrie auf dem
+zugrundeliegenden kombinatorischen Komplex. Folglich ist die Gruppe der
+geometrischen Symmetrien eine Untergruppe der Gruppe der kombinatorischen
+Symmetrien eines Komplexes.\\
+In der Tat handelt es sich im allgemeinen Fall "`nur"' um eine Untergruppe, es
+treten n"amlich zumeist mehr kombinatorische als metrische Symmetrien auf (vgl.
+die Betrachtung der Dyckschen Karte im dritten Kapitel). Die "`"uberz"ahligen"'
+kombinatorischen Symmetrien bezeichnet man als versteckte Symmetrien
+\idx{versteckte Symmetrien} des realisierbaren kombinatorischen Komplexes mit
+dieser Eigenschaft. Im Falle konvexer 3-Polytope im $\E^3$ sind die metrische
+und kombinatorische Symmetriegruppe stets gleich (isomorph), doch schon im
+nicht-konvexen Fall k"onnen versteckte Symmetrien auftreten (vgl. \cite{Bo:91},
+Seite 4). Als Beispiel f"ur eine Symmetrieuntersuchung m"oge ein Torus dienen,
+wie er in Kapitel 2, Seite \pageref{torus1} beschrieben ist.
+
+Analog der bisherigen Definitionen werden Permutationen $\sigma\in S_n$ auf
+der Grundmenge $E=\{1,\ldots,n\}$ eines orientierten Matroids $\chi$ als
+Symmetrien von diesem bezeichnet, wenn es sich bei $\sigma$ um einen
+Automorphismus handelt, der $\chi$ auf $\chi$ selbst (Drehung) oder
+auf $-\chi$ (Spiegelung, Reflektion) abbildet. Die Gesamtheit aller
+solchen Automorphismen eines orientierten Matroids $\chi$ hei"st wiederum,
+entsprechend ihrer Gruppenstruktur, Symmetriegruppe von $\chi$.
+\idx{Symmetriegruppe!$\sim$ orientierter Matroide} Dieser Symmetriebegriff
+l"a"st sich anschaulich an den Symmetrien der durch Pseudosph"arensysteme
+induzierten Komplexe illustrieren, aber auch an Vorzeichenwechseln des
+Vorzeichenvektors eines orientierten Matroids festmachen.
+
+Bei der Untersuchung der m"oglichen Symmetrien im Raum (hier ist der
+dreidimensionale Euklidische Raum gemeint), die im letzten Jahrhundert
+erfolgte und deren zentrales Ergebnis zum Ende des 19. Jahrhunderts die
+Klassifizierung aller Raumsymmetrien lieferte, stellte sich heraus, da"s bei
+Raumsymmetrien von Gitterstrukturen, das hei"st von periodischen Strukturen,
+die den gesamten $\R^3$ ausf"ullen, Symmetrieelemente nur mit den Ordnungen
+1, 2, 3, 4 und 6 auftreten k"onnen. (vgl. etwa die Darstellung der
+geschichtlichen Entwicklung der Symmetriekonzepte der Kristallographie von E.
+Scholz \cite{Scho:89}). Dieses Ergebnis wurde in der Diplomarbeit von Ronald
+Dauster (\cite{Dau:89}, Seite 30ff.) aufgegriffen und auf Realisierungen
+orientierter Matroide "ubertragen. Danach sind affine Realisierungen
+simplizialer orientierter Matroide nur mit oben angegebenen Ordnungen m"oglich,
+was zumindest die Verifikation der Symmetrien bei vermeindlichen Realisierungen
+unterst"utzt. Affine Realisierung bedeutet hier gerade, da"s das orientierte
+Matroid von einer Matrix stammt deren Zeilen explizite Punkte in homogenen
+Koordinaten beschreiben, also alle in der selben Hyperebene des $\R^d$ liegen,
+also zu $(1,p_i)$ normiert werden k"onnen und so einer affinen Punktmenge
+im $\R^{d-1}$ entsprechen.
+
+Da wir uns in dieser Arbeit aber mit allgemeinen CW-Komplexen besch"aftigen
+wollen, infolge dessen gerade eine Erweiterung auf nichtsimpliziale orientierte
+Matroide anstreben, haben wir diese Einschr"ankung der Ordnungen der
+Symmetrieelemente leider nicht zur Verf"ugung. Statt dessen stellt sich die
+interessante Frage, welche Symmetrien bei der Realisierung beliebiger orientierter
+Matroide auftreten k"onnen, ob Einschr"ankungen existieren oder ob es sogar eine
+maximale auftretende Elementordnung gibt. Ein solches Ergebnis w"urde zu einem
+Analogon der Klassifizierung der Raumsymmetrien f"uhren und sicher einer
+Bereicherung der Darstellung der Theorie der orientierten Matroide dienen.

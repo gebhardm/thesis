@@ -1,0 +1,19 @@
+\newbox\torusbox
+\newdimen\torusw
+\font\torusa=torusa
+\font\torusb=torusb
+\setbox\torusbox=\vbox{\hbox{%
+\torusa !()+,-}}
+\torusw=\wd\torusbox
+\setbox\torusbox=\hbox{\vbox{\hsize=\torusw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\torusa !()+,-}
+\hbox{\torusa ./0123}
+\hbox{\torusa 456789}
+\hbox{\torusa :;<\torusb !()}
+\hbox{\torusb +,-./0}}}
+\ifx\parbox\undefined
+    \def\settorus{\box\torusbox}
+\else
+    \def\settorus{\parbox{\wd\torusbox}{\box\torusbox}}
+\fi
