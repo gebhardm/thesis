@@ -1,93 +1,93 @@
 \chapter{Von CW-Komplexen zu orientierten Matroiden}
 
 Nach der Bereitstellung der wesentlichen Fundamentalia soll es in den beiden
-nun folgenden Kapiteln um die M"oglichkeiten gehen, zu einem allgemeinen
+nun folgenden Kapiteln um die Möglichkeiten gehen, zu einem allgemeinen
 d-dimensionalen CW-Komplex orientierte Matroide zu finden, mittels derer
-eventuell zugeh"orige Koordinaten gefunden werden k"onnen. Diese sollen dann
-das Bild des vorgelegten CW-Komplexes unter einer ho\-m"oo\-mor\-phen
+eventuell zugehörige Koordinaten gefunden werden können. Diese sollen dann
+das Bild des vorgelegten CW-Komplexes unter einer ho\-möo\-mor\-phen
 Abbildung als durchdringungsfreien CW-Komplex (je zwei offene Zellen haben
 leeren Schnitt) im Euklidischen Raum beschreiben.
 
 In diesem Kapitel soll dabei die grundlegende Vorgehensweise dargestellt
-werden, wie zun"achst solche bez"uglich Symmetrieeigenschaften des Komplexes
-"`vertr"aglichen"' orientierten Matroide bestimmt werden k"onnen. Dazu gilt
-n"amlich folgende Aussage.
+werden, wie zunächst solche bezüglich Symmetrieeigenschaften des Komplexes
+"`verträglichen"' orientierten Matroide bestimmt werden können. Dazu gilt
+nämlich folgende Aussage.
 \begin{quote}
 {\sf
-Existiert zu einem vorgelegten CW-Komplex $\C$ kein bez"uglich vorgegebener
-Symmetrieeigenschaften vertr"agliches orientiertes Matroid, so ist $\C$ nicht
+Existiert zu einem vorgelegten CW-Komplex $\C$ kein bezüglich vorgegebener
+Symmetrieeigenschaften verträgliches orientiertes Matroid, so ist $\C$ nicht
 mit diesen Symmetrien in den Euklidischen Raum einbettbar.
 }
 \end{quote}
-W"urde n"amlich doch eine solche Einbettung existieren, so geh"ort zu dieser
+Würde nämlich doch eine solche Einbettung existieren, so gehört zu dieser
 eine Punktkonfiguration, die eine Matrix und somit ein orientiertes Matroid
-induzieren w"urde, welches zu $\C$ "`vertr"aglich"' w"are.
+induzieren würde, welches zu $\C$ "`verträglich"' wäre.
 
-Im abschlie"senden dritten Kapitel sollen die bereitgestellten Mittel dazu
-dienen, einige Beispiele zu untersuchen, wobei es als Abschlu"s um symmetrische
+Im abschließenden dritten Kapitel sollen die bereitgestellten Mittel dazu
+dienen, einige Beispiele zu untersuchen, wobei es als Abschluß um symmetrische
 orientierte Matroide zur Dyckschen Karte gehen soll. Auch sollen weitere
 Fragestellungen angegeben werden, die sich in diesem Zusammenhang stellen
 (vgl. etwa \cite{Bo:86} und \cite{Bo:91}).
 
-\section{Erste Definition der Vertr"aglichkeit}
+\section{Erste Definition der Verträglichkeit}
 
-Zun"achst soll allerdings eine Vertr"aglichkeitsdefinition angegeben werden,
-die eine allgemeine Br"ucke zwischen CW-Komplexen und orientierten Matroiden
-schl"agt.\\
+Zunächst soll allerdings eine Verträglichkeitsdefinition angegeben werden,
+die eine allgemeine Brücke zwischen CW-Komplexen und orientierten Matroiden
+schlägt.\\
 Im Grundlagenteil wurde dazu als wichtiges Ergebnis aus der Theorie der
-orientierten Matroide aufgef"uhrt, wie sich unter Anwendung des topologischen
-Repr"asentationssatzes (Pseudo-)Sph"arenarrangements und orientierte Matroide
+orientierten Matroide aufgeführt, wie sich unter Anwendung des topologischen
+Repräsentationssatzes (Pseudo-)Sphärenarrangements und orientierte Matroide
 verbinden lassen. Ausgehend von diesem Satz soll es nun gelingen, dies auch auf
 allgemeine CW-Komplexen zu beziehen.\\
-Betrachtet man als Ausgangspunkt ein beliebiges (Pseudo-)Sph"arensystem auf
+Betrachtet man als Ausgangspunkt ein beliebiges (Pseudo-)Sphärensystem auf
 der $\S^d$, so ist dort durch das Arrangement eine Zerlegung in Zellen gegeben,
-die wegen der Hom"oomorphieeigenschaften von Sph"are und $\R^d$ auch als
+die wegen der Homöomorphieeigenschaften von Sphäre und $\R^d$ auch als
 CW-Komplex interpretiert werden kann (vgl. Seite \pageref{cell}). Die maximalen
 Zellen dieses Komplexes sind jene d-dimensionalen Gebiete auf der $\S^d$, deren
 Rand durch Schnitte und dadurch induzierte Segmente der
-(d$-$1)-(Pseudo-)Sph"aren, die gerade den niederdimensionalen Zellen
+(d$-$1)-(Pseudo-)Sphären, die gerade den niederdimensionalen Zellen
 entsprechen, gegeben ist. Aufgrund seiner Entstehung sei dieser Komplex als
-durch ein (Pseudo-)Sph"arensystem induzierter CW-Komplex \idx{induzierter
-CW-Komplex} bezeichnet. Handelt es sich bei einem Pseudosph"arensystem um die
+durch ein (Pseudo-)Sphärensystem induzierter CW-Komplex \idx{induzierter
+CW-Komplex} bezeichnet. Handelt es sich bei einem Pseudosphärensystem um die
 Darstellung eines orientierten Matroids und ist dieses sogar realisierbar (wenn
-das Pseudosph"arenarrangement zu einem Sph"arenarrangement mit gleicher
-Schnittstruktur hom"oomorph ist), so entspricht das zugeh"orige Sph"arensystem
-gerade der Realisierung des durch das Pseudosph"arensystem induzierten
+das Pseudosphärenarrangement zu einem Sphärenarrangement mit gleicher
+Schnittstruktur homöomorph ist), so entspricht das zugehörige Sphärensystem
+gerade der Realisierung des durch das Pseudosphärensystem induzierten
 CW-Komplexes.\\
-Betrachtet man das dem entstandenen Sph"arensystem entsprechende
-Hyperebenenarrangement, so ist mit dessen zugeh"origen Normalenvektoren eine
+Betrachtet man das dem entstandenen Sphärensystem entsprechende
+Hyperebenenarrangement, so ist mit dessen zugehörigen Normalenvektoren eine
 Koordinatenmatrix gegeben, die ein Chirotop induziert, das ein zum
-Sph"arensystem "aquivalentes orientiertes Matroid beschreibt. Entsprechend der
-Definition der Polarit"at von Seite \pageref{polar} hat man mit diesen Normalen
-eine Punktkonfiguration eines zum Ausgangssph"arensystem polaren Komplexes. Das
-Zusammenspiel der Realisierung eines durch ein Sph"arensystem induzierten
+Sphärensystem äquivalentes orientiertes Matroid beschreibt. Entsprechend der
+Definition der Polarität von Seite \pageref{polar} hat man mit diesen Normalen
+eine Punktkonfiguration eines zum Ausgangssphärensystem polaren Komplexes. Das
+Zusammenspiel der Realisierung eines durch ein Sphärensystem induzierten
 Komplexes einerseits und des durch die extrahierte Matrix gegebenen Chirotops
-andererseits ist "uber die "Aquivalenz der Darstellungen orientierter Matroide
+andererseits ist über die Äquivalenz der Darstellungen orientierter Matroide
 zu deuten. Aufgrund der verschiedenen Zugangsweisen soll klar unterschieden
 werden, ob bei der Untersuchung eines CW-Komplexes von einem
-Pseudosph"arenarrangement oder einem Chirotop ausgegangen wird. Zun"achst wollen
-wir so nur die Darstellung eines durch ein Sph"arensystem induzierten
-CW-Komplexes betrachten. Wie das zugeh"orige Chirotop in Zusammenhang mit der
+Pseudosphärenarrangement oder einem Chirotop ausgegangen wird. Zunächst wollen
+wir so nur die Darstellung eines durch ein Sphärensystem induzierten
+CW-Komplexes betrachten. Wie das zugehörige Chirotop in Zusammenhang mit der
 Struktur des Komplexes steht, kann dabei als gesonderte Fragestellung
-aufgefa"st werden.
+aufgefaßt werden.
 
-Aus obigen Grund"uberlegungen ergibt sich nun die entscheidende erste
+Aus obigen Grundüberlegungen ergibt sich nun die entscheidende erste
 Definition, die die Verbindung zwischen CW-Komplexen und orientierten Matroiden
 charakterisiert:
 \begin{quote}
-{\bf Ein orientiertes Matroid $\cal M$ soll vertr"aglich zu einem beliebigen
-CW-Komplex $\cal C$ hei"sen, wenn $\cal C$ als Unterkomplex in einem durch ein
-$\cal M$ darstellendes Pseudosph"arenarrangement induzierten CW-Komplex
+{\bf Ein orientiertes Matroid $\cal M$ soll verträglich zu einem beliebigen
+CW-Komplex $\cal C$ heißen, wenn $\cal C$ als Unterkomplex in einem durch ein
+$\cal M$ darstellendes Pseudosphärenarrangement induzierten CW-Komplex
 enthalten ist.}
 \end{quote}
-Ist dieses Pseudosph"arenarrangement zu einem Sph"arensystem hom"oomorph, so ist
+Ist dieses Pseudosphärenarrangement zu einem Sphärensystem homöomorph, so ist
 auch eine Realisierung des CW-Komplexes als entsprechende Teilstruktur des
-Sph"arensystems gegeben.\\
+Sphärensystems gegeben.\\
 {\scsi
-Hier k"onnte man das Pseudo- und das Sph"arensystem auch als homotop bezeichnen,
+Hier könnte man das Pseudo- und das Sphärensystem auch als homotop bezeichnen,
 wenn sich die beiden stetig unter Beibehaltung aller Schnitteigenschaften
-ineinander "uberf"uhren lassen, was man auch als Streckung des
-Pseudosph"arensystems bezeichnet.
+ineinander überführen lassen, was man auch als Streckung des
+Pseudosphärensystems bezeichnet.
 }
 
 \begin{figure}[htb]
@@ -125,16 +125,16 @@ $$
              \end{array}\right)$} [Bl] at 4 -0.5
 \endpicture
 $$
-\caption{Der Weg von einem CW-Komplex zu einer m"oglichen Realisierung}
+\caption{Der Weg von einem CW-Komplex zu einer möglichen Realisierung}
 \label{quest}
 \end{figure}
 
-Um von beliebig vorgelegten CW-Komplexen entscheiden zu k"onnen, ob diese in
-durch Sph"a\-rensysteme induzierten CW-Komplexen als Unterkomplexe vorkommen,
-mu"s zu\-n"achst untersucht werden, wie solche Unterkomplexe aussehen k"onnen.
+Um von beliebig vorgelegten CW-Komplexen entscheiden zu können, ob diese in
+durch Sphä\-rensysteme induzierten CW-Komplexen als Unterkomplexe vorkommen,
+muß zu\-nächst untersucht werden, wie solche Unterkomplexe aussehen können.
 Dazu sei ein kleines Beispiel betrachtet, welches zeigen soll, wie sich diese
-Unterkomplex\-eigenschaft "au"sert und welche Schwierigkeiten bei der
-Betrachtung solcher Pseudosph"arensysteme auftreten k"onnen.
+Unterkomplex\-eigenschaft äußert und welche Schwierigkeiten bei der
+Betrachtung solcher Pseudosphärensysteme auftreten können.
 
 Als erstes Beispiel betrachten wir dazu einen 1-Komplex, der aus sechs 0-Zellen
 und sechs 1-Zellen bestehe, die ein topologisches Sechseck beschreiben (siehe
@@ -142,23 +142,23 @@ dazu Abbildung \ref{hexagon}). Der 1-Komplex entspricht dem \ul{Rand}komplex
 einer 2-Zelle, so wie auch im allgemeinen Fall d-CW-Komplexe als (Teil des)
 Randkomplex(es) einer (d+1)-Zelle gedeutet werden sollen. Dies geschieht in
 Verallgemeinerung der Betrachtung von Randstrukturen von Mannigfaltigkeiten
-und impliziert damit, in welcher Dimension ein zugeh"origes beziehungsweise
-vertr"agliches Sph"arensystem zu suchen sein soll.\\
+und impliziert damit, in welcher Dimension ein zugehöriges beziehungsweise
+verträgliches Sphärensystem zu suchen sein soll.\\
 Da wir zum einen Durchdringungsfreiheit garantieren wollen, respektive die
-Eigenschaft zu erhalten ist, da"s alle offenen Zellen nach Abbildung in den
+Eigenschaft zu erhalten ist, daß alle offenen Zellen nach Abbildung in den
 euklidischen Raum disjunkt sind, sowie zum anderen eine affin lineare
 Realisierung angestrebt wird, ist im allgemeinen Fall die kleinste Dimension,
-in der mit einer Realisierung zu rechnen ist, um eins h"oher als die maximale
+in der mit einer Realisierung zu rechnen ist, um eins höher als die maximale
 Dimension der auftretenden Zellen des vorgelegten Komplexes.
 Betrachtet man als einfachen Fall etwa ein (d+1)-Simplex, so stellt dessen Rand
 gerade einen d-Komplex dar, der eine (d+1)-Zelle umschreibt.
 Zusammenfassend soll also ein d-Komplex immer als (Teil der) Berandung
-\ul{einer} (d+1)-Zelle aufgefa"st werden, womit als Ausgangssituation die
+\ul{einer} (d+1)-Zelle aufgefaßt werden, womit als Ausgangssituation die
 Realisierbarkeit eines d-dimensionalen CW-Komplexes immer im $\R^{d+1}$ zu
 untersuchen ist.\\
-"Ubertragen auf die Sph"aren bedeutet dies, da"s der vorgelegte d-Komplex
+Übertragen auf die Sphären bedeutet dies, daß der vorgelegte d-Komplex
 die Berandung einer (d+1)-Zelle beschreibt, die auf einer $\S^{d+1}$ liege,
-im Rand der (d+2)-Kugel. Die Pseudosph"aren, die den vorgelegten Komplex
+im Rand der (d+2)-Kugel. Die Pseudosphären, die den vorgelegten Komplex
 implizieren sollen sind stetige Verformungen der $\S^d$, womit sich als
 allgemeine Situation die Betrachtung orientierter Matroide im Rang d+2 ergibt,
 entsprechend $\S^{d+1}=\partial B^{d+2}\subset\R^{d+2}$.\\
@@ -230,24 +230,24 @@ $$
 
 Wie schon Abbildung \ref{hexagon} einer Darstellung des topologischen Sechsecks
 zeigt, gibt es neben der anschaulichen Realisierung als ebenes Sechseck (die
-"`"ubliche"') in einem Sph"arensystem noch eine weitere M"oglichkeit, ein
+"`übliche"') in einem Sphärensystem noch eine weitere Möglichkeit, ein
 Sechseck als Unterkomplex zu finden. Dieser zweite Fall zeichnet sich sogar
-dadurch aus, da"s die Anzahl der auftretenden Sph"aren minimal ist (f"unf statt
-der sechs in der "`"ublichen"' Darstellung). Zur Charakterisierung dieser
-beiden M"oglichkeiten kann zum einen ein beliebiger d-dimensionaler CW-Komplexes
+dadurch aus, daß die Anzahl der auftretenden Sphären minimal ist (fünf statt
+der sechs in der "`üblichen"' Darstellung). Zur Charakterisierung dieser
+beiden Möglichkeiten kann zum einen ein beliebiger d-dimensionaler CW-Komplexes
 als Randkomplex eines einzigen Topes (Gebietes auf der $\S^{d+1}$) auftreten
 oder aber auch der Randstruktur einer Vereinigung von (benachbarten) Topes
 entsprechen. Im Falle mehrerer beteiligter Topes ist die durch den vorgelegten
-Komplex umschriebene (d+1)-Zelle das Innere der Vereinigung der Abschl"usse der
+Komplex umschriebene (d+1)-Zelle das Innere der Vereinigung der Abschlüsse der
 auftretenden Regionen.
 
-Wird von einer weiteren Realisierungsm"oglichkeit des Sechsecks (einer
-nichtkonvexen) zu einem zugeh"origen Sph"arenarrangement "ubergegangen, so
-zeigt sich, da"s die beiden zuerst aufgef"uhrten F"alle die im Sinne der
-Unterkomplexeigenschaft einzigen M"oglichkeiten sind, den Komplex in
-einem Sph"arensystem darzustellen. L"a"st man n"amlich zu, da"s Segmente einer
-(Pseudo-)Sph"are auch mehrmals zur Beschreibung vorgelegter Zellen Verwendung
-finden, das hei"st wenn nicht benachbarte Teile einer (Pseudo-)Sph"are
+Wird von einer weiteren Realisierungsmöglichkeit des Sechsecks (einer
+nichtkonvexen) zu einem zugehörigen Sphärenarrangement übergegangen, so
+zeigt sich, daß die beiden zuerst aufgeführten Fälle die im Sinne der
+Unterkomplexeigenschaft einzigen Möglichkeiten sind, den Komplex in
+einem Sphärensystem darzustellen. Läßt man nämlich zu, daß Segmente einer
+(Pseudo-)Sphäre auch mehrmals zur Beschreibung vorgelegter Zellen Verwendung
+finden, das heißt wenn nicht benachbarte Teile einer (Pseudo-)Sphäre
 verschiedenen Zellen des gegebenen CW-Komplexes entsprechen sollen (vgl.
 Abb.\ref{linehex}), kann hier die Unterkomplexeigenschaft verletzt werden.
 
@@ -296,38 +296,38 @@ $$
       \endpicture } at 3 0
 \endpicture
 $$
-\caption{Ein "`verbotenes"' Sph"arensystem}
+\caption{Ein "`verbotenes"' Sphärensystem}
 \label{linehex}
 \end{figure}
 
 Was bei der polygonalen Darstellung des Sechsecks plausibel erscheint,
-widerspricht der Definition der induzierten Zellen im Sph"arenarrangement, nach
-der jeder Schnitt von (Pseudo-)Sph"aren immer einer niederdimensionalen Zelle
-entspricht. Dies ist in diesem Fall nicht gew"ahrleistet. Vielmehr w"urde es
+widerspricht der Definition der induzierten Zellen im Sphärenarrangement, nach
+der jeder Schnitt von (Pseudo-)Sphären immer einer niederdimensionalen Zelle
+entspricht. Dies ist in diesem Fall nicht gewährleistet. Vielmehr würde es
 sich hier um die Realisierung eines topologischen Achtecks im Rand der
-Vereinigung von vier Topes handeln. Im Sechseck sind die beiden zus"atzlichen
-0-Zellen (nicht ausgef"ullte Kreise in Abb. \ref{linehex}) in der Realisierung
-nicht vorhanden. Solch eine Situation soll grunds"atzlich verboten sein, denn
+Vereinigung von vier Topes handeln. Im Sechseck sind die beiden zusätzlichen
+0-Zellen (nicht ausgefüllte Kreise in Abb. \ref{linehex}) in der Realisierung
+nicht vorhanden. Solch eine Situation soll grundsätzlich verboten sein, denn
 sind $S_1$ und $S_2$ zwei benachbarte Zellen des induzierten Komplexes
 ($\ol{S_1}\cap\ol{S_2}\neq\emptyset$), so ist zwar int($\ol{S_1}\cup\ol{S_2}$)
 nach Definition eine Zelle, sie ist aber kein Element des durch das
-Sph"arensystem induzierten Komplexes und verletzt somit die
+Sphärensystem induzierten Komplexes und verletzt somit die
 Unterkomplexeigenschaft. Der betrachtete Unterkomplex des induzierten
-CW-Komplexes h"atte zwar den selben zugrundeliegenden Raum, aber mehr
+CW-Komplexes hätte zwar den selben zugrundeliegenden Raum, aber mehr
 Zellen als die Realisierung des vorgelegten CW-Komplexes, was nicht erlaubt ist.
 
-Mit diesem ersten Beispiel l"a"st sich die Definition von oben nun weiter
-pr"azisieren.
+Mit diesem ersten Beispiel läßt sich die Definition von oben nun weiter
+präzisieren.
 \begin{quote}
-{\bf Ein orientiertes Matroid $\cal M$ soll vertr"aglich zu einem beliebigen
-CW-Komplex $\cal C$ hei"sen, wenn $\cal C$ dem Randkomplex des Abschlusses
+{\bf Ein orientiertes Matroid $\cal M$ soll verträglich zu einem beliebigen
+CW-Komplex $\cal C$ heißen, wenn $\cal C$ dem Randkomplex des Abschlusses
 einer Vereinigung von Topes eines $\cal M$ darstellenden
-Pseudosph"arenarrangements entspricht.}
+Pseudosphärenarrangements entspricht.}
 \end{quote}
 
-Zur Vertiefung des gerade Beschriebenen und als Ausgangsbasis f"ur die
+Zur Vertiefung des gerade Beschriebenen und als Ausgangsbasis für die
 Untersuchung allgemeiner zweidimensionaler CW-Komplexe, zu der im dritten
-Kapitel weiter Beispiele behandelt werden sollen, m"oge als zweites
+Kapitel weiter Beispiele behandelt werden sollen, möge als zweites
 Beispiel ein 2-Komplex betrachtet werden, der den Rand eines Torus beschreibt
 (vgl. dazu auch \cite{Dau:89} und \cite{BoWi:87}). Der vorgelegte CW-Komplex
 sei dazu nach Abbildung \ref{torus1} gegeben.
@@ -342,9 +342,9 @@ $$
 \end{figure}
 
 Nach der Beschreibung aller Eigenschaften des Torus, die sich mit den bisher
-eingef"uhrten Begriffen angeben lassen, soll ein Algorithmus entwickelt werden,
+eingeführten Begriffen angeben lassen, soll ein Algorithmus entwickelt werden,
 der die Vorgehensweise im generellen Fall kombinatorischer Komplexe
-unterst"utzen soll.
+unterstützen soll.
 
 \section{Von einem CW-Komplex zu einem Algorithmus}
 
@@ -352,7 +352,7 @@ Es soll nun ein Torus im $\R^3$ betrachtet werden, dessen kombinatorische
 Struktur als zweidimensionaler CW-Komplex nach Abbildung \ref{torus1}
 durch Kantenidentifikation gegeben sei. Entgegen der Betrachtung der
 Einbettung triangulierter Tori (vgl. etwa \cite{Dau:89} und \cite{BoEg:91}),
-sei hier gerade der Nichtsimplizialit"at allgemeiner CW-Komplexe Rechnung
+sei hier gerade der Nichtsimplizialität allgemeiner CW-Komplexe Rechnung
 getragen und eine Zerlegung in Vierecke betrachtet.
 
 \begin{figure}[htb]
@@ -381,66 +381,66 @@ $$
 
 Der vorgelegte Komplex besitzt neun 0-Zellen, 18 1-Zellen und neun 2-Zellen,
 nach der Eulerformel also Geschlecht Eins. Da von der Wahl der Zellen her schon
-auf Realisierungen geschlossen werden kann (so wie eine m"ogliche in Abbildung
-\ref{torus3} zu sehen ist), w"are es nun interessant herauszufinden, wie sich
-dieser Komplex als Unterkomplex in ein Sph"arensystem einf"ugt.
+auf Realisierungen geschlossen werden kann (so wie eine mögliche in Abbildung
+\ref{torus3} zu sehen ist), wäre es nun interessant herauszufinden, wie sich
+dieser Komplex als Unterkomplex in ein Sphärensystem einfügt.
 
 Was allerdings bei der Betrachtung etwa einer Pyramide oder eines anderen
 konvexen 3-Polytops mit einer geringen Zellenanzahl noch anschaulich
-verst"andlich erscheint (indem man sich 2-Sph"aren so "`ineinandergesteckt"'
-denkt, da"s pro 2-Zelle des Komplexes eine Sph"are diese durch einen Auschnitt
-repr"asentiert), gestaltet sich schon hier, insbesondere bei noch gr"o"serer
-Zellenanzahl und einem Nicht-Konvexit"at induzierenden topologischen Geschlecht,
-schon schwieriger. Mangels "Ubersichtlichkeit in der m"oglichen Darstellung als
-Sph"arensystem soll deshalb eine Alternative zur Suche nach orientierten
-Matroiden angewandt werden, die unter Ber"ucksichtigung der Symmetriegruppe des
-vorgelegten CW-Komplexes zugeh"orige Chirotope bestimmen helfen soll, was eine
-zweite Vertr"aglichkeitsdefinition liefert.
+verständlich erscheint (indem man sich 2-Sphären so "`ineinandergesteckt"'
+denkt, daß pro 2-Zelle des Komplexes eine Sphäre diese durch einen Auschnitt
+repräsentiert), gestaltet sich schon hier, insbesondere bei noch größerer
+Zellenanzahl und einem Nicht-Konvexität induzierenden topologischen Geschlecht,
+schon schwieriger. Mangels Übersichtlichkeit in der möglichen Darstellung als
+Sphärensystem soll deshalb eine Alternative zur Suche nach orientierten
+Matroiden angewandt werden, die unter Berücksichtigung der Symmetriegruppe des
+vorgelegten CW-Komplexes zugehörige Chirotope bestimmen helfen soll, was eine
+zweite Verträglichkeitsdefinition liefert.
 
 \begin{figure}[htb]
 $$
 \input tritor
 \settritor
 $$
-\caption{Eine m"ogliche Realisierung des Torus}
+\caption{Eine mögliche Realisierung des Torus}
 \label{torus3}
 \end{figure}
 
 Da Chirotope durch (formale) Matrizen bestimmt werden und dadurch implizit eine
 eventuelle Punktkonfigurationen betrachtet wird, ist es wenig sinnvoll, eine
-Vertr"aglichkeitsdefinition von Chirotopen zu beliebigen CW-Komplexen anzugeben.
-Vielmehr soll der Fall simplizialer Komplexe dahingehend erweitert werden, da"s
+Verträglichkeitsdefinition von Chirotopen zu beliebigen CW-Komplexen anzugeben.
+Vielmehr soll der Fall simplizialer Komplexe dahingehend erweitert werden, daß
 nun mehr als (r+1) 0-Zellen/Punkte pro r-Seite zugelassen seien, in der Sprache
-der (n$\times$r)-Matrizen also auch singul"are (r$\times$r)-Untermatrizen
-auftreten k"onnen. Im Fall von 2-Komplexen fordert dies von der Gestalt der
-vorgelegten CW-Komplexe, da"s alle maximalen Zellen gleicher Dimension seien und
+der (n$\times$r)-Matrizen also auch singuläre (r$\times$r)-Untermatrizen
+auftreten können. Im Fall von 2-Komplexen fordert dies von der Gestalt der
+vorgelegten CW-Komplexe, daß alle maximalen Zellen gleicher Dimension seien und
 der Rand des Abschlusses einer jeden 2-Zelle einem Polygonzug,
-im h"oherdimensionalen Fall einem Polytop, entspreche, der die 0- und 1-Zellen,
+im höherdimensionalen Fall einem Polytop, entspreche, der die 0- und 1-Zellen,
 sowie deren Inzidenzen induziert. In Aigners Buch zur
-Kombinatorik \cite{Aig:76} hei"sen solche 2-dimensionalen CW-Komplexe
-Landkarten, was mit der Definition der Karten aus dem Abschnitt "uber
+Kombinatorik \cite{Aig:76} heißen solche 2-dimensionalen CW-Komplexe
+Landkarten, was mit der Definition der Karten aus dem Abschnitt über
 Symmetriebegriffe gleichzusetzen ist. Ausgehend von den 0-Zellen ergibt sich
-mittels deren Sterne wieder der Komplex, was das Vorhandensein der n"otigen n
-Punkte f"ur Chirotope, zusammen mit dem Rang r "uber die Dimension der maximalen
+mittels deren Sterne wieder der Komplex, was das Vorhandensein der nötigen n
+Punkte für Chirotope, zusammen mit dem Rang r über die Dimension der maximalen
 Zellen + 2 sicherstellt.\\
-Nun ist aber ein Chirotop noch nicht vertr"aglich mit einem CW-Komplex nur
-aufgrund der Tatsache, da"s die Anzahl der Punkte und der Rang "ubereinstimmen.
+Nun ist aber ein Chirotop noch nicht verträglich mit einem CW-Komplex nur
+aufgrund der Tatsache, daß die Anzahl der Punkte und der Rang übereinstimmen.
 Als weitere Kopplung dient die Eigenschaft in gewissem Sinne gleiche
-Symmetrieeigenschaften zu haben. Dazu sei daran erinnert, da"s die Realisierung
+Symmetrieeigenschaften zu haben. Dazu sei daran erinnert, daß die Realisierung
 eines kombinatorischen Komplexes eine Untergruppe der Symmetriegruppe von diesem
 als eigene Symmetriegruppe besitzt. Die Realisierung weist hierbei den 0-Zellen
 aber gerade jene Koordinaten zu, die in eine Matrix geschrieben, ein
-zugeh"origes Chirotop liefern. Damit kommt man nun zu folgender zweiter
-Vertr"aglichkeitsdefinition von CW-Komplexen und orientierten Matroiden.
+zugehöriges Chirotop liefern. Damit kommt man nun zu folgender zweiter
+Verträglichkeitsdefinition von CW-Komplexen und orientierten Matroiden.
 
 \begin{quote}
-{\bf Ein Chirotop $\chi$ soll vertr"aglich zu einem polyedrisch begrenzten
-CW-Komplex $\cal C$ hei"sen, wenn Punktanzahl und Rang "ubereinstimmen und
+{\bf Ein Chirotop $\chi$ soll verträglich zu einem polyedrisch begrenzten
+CW-Komplex $\cal C$ heißen, wenn Punktanzahl und Rang übereinstimmen und
 die Automorphismengruppe ${\cal A}(\chi)$ eine Untergruppe der Symmetriegruppe
 ${\cal A}({\cal C})$ des CW-Komplexes ist.}
 \end{quote}
 
-Nun soll f"ur das Torusbeispiel zun"achst die Symmetriegruppe des vorgelegten
+Nun soll für das Torusbeispiel zunächst die Symmetriegruppe des vorgelegten
 Komplexes bestimmt werden. Dies kann mittels eines kurzen Programmes geschehen,
 dessen Aufbau sich wie folgt gliedert.
 
@@ -448,19 +448,19 @@ dessen Aufbau sich wie folgt gliedert.
 
 Vorgelegt sei eine Liste, die angibt, welche 0-Zellen im Rand des Abschlusses
 jeder 2-Zelle eines vorgelegten 2-CW-Komplexes liegen. Die 2-Zellen seien dabei
-durch geschlossene Polygonz"uge begrenzt, die durch die 0-Zellen und sie
-verbindende 1-Zellen in den R"andern der Abschl"usse der 2-Zellen gegeben
+durch geschlossene Polygonzüge begrenzt, die durch die 0-Zellen und sie
+verbindende 1-Zellen in den Rändern der Abschlüsse der 2-Zellen gegeben
 sind. Dies geschieht entsprechend obiger Definition und ist gerade im Hinblick
-auf die Untersuchung von Karten von Mannigfaltigkeiten sehr zweckm"a"sig.\\
-Zus"atzlich sei auf den R"andern der 2-Zellen willk"urlich eine Orientierung in
-Form eines Durchlaufsinnes eingef"uhrt. Diese soll dazu dienen, auf die
-tats"achlich vorhandenen 1-Zellen, also Kanten, zur"uckschliessen zu k"onnen.
+auf die Untersuchung von Karten von Mannigfaltigkeiten sehr zweckmäßig.\\
+Zusätzlich sei auf den Rändern der 2-Zellen willkürlich eine Orientierung in
+Form eines Durchlaufsinnes eingeführt. Diese soll dazu dienen, auf die
+tatsächlich vorhandenen 1-Zellen, also Kanten, zurückschliessen zu können.
 {\scsi
 Entgegen simplizialer Komplexe ist eine 0-Zelle/Ecke im Rand einer 2-Zelle/Seite
 im allgemeinen nicht mit allen anderen Ecken der Seite durch eine 1-Zelle/Kante
-verbunden, was bedeutet, da"s die Valenz einer Ecke im allgemeinen kleiner oder
-gleich der Gesamt\-eckenzahl $-1$ ist, was gesondert ber"ucksichtigt werden
-mu"s.
+verbunden, was bedeutet, daß die Valenz einer Ecke im allgemeinen kleiner oder
+gleich der Gesamt\-eckenzahl $-1$ ist, was gesondert berücksichtigt werden
+muß.
 }
 
 Die entsprechende Zellenliste sei als Datei folgender Form vorgelegt:
@@ -471,35 +471,35 @@ torus.gon
 1254 2365 3146 4587 5698 6479 7821 8932 9713*
 \end{verbatim}
 {\scsi
-Die Datei {\it torus.gon} gliedert sich wie folgt: {\bf 4} besagt, da"s pro
-2-Zelle vier 0-Zellen vorkommen, also Vierecke; die folgende Liste enth"alt die
+Die Datei {\it torus.gon} gliedert sich wie folgt: {\bf 4} besagt, daß pro
+2-Zelle vier 0-Zellen vorkommen, also Vierecke; die folgende Liste enthält die
 0-Zellen im Rand der abgeschlossenen 2-Zellen entsprechend ihres Durchlaufsinns.
 }
 
 Beim Einlesen der Liste wird die maximale Anzahl der vorhandenen 0-Zellen
 bestimmt und als {\it npkt} gespeichert. In einer
-({\it npkt}$\times${\it npkt})-Bin"armatrix (Adjazenzmatrix) wird dabei auch
+({\it npkt}$\times${\it npkt})-Binärmatrix (Adjazenzmatrix) wird dabei auch
 gespeichert, welche 0-Zellen durch 1-Zellen "`verbunden"' sind, also welche
-"`Kanten"' vorliegen. Anschlie"send kann die Bestimmung der Symmetriegruppe
+"`Kanten"' vorliegen. Anschließend kann die Bestimmung der Symmetriegruppe
 beginnen. Dazu werden in einer rekursiven Routine alle {\it npkt}! Permutationen
 der 0-Zellen durchlaufen und als Abbildungsvorschrift $\pi$ an die
-Symmetriepr"ufroutine "ubergeben (der Algorithmus zur Erzeugung der
+Symmetrieprüfroutine übergeben (der Algorithmus zur Erzeugung der
 Permutationen stammt aus dem Algorithmenbuch von R. Sedgewick \cite{Sed:91}).
 In dieser wird getestet, ob $\pi$ jede 2-Zelle auf eine vorhandene
 2-Zelle abbildet und ob in diesem Fall deren Rand respektive Kanten der
-Orientierung entsprechend durchlaufen werden. Erf"ullt $\pi$ dies f"ur alle
-vorgelegten 2-Zellen, so wird $\pi$ in die Symmetriegruppe "ubernommen, sonst
-gestrichen und mit der n"achsten Permutation fortgefahren.\\
+Orientierung entsprechend durchlaufen werden. Erfüllt $\pi$ dies für alle
+vorgelegten 2-Zellen, so wird $\pi$ in die Symmetriegruppe übernommen, sonst
+gestrichen und mit der nächsten Permutation fortgefahren.\\
 Nachdem alle Permutationen durchlaufen sind, liegen jene Elemente der
 Permutationsgruppe $S_{\it npkt}$ vor, die einen Automorphismus auf dem
 vorgelegten Komplex beschreiben. Diese werden als Symmetriegruppe in einer
-Datei gespeichert. Angemerkt sei, da"s durch den Durchlauf aller Permutationen
-f"ur eine gro"se Anzahl von 0-Zellen sehr viel Rechenzeit n"otig ist.
+Datei gespeichert. Angemerkt sei, daß durch den Durchlauf aller Permutationen
+für eine große Anzahl von 0-Zellen sehr viel Rechenzeit nötig ist.
 {\scsi
-(F"ur die acht 0-Zellen eines 3-W"urfels etwa eine Sekunde, obiger Torus wird
-in etwa 10 Sekunden abgearbeitet, die zw"olf 0-Zellen der Dyckschen Karte
-beanspruchen dann schon etwas "uber einer Stunde -- gemessen auf einem
-66 MHz-i486-PC mit einem C-Programm unter Linux.)} F"ur obigen Torus ergeben
+(Für die acht 0-Zellen eines 3-Würfels etwa eine Sekunde, obiger Torus wird
+in etwa 10 Sekunden abgearbeitet, die zwölf 0-Zellen der Dyckschen Karte
+beanspruchen dann schon etwas über einer Stunde -- gemessen auf einem
+66 MHz-i486-PC mit einem C-Programm unter Linux.)} Für obigen Torus ergeben
 sich so folgende Symmetrien (in Zykelschreibweise):
 \begin{verbatim}
 No.1 : identity                     No.37 : (162435)(798)
@@ -541,25 +541,25 @@ No.36 : (184275)(396)               No.72 : (19)(28)(37)(46)
 \end{verbatim}
 Der vorgelegte Torus hat also eine kombinatorische Symmetriegruppe der
 Ordnung 72. Nun gilt es Chirotope zu finden, die zumindest eine Untergruppe
-dieser Symmetriegruppe als eigene Symmetriegruppe besitzen. Diese k"onnen dann
+dieser Symmetriegruppe als eigene Symmetriegruppe besitzen. Diese können dann
 im Falle ihrer Realisierbarkeit dazu eingesetzt werden, zu dem vorgelegten
 Komplex Koordinaten zu finden.
 
-Zun"achst m"ussen dazu aus der vorgelegten Symmetriegruppe $\cal A$ Untergruppen
-G extrahiert werden, die als Symmetriegruppen zugeh"origer Chirotope in
+Zunächst müssen dazu aus der vorgelegten Symmetriegruppe $\cal A$ Untergruppen
+G extrahiert werden, die als Symmetriegruppen zugehöriger Chirotope in
 Betracht kommen. Genauer soll die Anzahl der zu suchenden Chirotope auf
-die Anzahl derer beschr"ankt werden, die die gew"unschten Symmetrieeigenschaften
-besitzen. Die betreffenden Untergruppen k"onnen wieder mittels eines Programms
+die Anzahl derer beschränkt werden, die die gewünschten Symmetrieeigenschaften
+besitzen. Die betreffenden Untergruppen können wieder mittels eines Programms
 erzeugt werden, welches ausgehend von den Symmetrien $\sigma\in {\cal A}$ mit
-der h"ochsten Elementordnung ord($\sigma$) (es ist eine Realisierung mit
-m"oglichst hoher Symmetrie angestrebt) deren zyklische Gruppen
+der höchsten Elementordnung ord($\sigma$) (es ist eine Realisierung mit
+möglichst hoher Symmetrie angestrebt) deren zyklische Gruppen
 ($\{id,\sigma,\sigma^2,\ldots,\sigma^{ord(\sigma)-1}\}$) bestimmt und alle
-erzeugten Elemente aus $\cal A$ streicht, so da"s am Ende die verschiedenen
+erzeugten Elemente aus $\cal A$ streicht, so daß am Ende die verschiedenen
 maximalen zyklischen Untergruppen der vorgelegten Symmetriegruppe aufgelistet
-werden. Die Wahl solcher zyklischen Untergruppen begr"undet sich in der leichten
-Erzeugbarkeit und dient der Tatsache, da"s solche Gruppen wahrscheinlicher als
-Symmetriegruppen von Chirotopen angenommen werden, als etwa gr"o"sere
-zusammengesetzte. F"ur den Torus sind dies (die Zahlen in den eckigen Klammern
+werden. Die Wahl solcher zyklischen Untergruppen begründet sich in der leichten
+Erzeugbarkeit und dient der Tatsache, daß solche Gruppen wahrscheinlicher als
+Symmetriegruppen von Chirotopen angenommen werden, als etwa größere
+zusammengesetzte. Für den Torus sind dies (die Zahlen in den eckigen Klammern
 geben die Nummern der Elemente der vorgelegten obigen Automorphismengruppe an):
 \begin{verbatim}
 No.1 : { id, [12], [17], [2], [11], [18] }
@@ -587,54 +587,54 @@ No.22 : { id }
 \end{verbatim}
 
 Mittels dieser Untergruppen kann man sich nun auf die Suche nach etwaig
-zugeh"origen Chirotopen begeben, was wie folgt geschehen soll.
+zugehörigen Chirotopen begeben, was wie folgt geschehen soll.
 
-\subsection{Erzeugung vertr"aglicher Chirotope}
+\subsection{Erzeugung verträglicher Chirotope}
 
 Mit der Anzahl $npkt$ der vorkommenden 0-Zellen und der Dimension $d$ der
-maximalen Zellen des vorgelegten CW-Komplexes ist die Gestalt "`m"oglich
-zugeh"origer"', respektive vertr"aglicher Chirotope festgelegt.\\
+maximalen Zellen des vorgelegten CW-Komplexes ist die Gestalt "`möglich
+zugehöriger"', respektive verträglicher Chirotope festgelegt.\\
 Sie sind darstellbar durch Listen mit insgesamt ${npkt \choose d+2}$
 Vorzeichen aus $\{-,0,+\}$, im Fall des Torus also mit ${9 \choose 4}=126$
 Elementen, die den Vorzeichen der formalen Brackets $[\lambda]$ mit
 $\lambda\in\Lambda(npkt,d+2)$ entsprechen.\\
-Da die Anzahl der M"oglichkeiten diese ${npkt \choose d+2}$ Vorzeichen
-aufzuf"ullen mit $3^{npkt \choose d+2}$ (im Fall des Torus
-$3^{126}\geq 10^{60}$) recht gro"s ist, soll mittels zus"atzlicher Bedingungen
+Da die Anzahl der Möglichkeiten diese ${npkt \choose d+2}$ Vorzeichen
+aufzufüllen mit $3^{npkt \choose d+2}$ (im Fall des Torus
+$3^{126}\geq 10^{60}$) recht groß ist, soll mittels zusätzlicher Bedingungen
 diese Anzahl verringert werden.\\
 Dazu kann zuerst einmal die Gestalt der vorgelegten 2-Zellen dienen. Da diese
 in der Realisierung als Facetten im Rand der entstehenden 3-Zelle eben sein
-sollen, k"onnen die 0-Zellen im Rand ihrer Abschl"usse, bei einer Anzahl
-gr"o"ser als drei, entsprechend als linear abh"angige Punkte gedeutet werden.
-Da die Vorzeichen zu (zun"achst) formalen Determinanten geh"oren, k"onnen die
+sollen, können die 0-Zellen im Rand ihrer Abschlüsse, bei einer Anzahl
+größer als drei, entsprechend als linear abhängige Punkte gedeutet werden.
+Da die Vorzeichen zu (zunächst) formalen Determinanten gehören, können die
 Vorzeichen jener Brackets zu 0 gesetzt werden, die eine Auswahl der Indizes der
 0-Zellen des Randes ein und derselben abgeschlossenen 2-Zelle enthalten.\\
-F"ur den Torus sind so die Vorzeichen zu den Brackets $[1245]$, $[1278]$,
+Für den Torus sind so die Vorzeichen zu den Brackets $[1245]$, $[1278]$,
 $[1346]$, $[1379]$, $[2356]$, $[2389]$, $[4578]$, $[4679]$ und $[5689]$ zu 0
-zu setzen, was die Anzahl der Auf\-f"ull\-m"og\-lich\-kei\-ten von $3^{126}$ auf
+zu setzen, was die Anzahl der Auf\-füll\-mög\-lich\-kei\-ten von $3^{126}$ auf
 immerhin schon $3^{117}< 10^{56}$ reduziert.\\
-Mit den zu erf"ullenden Symmetrien l"a"st sich diese Zahl noch weiter
+Mit den zu erfüllenden Symmetrien läßt sich diese Zahl noch weiter
 verringern. Dies geschieht durch Kopplung der Brackets unter den Elementen
 $\sigma$ einer Symmetriegruppe G, die entsteht, wenn man die Orbits der Brackets
 $[\lambda]$, die Menge aller Bilder der $[\lambda]$ unter den $\sigma\in G$, als
-"Aquivalenzklassen betrachtet.\\
-F"ur den vorgelegten Torus sei als zu erf"ullende Symmetrieeigenschaft der
+Äquivalenzklassen betrachtet.\\
+Für den vorgelegten Torus sei als zu erfüllende Symmetrieeigenschaft der
 Realisierung im folgenden als Beispiel die Untergruppe G =
-$\{ id, [12], [17], [2], [11], [18] \}$ vorgelegt. Mit dieser erh"alt man eine
-Kopplung, durch die mit der Vorgabe von 23 Bracketvorzeichen f"ur
-Repr"asentanten der Orbits alle "ubrigen Vorzeichen bestimmbar sind. In Tabelle
+$\{ id, [12], [17], [2], [11], [18] \}$ vorgelegt. Mit dieser erhält man eine
+Kopplung, durch die mit der Vorgabe von 23 Bracketvorzeichen für
+Repräsentanten der Orbits alle übrigen Vorzeichen bestimmbar sind. In Tabelle
 \ref{tab} sind in den Zeilen die 23 verschiedenen Bracketorbits aufgelistet,
 von denen die Brackets der ersten Spalte, die entsprechend lexikographischer
-Ordnung minimal sind, als Rep"asentanten gew"ahlt werden.
-Die Vorzeichen vor den "ubrigen Brackets sind die jeweils durch die
-lexikographische Ordnung nach der Permutation zu ber"ucksichtigen
+Ordnung minimal sind, als Repäsentanten gewählt werden.
+Die Vorzeichen vor den übrigen Brackets sind die jeweils durch die
+lexikographische Ordnung nach der Permutation zu berücksichtigen
 Vorzeichenwechsel.
 
 \begin{table}[htb]
 {\small
 $$
 \begin{array}{cccccc}
-Identit"at                   & {123456789\choose 312978645} &
+Identität                   & {123456789\choose 312978645} &
 {123456789\choose 231564897} & {123456789\choose 123789456} &
 {123456789\choose 312645978} & {123456789\choose 231897564}\\
         &         &         &         &         &        \\
@@ -662,39 +662,39 @@ Identit"at                   & {123456789\choose 312978645} &
 +[4578] & +[4679] & +[5689] & +[4578] & +[4679] & +[5689]\\
 +[4579] & +[5679] & -[5678] & +[4678] & +[4689] & -[4589]
 \end{array}$$}
-\caption{Orbits der Brackets unter einer gew"ahlten Symmetrieuntergruppe}
+\caption{Orbits der Brackets unter einer gewählten Symmetrieuntergruppe}
 \label{tab}
 \end{table}
 
 Da bereits bestimmt wurde, welche Brackets sicherlich zu 0 zu setzen sind,
-sind f"ur eine vollst"andige Vorzeichenliste noch 21 Vorzeichen vorzugeben.
+sind für eine vollständige Vorzeichenliste noch 21 Vorzeichen vorzugeben.
 Allerdings reduziert sich die Anzahl der zu untersuchenden Vorzeichenlisten
 noch nicht auf $3^{21}$, da Symmetrien $\sigma$ Chirotope $\chi$ sowohl auf
-$\chi$ selbst, als auch auf $-\chi$ abbilden k"onnen, was von vornherein
-nicht abzusehen ist und zu einer Gesamtzahl von m"oglichen Listen von, im Fall
-des Torus, $2^5\cdot 3^{21}< 3.5\cdot 10^{11}$ f"uhrt. Der Faktor $2^5$ r"uhrt
-daher, da"s pro Symmetrie ungleich der Identit"at $\chi$ oder $-\chi$ vorliegen
+$\chi$ selbst, als auch auf $-\chi$ abbilden können, was von vornherein
+nicht abzusehen ist und zu einer Gesamtzahl von möglichen Listen von, im Fall
+des Torus, $2^5\cdot 3^{21}< 3.5\cdot 10^{11}$ führt. Der Faktor $2^5$ rührt
+daher, daß pro Symmetrie ungleich der Identität $\chi$ oder $-\chi$ vorliegen
 kann, also pro Permutation aus G auf $\chi$ und $-\chi$ zu testen ist.
 \label{symmtest} Selbst diese Zahl von Vorzeichenlisten ist mit fast 335
 Milliarden noch ziemlich hoch, weshalb auch diese Zahl durch weitere
-"Uberlegungen reduziert werden soll, was wie folgt geschieht.
+Überlegungen reduziert werden soll, was wie folgt geschieht.
 
-\subsection{Reduktion auf vertr"agliche Matroide}
+\subsection{Reduktion auf verträgliche Matroide}
 
-Dazu nutzen wir die Tatsache, da"s die Vorzeichenlisten letztendlich Chirotopen
-entsprechen sollen und da"s mit jedem Chirotop ein diesem zugrunde liegendes
-Matroid gegeben ist. Von der Matroidseite her betrachtet, mu"s also zun"achst
-ein solches vorliegen, um es zu einem Chirotop orientieren zu k"onnen.
+Dazu nutzen wir die Tatsache, daß die Vorzeichenlisten letztendlich Chirotopen
+entsprechen sollen und daß mit jedem Chirotop ein diesem zugrunde liegendes
+Matroid gegeben ist. Von der Matroidseite her betrachtet, muß also zunächst
+ein solches vorliegen, um es zu einem Chirotop orientieren zu können.
 Betrachtet man die Brackets als Basen eines Matroids, so reduzieren sich nach
-der Definition, die das Erf"ulltsein der Gra"smann-Pl"ucker-Relationen "uber
-GF(2) fordert, die Auff"ullm"oglichkeiten f"ur die "`Bracketvorzeichen"' auf
-$2^{21}$, entsprechend der M"oglichkeit, f"ur jede Bracket 0 oder 1 zu setzen.
-Der n"achste Schritt soll dementsprechend der Erzeugung bez"uglich der
-vorgelegten Symmetrien vertr"aglicher Matroide gewidmet sein. Zur ersten
-Vorauswahl werden dazu die unter der Symmetriegruppe in "Aquivalenzklassen
-aufgeteilten 3-summandigen Gra"smann-Pl"ucker-Relationen untersucht.
+der Definition, die das Erfülltsein der Graßmann-Plücker-Relationen über
+GF(2) fordert, die Auffüllmöglichkeiten für die "`Bracketvorzeichen"' auf
+$2^{21}$, entsprechend der Möglichkeit, für jede Bracket 0 oder 1 zu setzen.
+Der nächste Schritt soll dementsprechend der Erzeugung bezüglich der
+vorgelegten Symmetrien verträglicher Matroide gewidmet sein. Zur ersten
+Vorauswahl werden dazu die unter der Symmetriegruppe in Äquivalenzklassen
+aufgeteilten 3-summandigen Graßmann-Plücker-Relationen untersucht.
 
-Zur Erinnerung lassen sich die 3-summandigen Gra"smann-Pl"ucker-Relationen
+Zur Erinnerung lassen sich die 3-summandigen Graßmann-Plücker-Relationen
 mittels zweier Mengen $A:=\{a_1,\ldots,a_{r-2}\}$ und $B:=\{b_1,\ldots,b_4\}$
 paarweise verschiedener Elemente aus $E=\{1,\ldots,npkt\}$ im Rang r
 darstellen als
@@ -705,17 +705,17 @@ $$\{A|B\}=
     +[a_1,\ldots,a_{r-2},b_1,b_4]\cdot [a_1,\ldots,a_{r-2},b_2,b_3]
   \end{array}=0$$
 was zu ${npkt \choose r-2}\cdot{npkt-r+2 \choose 4}$, im Falle des Torus also
-${9\choose 2}\cdot{7\choose 4}=1260$ verschiedenen Gleichungen f"uhrt.
-Betrachtet man diese Gleichungen "uber dem zweielementigen K"orper GF(2), so
-m"ussen "aquivalente Gleichungen vom Typ $X + Y + Z + XYZ = 0$ erf"ullt sein, in
-denen die X, Y und Z den Betr"agen der Vorzeichen obiger Produkte entsprechen.
-Der Summand $XYZ$ als Produkt "uber alle in der Gleichung vorkommenden Brackets
-mu"s bei einer Betrachtung "uber GF(2) hinzugef"ugt werden, um auch die
-erlaubten F"alle mit gleichzeitig $X=1$, $Y=1$ und $Z=1$ abzudecken.
+${9\choose 2}\cdot{7\choose 4}=1260$ verschiedenen Gleichungen führt.
+Betrachtet man diese Gleichungen über dem zweielementigen Körper GF(2), so
+müssen äquivalente Gleichungen vom Typ $X + Y + Z + XYZ = 0$ erfüllt sein, in
+denen die X, Y und Z den Beträgen der Vorzeichen obiger Produkte entsprechen.
+Der Summand $XYZ$ als Produkt über alle in der Gleichung vorkommenden Brackets
+muß bei einer Betrachtung über GF(2) hinzugefügt werden, um auch die
+erlaubten Fälle mit gleichzeitig $X=1$, $Y=1$ und $Z=1$ abzudecken.
 
-Da die zu entstehenden Matroide bez"uglich der vorgelegten Symmetriegruppe G
-vertr"aglich sein sollen, braucht man, analog der Brackets, nur Repr"asentanten
-der Orbits der Gra"smann-Pl"ucker-Relationen unter G betrachten, was deren
+Da die zu entstehenden Matroide bezüglich der vorgelegten Symmetriegruppe G
+verträglich sein sollen, braucht man, analog der Brackets, nur Repräsentanten
+der Orbits der Graßmann-Plücker-Relationen unter G betrachten, was deren
 Anzahl auf 215 reduziert. Ein Teil dieser ist in Tabelle \ref{orbtab}
 aufgezeigt.
 
@@ -735,28 +735,28 @@ $$
 \{48|2379\} & \{48|2567\} & \{48|2569\} & \{48|2579\} & \{48|2679\} \\
 \{48|3567\} & \{48|3569\} & \{48|3579\} & \{48|3679\} & \{48|5679\} \\
 \end{array}$$}
-\caption{Repr"asentanten der Orbits der GPR unter G}
+\caption{Repräsentanten der Orbits der GPR unter G}
 \label{orbtab}
 \end{table}
 
-Zu beachten ist hierbei, da"s eine Permutation auf den Elementen einer
-k-sum\-man\-di\-gen Gra"smann-Pl"ucker-Relation das Vorzeichen des
-repr"asentierten Polynoms "andert. Dies geschieht f"ur Permutationen
-$\pi_1:A\to A$, $\pi_2:B\to B$ und $\pi_3:C\to C$ gem"a"s
+Zu beachten ist hierbei, daß eine Permutation auf den Elementen einer
+k-sum\-man\-di\-gen Graßmann-Plücker-Relation das Vorzeichen des
+repräsentierten Polynoms ändert. Dies geschieht für Permutationen
+$\pi_1:A\to A$, $\pi_2:B\to B$ und $\pi_3:C\to C$ gemäß
 $$\{\pi_1(A)|\pi_2(B)|\pi_3(C)\} =
 \mbox{sgn}(\pi_1)\cdot\mbox{sgn}(\pi_2)\cdot\mbox{sgn}(\pi_3)\cdot\{A|B|C\}$$
-Bei Betrachtungen der Relationen "uber GF(2) ist dies nicht zu ber"ucksichtigen,
-wohl aber im Falle orientierter Matroide "uber GF(3).
+Bei Betrachtungen der Relationen über GF(2) ist dies nicht zu berücksichtigen,
+wohl aber im Falle orientierter Matroide über GF(3).
 
 Setzt man in diese 215 Gleichungen wiederum ein, welche Brackets unter der
-Symmetriegruppe G bez"uglich ihrer Orbits gleich beziehungweise welche Null
+Symmetriegruppe G bezüglich ihrer Orbits gleich beziehungweise welche Null
 sind und streicht alle redundanten Gleichungen (doppelte oder vom Typ
-$X + X + 0 = 0$), so erh"alt man f"ur den Torus letztendlich 204 Gleichungen
+$X + X + 0 = 0$), so erhält man für den Torus letztendlich 204 Gleichungen
 (darunter 80 zweisummandige, wenn ein Summand gleich Null war), mit denen nun
-mittels Fallunterscheidungen alle zur Symmetriegruppe G geh"origen Matroide
-mit 9 Punkten im Rang 4 bestimmt werden k"onnen. Tabelle \ref{gltab} zeigt
+mittels Fallunterscheidungen alle zur Symmetriegruppe G gehörigen Matroide
+mit 9 Punkten im Rang 4 bestimmt werden können. Tabelle \ref{gltab} zeigt
 einen Ausschnitt aus der Liste dieser Gleichungen, mit den Nummern der
-Orbitrepr"asentanten in runden Klammern.
+Orbitrepräsentanten in runden Klammern.
 
 \begin{table}[htb]
 {\small
@@ -777,25 +777,25 @@ $$
 (20)(21)+(20)(23) & = & 0 \\
 (21)+(23) & = & 0 \\
 \end{array}$$}
-\caption{Gleichungen, die alle (9,4)-Matroide unter G erf"ullen m"ussen}
+\caption{Gleichungen, die alle (9,4)-Matroide unter G erfüllen müssen}
 \label{gltab}
 \end{table}
 
-Die in den Tabellen \ref{orbtab} und \ref{gltab} aufgef"uhrten Beziehungen
-der Brackets in den Gra"smann-Pl"ucker-Relationen dienen einem C-Programm
-{\sc Sym2mat} (siehe dazu den Anhang) als Ausgangsbasis, alle m"oglichen,
-bez"uglich einer Symmetriegruppe G und Bracket-Null- beziehungsweise
-Bracket-Eins-Setzungen vertr"aglichen Matroide zu erzeugen. Dies geschieht
-mittels eines rekursiven Verfahrens, welches vorhandene Abh"angigkeiten
+Die in den Tabellen \ref{orbtab} und \ref{gltab} aufgeführten Beziehungen
+der Brackets in den Graßmann-Plücker-Relationen dienen einem C-Programm
+{\sc Sym2mat} (siehe dazu den Anhang) als Ausgangsbasis, alle möglichen,
+bezüglich einer Symmetriegruppe G und Bracket-Null- beziehungsweise
+Bracket-Eins-Setzungen verträglichen Matroide zu erzeugen. Dies geschieht
+mittels eines rekursiven Verfahrens, welches vorhandene Abhängigkeiten
 ausnutzt und im folgenden beschrieben wird.
 
-Das Programm {\sc Sym2mat} erh"alt als Eingabe eine Automorphismengruppe G,
-die gew"unschte Punktanzahl $npkt$ und den Rang $rang$, sowie nach Berechnung
-der Repr"asentanten der Bracketorbits unter G gezielt zu Null oder Eins
+Das Programm {\sc Sym2mat} erhält als Eingabe eine Automorphismengruppe G,
+die gewünschte Punktanzahl $npkt$ und den Rang $rang$, sowie nach Berechnung
+der Repräsentanten der Bracketorbits unter G gezielt zu Null oder Eins
 gesetzte Brackets ("`gesetzt"' bezieht sich hier immer auf Untersuchungen
-bez"uglich GF(2)).\\
+bezüglich GF(2)).\\
 Aus diesen Informationen werden nun die (wie in Tabelle \ref{gltab}) unter G
-reduzierten dreisummandigen Gra"smann-Pl"ucker-Relationen als zu erf"ullendes
+reduzierten dreisummandigen Graßmann-Plücker-Relationen als zu erfüllendes
 Gleichungssystem bereitgestellt. Dabei sind aus Gleichungen vom Typ
 $$AB + CD + EF + ABCDEF = 0$$
 zum Teil Gleichungen mit nur zwei Summanden (ein Bracketorbit gleich Null)
@@ -803,48 +803,48 @@ $$AB + CD = 0$$
 oder durch Gleichsetzungen Gleichungen mit Quadraten
 $$AA + CD + EE + AACDEE = 0$$
 oder Gemische aus beiden Typen entstanden, wenn A, B, C, D, E und F
-Repr"asentanten von Bracketorbits bezeichnen (eine Begr"undung f"ur das
+Repräsentanten von Bracketorbits bezeichnen (eine Begründung für das
 Erscheinungsbild dieser Gleichungen findet sind in \cite{BoOlRi:91}).\\
-F"ur das Auff"ullen mit Nullen und Einsen sind nun zun"achst die
+Für das Auffüllen mit Nullen und Einsen sind nun zunächst die
 zweisummandigen Gleichungen interessant, da aus ihnen unter Eins-Setzung
-eines enthaltenen Bracketorbit\-repr"asentanten eventuell Gleichheiten anderer
+eines enthaltenen Bracketorbit\-repräsentanten eventuell Gleichheiten anderer
 Orbits induziert werden.\\
 Unter den vorhandenen Gleichungen werden zu Beginn solche gesucht, die von der
 Gestalt $AA + BB = 0$ beziehungsweise $1A + 1B = 0$ und ihrer kommutativen
-"Aquivalente sind, da hieraus direkt $A = B$ abzuleiten ist. Diese Gleichheit
+Äquivalente sind, da hieraus direkt $A = B$ abzuleiten ist. Diese Gleichheit
 wird pro Rekursionsstufe in ein "`Bracket-Gleichheitsfeld"' eingetragen und A
-als frei zu bestimmende Bracket f"ur folgende Rekursionsschritte gespeichert.\\
+als frei zu bestimmende Bracket für folgende Rekursionsschritte gespeichert.\\
 Die aus allen vorhandenen Gleichungen resultierenden Gleichheiten werden nun
-in das Gleichungssystem "ubernommen. Ein Sortierungsschritt eliminiert darauf
-alle nach Gleichsetzung von Bracketorbitrepr"asentanten redundanten (doppelte
-oder triviale) Gleichungen, pr"uft auf direkte Schl"usse der Form
-$1 + B = 0 \follows B = 1$ und $1 + 1 + B = 0\follows B = 0$, sowie Erf"ullung
+in das Gleichungssystem übernommen. Ein Sortierungsschritt eliminiert darauf
+alle nach Gleichsetzung von Bracketorbitrepräsentanten redundanten (doppelte
+oder triviale) Gleichungen, prüft auf direkte Schlüsse der Form
+$1 + B = 0 \follows B = 1$ und $1 + 1 + B = 0\follows B = 0$, sowie Erfüllung
 der Gleichungen und stellt so immer das aktuelle reduzierte Gleichungssystem
-zur Verf"ugung. Eine Sortierung der Gleichungen zeichnet sich als
-programmtechnisch sinnvoll aus und verf"ahrt nach der lexikographischen Ordnung,
-nach der f"ur $AB + CD + EF$ immer gelte, da"s $A\leq B$, $C\leq D$, $E\leq F$,
+zur Verfügung. Eine Sortierung der Gleichungen zeichnet sich als
+programmtechnisch sinnvoll aus und verfährt nach der lexikographischen Ordnung,
+nach der für $AB + CD + EF$ immer gelte, daß $A\leq B$, $C\leq D$, $E\leq F$,
 sowie $A\leq C$, $A\leq E$, $C\leq E$, wenn wiederum A, B, C, D, E und F
-Repr"asentanten von Bracketorbits bezeichnen. Zudem seien die Summanden, die
-eine Null enthalten in der Gleichung immer zuletzt aufgef"uhrt.\\
+Repräsentanten von Bracketorbits bezeichnen. Zudem seien die Summanden, die
+eine Null enthalten in der Gleichung immer zuletzt aufgeführt.\\
 Haben sich nach diesem Verfahren keine freien Bracketorbits ergeben, so werden
-die verbliebenen ungesetzten als frei angesehen. Im n"achsten Schritt
+die verbliebenen ungesetzten als frei angesehen. Im nächsten Schritt
 werden in einer Schleife nacheinander die freien Bracketorbits abwechselnd auf
 0 und 1 gesetzt und obige Prozedur wiederholt, woraus sich die Rekursion ergibt.
 
 Folge dieser Vorgehensweise ist der Aufbau einer Baumstruktur von
-Bracketorbit"aquivalenzen, in der, da alle m"oglichen Abh"angigkeiten und
-Gleichheiten in den einzelnen "Asten ber"ucksichtigt werden, alle m"oglichen
-bez"uglich der Symmetriegruppe G vertr"aglichen Matroide erzeugt werden.
+Bracketorbitäquivalenzen, in der, da alle möglichen Abhängigkeiten und
+Gleichheiten in den einzelnen Ästen berücksichtigt werden, alle möglichen
+bezüglich der Symmetriegruppe G verträglichen Matroide erzeugt werden.
 
 \begin{figure}[p]
 \begin{center}
 \btab{ll}
-{\bf Routine} & {\sf L"ose\_Gleichungssystem\_"uber\_GF(2)}\\
+{\bf Routine} & {\sf Löse\_Gleichungssystem\_über\_GF(2)}\\
           & \\
 Eingabe : & - Anzahl der Gleichungen \\
           & - Das Gleichungssystem \\
           & - Gesetzte Bracketorbits \\
-          & - Abh"angigkeiten der Bracketorbits untereinander \\
+          & - Abhängigkeiten der Bracketorbits untereinander \\
           & \\
 Schritt 1 : & - Untersuche alle Gleichungen auf Gleichheiten \\
             & \hspace*{3ex} $\left.\begin{array}{l}
@@ -858,11 +858,11 @@ Schritt 1 : & - Untersuche alle Gleichungen auf Gleichheiten \\
                A1+1B=0\\
                A1+B1=0\end{array}\right\} \follows A = B,~A\mbox{ frei}$\\
             & - Minimiere Gleichheiten : $A=B,~B=C\follows A=C$\\
-            & - "Ubertrage Gleichheiten in das Gleichungssystem\\
+            & - Übertrage Gleichheiten in das Gleichungssystem\\
             & - Sortiere und reduziere Gleichungssystem\\
-            & \hspace*{3ex} "Uberpr"ufe dabei Schl"usse auf $A=1,~A=0$\\
-            & \hspace*{3ex} "Uberpr"ufe dabei, ob Gleichungen erf"ullt sind\\
-            & - Bei Erf"ullung aller Gleichungen, schreibe m"ogliches Matroid\\
+            & \hspace*{3ex} Überprüfe dabei Schlüsse auf $A=1,~A=0$\\
+            & \hspace*{3ex} Überprüfe dabei, ob Gleichungen erfüllt sind\\
+            & - Bei Erfüllung aller Gleichungen, schreibe mögliches Matroid\\
 Schritt 2 : & - Ermittlung weiterer freier Bracketorbits aus\\
             & \hspace*{3ex} $\left.\begin{array}{l}
               AB+AC=0\\
@@ -872,42 +872,42 @@ Schritt 2 : & - Ermittlung weiterer freier Bracketorbits aus\\
 Schritt 3 : & - Setzen der freien Bracketorbits auf 0 und 1\\
             & \hspace*{3ex} Gehe in einer Schleife alle Orbits durch\\
             & \hspace*{4ex} Setze freien Orbit auf 0 bzw. 1\\
-            & \hspace*{4ex} {\sf L"ose\_Gleichungssystem\_"uber\_GF(2)}\\
+            & \hspace*{4ex} {\sf Löse\_Gleichungssystem\_über\_GF(2)}\\
             & \hspace*{4ex} mit neuen Annahmen
 \etab
-\caption{Routine zur Bestimmung m"oglicher vertr"aglicher Matroide}
+\caption{Routine zur Bestimmung möglicher verträglicher Matroide}
 \label{solvegpr}
 \end{center}
 \end{figure}
 
 Die Ausgabe von {\sc Sym2mat} liefert so die dreisummandigen
-Gra"smann-Pl"ucker-Relationen erf"ullende Elementlisten, die entsprechend der
-"uber GF(2) betrachteten Brackets jedem $[\lambda]$ mit $\lambda\in\Lambda(n,r)$
-eine 0 oder 1 zuweist. Da das Erf"ulltsein der dreisummandigen
-Gra"smann-Pl"ucker-Relationen nur eine notwendige Bedingung f"ur das Vorliegen
-eines Matroids darstellt, m"u"sten nun in einem folgenden Schritt die
-Elementlisten ebenfalls mit den "ubrigen k-summandigen
-Gra"smann-Pl"ucker-Relationen "uber GF(2) getestet werden, damit letztendlich
-nur Matroide vorliegen, die dann vertr"aglich zur Symmetriegruppe G orientiert
+Graßmann-Plücker-Relationen erfüllende Elementlisten, die entsprechend der
+über GF(2) betrachteten Brackets jedem $[\lambda]$ mit $\lambda\in\Lambda(n,r)$
+eine 0 oder 1 zuweist. Da das Erfülltsein der dreisummandigen
+Graßmann-Plücker-Relationen nur eine notwendige Bedingung für das Vorliegen
+eines Matroids darstellt, müßten nun in einem folgenden Schritt die
+Elementlisten ebenfalls mit den übrigen k-summandigen
+Graßmann-Plücker-Relationen über GF(2) getestet werden, damit letztendlich
+nur Matroide vorliegen, die dann verträglich zur Symmetriegruppe G orientiert
 werden sollen.
 {\scsi
-Hierzu haben Bokowski et al. gezeigt, da"s "uber GF(2) die sogenannten
-"`Odd-Polynomials"' zu den Gra"smann-Pl"ucker-Polynomen, die aufsummierten
+Hierzu haben Bokowski et al. gezeigt, daß über GF(2) die sogenannten
+"`Odd-Polynomials"' zu den Graßmann-Plücker-Polynomen, die aufsummierten
 ungeraden elementarsymmetrischen Funktionen der auftretenden Bracketprodukte,
-darauf zu "uberpr"ufen sind, ob sie mit den vorgegebenen Betragswerten der
-Elementeliste Null ergeben. Als Beispiel f"ur die 4-summandigen
-Gra"smann-Pl"ucker-Relationen sind so Gleichungen vom Typ
+darauf zu überprüfen sind, ob sie mit den vorgegebenen Betragswerten der
+Elementeliste Null ergeben. Als Beispiel für die 4-summandigen
+Graßmann-Plücker-Relationen sind so Gleichungen vom Typ
 $A+B+C+D+ABC+ABD+ACD+BCD=0$ als Summe der ersten und dritten
 elementarsymmetrischen Funktion zu testen, wenn A,B,C und D jeweils das
 Produkt zweier Brackets darstellen.
 }
 
-F"ur das Torusbeispiel von oben liefert {\sc Sym2mat} 43 verschiedene
+Für das Torusbeispiel von oben liefert {\sc Sym2mat} 43 verschiedene
 Elementlisten, von denen ein Teil in Tabelle \ref{tormat} dargestellt ist.
 Dabei kann das triviale Matroid (erste Zeile, nur Nullen) von vornherein als
-"`unerw"unschtes"' gestrichen werden, da es sicher jede Symmetrie erf"ullt,
-aber keine Information "uber den vorgelegten Komplex liefert. Interessant sind
-gerade solche Matroide, die lineare Unabh"angigkeiten, eine "`R"aumlichkeit"'
+"`unerwünschtes"' gestrichen werden, da es sicher jede Symmetrie erfüllt,
+aber keine Information über den vorgelegten Komplex liefert. Interessant sind
+gerade solche Matroide, die lineare Unabhängigkeiten, eine "`Räumlichkeit"'
 des Komplexes induzieren, dazu aber gleich mehr.
 
 \begin{table}[htb]
@@ -936,25 +936,25 @@ $\vdots$\\
 \etab
 }
 \end{center}
-\caption{M"ogliche Matroid-Elementlisten zum Torusbeispiel}
+\caption{Mögliche Matroid-Elementlisten zum Torusbeispiel}
 \label{tormat}
 \end{table}
 
 {\sc Sym2mat} liefert ausgehend vom Test der nur dreisummandigen
-Gra"smann-Pl"ucker-Polynome "`m"oglicherweise"' Matroide. Um nun sicherzugehen,
-da"s f"ur die weitere Bearbeitung nur wirkliche Matroide vorliegen, m"ussen die
+Graßmann-Plücker-Polynome "`möglicherweise"' Matroide. Um nun sicherzugehen,
+daß für die weitere Bearbeitung nur wirkliche Matroide vorliegen, müssen die
 ausgegebenen Elementlisten darauf getestet werden, ob sie Matroide darstellen
-oder nicht. Dazu k"onnen, wie angedeutet, die "ubrigen k-summandigen
-($4\leq k\leq rang+1$) Gra"smann-Pl"ucker-Relationen in Form der
+oder nicht. Dazu können, wie angedeutet, die übrigen k-summandigen
+($4\leq k\leq rang+1$) Graßmann-Plücker-Relationen in Form der
 Odd-Polynomials getestet werden. Ebenso kann der Matroidbeweis aber auch auf
-dem Nachweis basieren, da"s die Elementlisten das Basisaxiom der Definition
-eines Matroids erf"ullen m"ussen. Nach \cite{Bj:93}, Seite 81, mu"s
-so "uberpr"uft werden, ob die Menge
+dem Nachweis basieren, daß die Elementlisten das Basisaxiom der Definition
+eines Matroids erfüllen müssen. Nach \cite{Bj:93}, Seite 81, muß
+so überprüft werden, ob die Menge
 $${\cal B}=\{[\lambda_1,\ldots,\lambda_d]\neq 0~|~(\lambda_1,\ldots,\lambda_d)
 \in\Lambda (n,d)\}$$
-die Eigenschaft besitzt, da"s f"ur je zwei "`Basen"' $B_1$ und $B_2$ aus
+die Eigenschaft besitzt, daß für je zwei "`Basen"' $B_1$ und $B_2$ aus
 $\cal B$ und alle $b_1\in B_1\backslash B_2$ ein $b'_i\in B_2\backslash B_1$
-so existiert, da"s $((B_1\backslash b_1)\cup b'_i)$ aus $\cal B$ stammt, was
+so existiert, daß $((B_1\backslash b_1)\cup b'_i)$ aus $\cal B$ stammt, was
 nach Abbildung \ref{testmatroid} geschehen kann.
 
 \begin{figure}[htb]
@@ -963,15 +963,15 @@ nach Abbildung \ref{testmatroid} geschehen kann.
 {\bf Routine} & {\sf Teste\_auf\_Matroid}\\
           & \\
 Eingabe : & - Elementliste $\ul{\cal M}$ des vermeindlichen Matroids \\
-          & - F"ur alle $1\leq i\leq {npkt \choose rang}$ \\
+          & - Für alle $1\leq i\leq {npkt \choose rang}$ \\
           & \hspace*{2ex} Ist $matroid[i]\neq 0$ \\
           & \hspace*{4ex} Sei $B_1$ die Bracket zu $matroid[i]$ \\
-          & \hspace*{4ex} F"ur alle $1\leq (j\neq i)\leq {npkt \choose rang}$ \\
+          & \hspace*{4ex} Für alle $1\leq (j\neq i)\leq {npkt \choose rang}$ \\
           & \hspace*{6ex} Ist $matroid[j]\neq 0$ \\
           & \hspace*{8ex} Sei $B_2$ die Bracket zu $matroid[j]$ \\
           & \hspace*{8ex} $P = B_1\backslash B_2$ \\
           & \hspace*{8ex} $Q = B_2\backslash B_1$ \\
-          & \hspace*{8ex} F"ur alle $p\in P$\\
+          & \hspace*{8ex} Für alle $p\in P$\\
           & \hspace*{10ex} Existiert in Q kein Element q mit \\
           & \hspace*{12ex} $(B_1\backslash p)\cup q\in{\cal B}$\\
           & \hspace*{10ex} so ist $\ul{\cal M}$ kein Matroid\\
@@ -982,26 +982,26 @@ Ausgabe : & - Matroid oder nicht
 \end{center}
 \end{figure}
 
-Liegt die Elementliste des zu "uberpr"ufenden vermeindlichen Matroids als ein
-Feld $matroid[i]$ mit $1\leq i\leq {n\choose d}$ und Eintr"agen 0 oder 1 vor,
-etwa wie die Ausgabe von {\sc Sym2mat}, so l"a"st sich mit einer Routine
+Liegt die Elementliste des zu überprüfenden vermeindlichen Matroids als ein
+Feld $matroid[i]$ mit $1\leq i\leq {n\choose d}$ und Einträgen 0 oder 1 vor,
+etwa wie die Ausgabe von {\sc Sym2mat}, so läßt sich mit einer Routine
 entsprechend Abbildung \ref{testmatroid} auf die Matroideigenschaft der Liste
-testen. Dazu sind im schlechtesten Fall, wenn alle Basen "uberpr"uft werden
-m"u"sten, ${npkt\choose rang}\cdot\left({npkt\choose rang}-1\right)\cdot rang^2$
-Operationen n"otig. Dies ist zwar auf den ersten Blick wesentlich mehr, als die
-"Uberpr"ufung der Gra"smann-Pl"ucker-Relationen ergeben w"urde, bedenkt man
-aber, da"s dazu alle k-summandigen ($4\leq k\leq rang+1$) rekursiv erzeugt und
+testen. Dazu sind im schlechtesten Fall, wenn alle Basen überprüft werden
+müßten, ${npkt\choose rang}\cdot\left({npkt\choose rang}-1\right)\cdot rang^2$
+Operationen nötig. Dies ist zwar auf den ersten Blick wesentlich mehr, als die
+Überprüfung der Graßmann-Plücker-Relationen ergeben würde, bedenkt man
+aber, daß dazu alle k-summandigen ($4\leq k\leq rang+1$) rekursiv erzeugt und
 in Bracketgleichungen (die Odd-Poly\-no\-mi\-als) umgewandelt werden
-m"ussen, so ist der (Rechen-)\-Aufwand von der gleichen Gr"o"senordnung, so
-da"s der viel einfacher zu implementierende Basistest auch seine Berechtigung
+müssen, so ist der (Rechen-)\-Aufwand von der gleichen Größenordnung, so
+daß der viel einfacher zu implementierende Basistest auch seine Berechtigung
 besitzt.
 
-F"uhrt man diese "Uberpr"ufung durch, so ergeben sich aus den 43 vorgelegten
-Listen f"ur den Torus 25 nichttriviale Matroide, von denen ein Teil in Tabelle
-\ref{torusmat} aufgelistet ist. Diese k"onnten nun als Eingabe f"ur ein
+Führt man diese Überprüfung durch, so ergeben sich aus den 43 vorgelegten
+Listen für den Torus 25 nichttriviale Matroide, von denen ein Teil in Tabelle
+\ref{torusmat} aufgelistet ist. Diese könnten nun als Eingabe für ein
 Matroid-Orientierungsprogramm dienen, welches mit seiner Beschreibung das Ziel
-dieser Arbeit darstellt und eine M"oglichkeit liefert, zu einem CW-Komplex
-"uber dessen Symmetrien vertr"agliche orientierte Matroide zu erzeugen.
+dieser Arbeit darstellt und eine Möglichkeit liefert, zu einem CW-Komplex
+über dessen Symmetrien verträgliche orientierte Matroide zu erzeugen.
 
 \begin{table}[htb]
 \begin{center}
@@ -1029,19 +1029,19 @@ $\vdots$\\
 \etab
 }
 \end{center}
-\caption{Die bez"uglich G vertr"aglichen Matroide zum Torus}
+\caption{Die bezüglich G verträglichen Matroide zum Torus}
 \label{torusmat}
 \end{table}
 
 Betrachtet man zuvor die Struktur der erzeugten Matroide, so stellt man fest,
-da"s unter diesen noch viele "`uninteressante"' zu finden sind. Dies sind jene,
+daß unter diesen noch viele "`uninteressante"' zu finden sind. Dies sind jene,
 die "`zuviele"' Nullen enthalten, entsprechend der Determinantendeutung der
-Basen also eine "`flache"' Punktkonfiguration repr"asentieren.\\
-Um solche von vorn herein ausschlie"sen zu k"onnen, kann man sich des
+Basen also eine "`flache"' Punktkonfiguration repräsentieren.\\
+Um solche von vorn herein ausschließen zu können, kann man sich des
 vorgelegten Komplexes bedienen und fordern, welche Brackets sicher nicht Null,
 also Basen des Matroids sein sollen. Solche Basen ergeben sich aus den Brackets,
 die sich aus den Indizes von Punkten benachbarter Zellen, die gefordert nicht
-in einer Ebene liegen sollen, zusammensetzen lassen. F"ur den Torus ergibt diese
+in einer Ebene liegen sollen, zusammensetzen lassen. Für den Torus ergibt diese
 Forderung bei abgeschlossenen benachbarten Zellen $\mbox{conv}\{a,b,c,d\}$ und
 $\mbox{conv}\{a,b,e,f\}$ mit den 0-Zellen-Indizes a bis f und der gemeinsamen
 Kante $\ol{ab}$, folgende Brackets als Basen eines Matroids:
@@ -1051,9 +1051,9 @@ Kante $\ol{ab}$, folgende Brackets als Basen eines Matroids:
 [acef], [adef], [bcde], [bcdf], [bcef], [bdef]
 }
 \end{center}
-Von den ${6\choose 4}$ M"oglichkeiten, aus obigen Punkten eine Bracket zu
-bilden also jene, die nicht die Zellen selbst und zwei gegen"uberliegende
-"`Au"senkanten"' (hier etwa $\ol{cd}$ und $\ol{ef}$) beschreiben.
+Von den ${6\choose 4}$ Möglichkeiten, aus obigen Punkten eine Bracket zu
+bilden also jene, die nicht die Zellen selbst und zwei gegenüberliegende
+"`Außenkanten"' (hier etwa $\ol{cd}$ und $\ol{ef}$) beschreiben.
 
 \begin{figure}[htb]
 $$
@@ -1076,9 +1076,9 @@ $$
 \end{figure}
 
 Eine gezielte Bestimmung der Nichtbasen und "`sicherlich"' Basen ergibt so eine
-Grundstruktur f"ur die vertr"aglichen Matroide, die letztendlich "uber
-{\sc Sym2mat} zu echten Rang (d+2) Matroiden f"uhrt. Ein Algorithmus f"ur eine
-solche Bestimmung l"a"st sich Abbildung \ref{setbases} entnehmen.
+Grundstruktur für die verträglichen Matroide, die letztendlich über
+{\sc Sym2mat} zu echten Rang (d+2) Matroiden führt. Ein Algorithmus für eine
+solche Bestimmung läßt sich Abbildung \ref{setbases} entnehmen.
 
 \begin{figure}[htb]
 \begin{center}
@@ -1086,14 +1086,14 @@ solche Bestimmung l"a"st sich Abbildung \ref{setbases} entnehmen.
 {\bf Routine} & {\sf Setze\_sichere\_Basen}\\
           & \\
 Eingabe : & CW-Komplex in Form der Zellenberandungen mit Rang r\\
-Prozedur :& F"ur jedes Paar A, B von (r-2)-Zellen \\
+Prozedur :& Für jedes Paar A, B von (r-2)-Zellen \\
           & \hspace*{2ex} erzeuge A$\cap$B \\
           & \hspace*{2ex} Ist $|A\cap B|\geq r-2$, also zumindest ein\\
           & \hspace*{2ex} (r-3)-Simplex im Rand, so erzeuge folgende Brackets \\
-          & \hspace*{4ex} - f"ur alle Auswahlen von (r-1) 0-Zellen aus A \\
-          & \hspace*{6ex} die Brackets durch Erg"anzung um einen Punkt aus B \\
-          & \hspace*{4ex} - f"ur alle Auswahlen von (r-1) 0-Zellen aus B \\
-          & \hspace*{6ex} die Brackets durch Erg"anzung um einen Punkt aus A \\
+          & \hspace*{4ex} - für alle Auswahlen von (r-1) 0-Zellen aus A \\
+          & \hspace*{6ex} die Brackets durch Ergänzung um einen Punkt aus B \\
+          & \hspace*{4ex} - für alle Auswahlen von (r-1) 0-Zellen aus B \\
+          & \hspace*{6ex} die Brackets durch Ergänzung um einen Punkt aus A \\
           & \hspace*{4ex} Sind die erzeugten Brackets nicht durch Auswahl von \\
           & \hspace*{4ex} Punkten einer (r-2)-Zelle entstanden und sind keine \\
           & \hspace*{4ex} Punkte doppelt vorhanden, so setze diese Brackets als \\
@@ -1103,12 +1103,12 @@ Prozedur :& F"ur jedes Paar A, B von (r-2)-Zellen \\
 Ausgabe : & Liste, in der die Basen und Nichtbasen, sowie freien Brackets \\
           & verzeichnet sind.
 \etab
-\caption{Routine zur Bestimmung einer Grundstruktur f"ur die Elementlisten}
+\caption{Routine zur Bestimmung einer Grundstruktur für die Elementlisten}
 \label{setbases}
 \end{center}
 \end{figure}
 
-Damit ergibt sich als Grundstruktur f"ur den Torus folgendes Bild.
+Damit ergibt sich als Grundstruktur für den Torus folgendes Bild.
 
 {\small\tt
 \begin{center}
@@ -1117,8 +1117,8 @@ Damit ergibt sich als Grundstruktur f"ur den Torus folgendes Bild.
 \end{center}
 }
 
-womit von obigen 25 vertr"aglichen Matroiden noch sechs "ubrigbleiben, die eine
-Chance besitzen, zu vertr"aglichen Rang 4 orientierten Matroiden des Torus
+womit von obigen 25 verträglichen Matroiden noch sechs übrigbleiben, die eine
+Chance besitzen, zu verträglichen Rang 4 orientierten Matroiden des Torus
 zu werden.
 
 \begin{table}[htb]
@@ -1145,37 +1145,37 @@ zu werden.
 \etab
 }
 \end{center}
-\caption{Die bez"uglich G vertr"aglichen Rang 4 Matroide zum Torus}
+\caption{Die bezüglich G verträglichen Rang 4 Matroide zum Torus}
 \label{torus4mat}
 \end{table}
 
 \clearpage
 \subsection{Orientierung der erzeugten Matroide}
 
-Im letzten Schritt sollen die erzeugten, bez"uglich 0-Zellenanzahl
+Im letzten Schritt sollen die erzeugten, bezüglich 0-Zellenanzahl
 und Rang eines CW-Komplexes $\C$, sowie einer vorgelegten Symmetriegruppe G
-vertr"aglichen Matroide so orientiert werden, da"s weiterhin die
-Vertr"aglichkeitseigenschaft bez"uglich G gew"ahrleistet ist.\\
+verträglichen Matroide so orientiert werden, daß weiterhin die
+Verträglichkeitseigenschaft bezüglich G gewährleistet ist.\\
 Dazu werden wiederum zur Minimierung des Rechenaufwandes, die unter den
-Symmetrien aus G reduzierten, zu erf"ullenden dreisummandigen
-Gra"smann-Pl"ucker-Relationen eingesetzt. Da"s diese erf"ullt sind, stellt f"ur
+Symmetrien aus G reduzierten, zu erfüllenden dreisummandigen
+Graßmann-Plücker-Relationen eingesetzt. Daß diese erfüllt sind, stellt für
 die zu entstehenden orientierten Matroide nun eine notwendige und hinreichende
-Bedingung dar, was sich aus dem Satz "uber die dreisummandigen Relationen von
+Bedingung dar, was sich aus dem Satz über die dreisummandigen Relationen von
 Seite \pageref{dgpr} ergibt. Ziel ist die rekursive Erzeugung aller zu einem
-vorgelegten Matroid bez"uglich G vertr"aglichen Orientierungen, sofern solche
-"uberhaupt existieren.
+vorgelegten Matroid bezüglich G verträglichen Orientierungen, sofern solche
+überhaupt existieren.
 
-Auf Seite \pageref{symmtest} war davon die Rede, da"s die Anzahl der
-M"oglichkeiten ein orientiertes Matroid zu erzeugen davon abh"angt, wie die
+Auf Seite \pageref{symmtest} war davon die Rede, daß die Anzahl der
+Möglichkeiten ein orientiertes Matroid zu erzeugen davon abhängt, wie die
 Elemente g$\in$G das entsprechende Chirotop $\chi$ abbilden, ob als Rotation
 auf sich selbst oder als Reflexion auf sein negatives. Gerade bei der
 Bestimmung der Orbits der Brackets unter G ist dies eine wichtige Information.
-Erzw"ange man n"amlich eine bestimmte Variante (etwa alle id$\neq$g$\in$G seien
-Rotationen), so kann es passieren, da"s kein solches vertr"agliches orientiertes
+Erzwänge man nämlich eine bestimmte Variante (etwa alle id$\neq$g$\in$G seien
+Rotationen), so kann es passieren, daß kein solches verträgliches orientiertes
 Matroid existiert, da sich schon bei der Aufstellung der Bracketbahnen
-Widerspr"uche ergeben.
+Widersprüche ergeben.
 
-F"ur den dreidimensionalen W"urfel etwa (acht Punkte im Rang vier mit den
+Für den dreidimensionalen Würfel etwa (acht Punkte im Rang vier mit den
 2-Zellen-Berandungen 1264, 2586, 5378, 3147, 4687 und 1253) bei Vorlage der
 Symmetriegruppe $\{id, (23)(67), (24)(57), (34)(56), (234)(576), (243)(567)\}$
 und dem zugrunde liegenden Matroid
@@ -1184,7 +1184,7 @@ und dem zugrunde liegenden Matroid
 $1011110111111101101111101110111111111111110111011111011011111110111101$
 }\end{center}
 
-ergibt sich f"ur die Basis-Bracket [1234] folgender Orbit:
+ergibt sich für die Basis-Bracket [1234] folgender Orbit:
 $$
 \begin{array}{|ccc|c|c|c|c|}
 \hline
@@ -1194,15 +1194,15 @@ id & \mapsto & (23)(67) & (24)(57) & (34)(56) & (234)(576) & (243)(567) \\
 \hline
 \end{array}
 $$
-Egal wie man sich entscheiden w"urde (alle id$\neq$g$\in$G Reflexionen
-beziehungsweise Rotationen), der Orbit w"urde immer induzieren, da"s
-$[1234]=-[1234]$, also $[1234]=0$ gelten mu"s, was einen Widerspruch zum
+Egal wie man sich entscheiden würde (alle id$\neq$g$\in$G Reflexionen
+beziehungsweise Rotationen), der Orbit würde immer induzieren, daß
+$[1234]=-[1234]$, also $[1234]=0$ gelten muß, was einen Widerspruch zum
 zugrunde liegenden Matroid darstellt.\\
-Hier lie"se sich aus obigem Orbit allerdings direkt ablesen, da"s es sich bei
+Hier ließe sich aus obigem Orbit allerdings direkt ablesen, daß es sich bei
 den Permutationen (23)(67), (24)(57) und (34)(56) um Reflexionen, sowie bei
-(234)(576) und (243)(567) um Rotationen handeln mu"s. Betrachtet man dazu
-die Symmetriegruppe des W"urfelchirotops (die identisch zur kombinatorischen
-Symmetriegruppe ist), da"s durch geeignete Koordinatenwahl (vgl. Abb.
+(234)(576) und (243)(567) um Rotationen handeln muß. Betrachtet man dazu
+die Symmetriegruppe des Würfelchirotops (die identisch zur kombinatorischen
+Symmetriegruppe ist), daß durch geeignete Koordinatenwahl (vgl. Abb.
 \ref{cube}) entstanden ist, so entspricht dies auch der "`Wirklichkeit"'.
 \vskip4mm
 
@@ -1210,149 +1210,149 @@ Symmetriegruppe ist), da"s durch geeignete Koordinatenwahl (vgl. Abb.
 +0+++-0--+++--0++0+----0+-+0++---+-++++---0++-0-++--0+-0++++---0---+0-
 }\vskip4mm
 
-Aus dieser "Uberlegung l"a"st sich nun folgender kleiner Hilfssatz ableiten, der
+Aus dieser Überlegung läßt sich nun folgender kleiner Hilfssatz ableiten, der
 besagt:
 \begin{quote}
-Wann immer ein Element g einer f"ur ein zu erzeugendes Chirotop geforderten
+Wann immer ein Element g einer für ein zu erzeugendes Chirotop geforderten
 Symmetriegruppe G eine Bracket $[\lambda]\neq 0$ bis auf eine lexikographische
 Sortierung $\sigma$ auf sich abbildet, so bildet in diesem Fall g das
 Chirotop $\chi$ auf $\mbox{sgn}(\sigma)\chi$ ab.
 \end{quote}
-Der Beweis hierzu ist einfach in dem Sinne, da"s g als geforderte Symmetrie
+Der Beweis hierzu ist einfach in dem Sinne, daß g als geforderte Symmetrie
 $\chi$ sicher auf $\chi$ selbst oder $-\chi$ abbildet. Wird eine Basis-Bracket
 $[a_1\ldots a_r]$ des zugrunde liegenden Matroids nun, unter Vorschaltung einer
-Sortierungspermutation (eine Permutation, die die $a_1$ bis $a_r$ der Gr"o"se
+Sortierungspermutation (eine Permutation, die die $a_1$ bis $a_r$ der Größe
 nach sortiert, also auf $\{1,\ldots,r\}$ wirkt), auf sich abgebildet, so ist
 hierdurch, aufgrund der Symmetrieforderung, eindeutig festgelegt, ob nach g
 $\chi$ oder $-\chi$ vorliegt, da sich die Symmetrie auf alle Basis-Brackets
 bezieht.$\Box$
 
-F"ur die "ubrigen Symmetrien, die keine Bracket bis auf ihr Vorzeichen
-invariant lassen, bleibt nichts anderes "ubrig, als zun"achst beide
-M"oglichkeiten in Betracht zu ziehen, wie sie auf ein $\chi$ wirken k"onnten
+Für die übrigen Symmetrien, die keine Bracket bis auf ihr Vorzeichen
+invariant lassen, bleibt nichts anderes übrig, als zunächst beide
+Möglichkeiten in Betracht zu ziehen, wie sie auf ein $\chi$ wirken könnten
 oder eine Fixierung vorzugeben. Schaltet man vor die Orientierungsversuche zu
 einem Matroid einen Test nach obigem Hilfssatz vor, so kann sich hier der
 Aufwand aber schon erheblich reduzieren. In bezug auf das Torusbeispiel ergibt
-sich so, da"s die Symmetrie $(47)(58)(69)$ die Bracket $[1247]$ auf $-[1247]$
+sich so, daß die Symmetrie $(47)(58)(69)$ die Bracket $[1247]$ auf $-[1247]$
 abbildet und somit eine Reflexion der Chirotope $\chi$ zum Torus darstellt.
-Damit bleiben $2^4$ M"oglichkeiten f"ur die anderen Elemente aus G, wie die
-Bracketorbits bez"uglich ihrer Gleichheiten zu deuten sind.
+Damit bleiben $2^4$ Möglichkeiten für die anderen Elemente aus G, wie die
+Bracketorbits bezüglich ihrer Gleichheiten zu deuten sind.
 
-Ein erster Eindruck, wie ein Matroidorientierungsprogramm aussehen k"onnte,
+Ein erster Eindruck, wie ein Matroidorientierungsprogramm aussehen könnte,
 ergibt sich nun wie folgt.
 \begin{enumerate}
-\item Lege eine Automorphismengruppe G und eine vertr"agliche Matroidliste
-      f"ur n Punkte im Rang r vor.
-\item Bestimme die Bracketorbits unter G und pr"ufe auf Selbstabbildungen in
+\item Lege eine Automorphismengruppe G und eine verträgliche Matroidliste
+      für n Punkte im Rang r vor.
+\item Bestimme die Bracketorbits unter G und prüfe auf Selbstabbildungen in
       obigem Sinne. Liegen solche vor, so merke den Symmetrietyp (Rot/Ref).
-\item Bestimme die Orbits der dreisummandigen Gra"smann-Pl"ucker-Polynome
-      unter G als Ausgangsebene f"ur ein System zur Bestimmung der zugeh"origen
+\item Bestimme die Orbits der dreisummandigen Graßmann-Plücker-Polynome
+      unter G als Ausgangsebene für ein System zur Bestimmung der zugehörigen
       Chirotopvorzeichen.
-\item Setze nacheinander alle Kombinationen f"ur die unbestimmten Symmetrietypen
-      in die Bracketorbits ein, so da"s sich nun die gew"unschten
+\item Setze nacheinander alle Kombinationen für die unbestimmten Symmetrietypen
+      in die Bracketorbits ein, so daß sich nun die gewünschten
       Bracketgleichheiten ergeben und
 \begin{itemize}
-\item Stelle das zugeh"orige "`Gleichungs"'system durch Einsetzen der
-      Bracket\-orbitrepr"asentanten (Vorzeichenwechsel ber"ucksichtigen)
+\item Stelle das zugehörige "`Gleichungs"'system durch Einsetzen der
+      Bracket\-orbitrepräsentanten (Vorzeichenwechsel berücksichtigen)
       in die GPP auf.
-\item Ermittle die zugeh"origen Chirotope durch Auff"ullen und Erschlie"sen von
-      Vorzeichen f"ur die Brackets in den GPP.
+\item Ermittle die zugehörigen Chirotope durch Auffüllen und Erschließen von
+      Vorzeichen für die Brackets in den GPP.
 \end{itemize}
 \item Gib alle ermittelten Vorzeichenlisten der Chirotope aus.
 \end{enumerate}
 
-Das Einsetzen und Erschlie"sen von Vorzeichen in den GPP begr"undet sich
+Das Einsetzen und Erschließen von Vorzeichen in den GPP begründet sich
 in der Deutung der Brackets als Determinanten von (r$\times$r)-Teilmatrizen
-einer (n$\times$r)-Matrix, f"ur die die Gra"smann-Pl"ucker-Relationen erf"ullt
+einer (n$\times$r)-Matrix, für die die Graßmann-Plücker-Relationen erfüllt
 sind.\\
 Stellt man das zu untersuchende Gleichungssystems auf, so zeigt sich noch eine
-weitere M"oglichkeit, auftretende Symmetrietypen als unsinnig zu erkennen.
-Treten n"amlich unter Ber"ucksichtigung aller Sortierungsvorzeichen und
+weitere Möglichkeit, auftretende Symmetrietypen als unsinnig zu erkennen.
+Treten nämlich unter Berücksichtigung aller Sortierungsvorzeichen und
 Nullsetzungen von Bracketorbits Gleichungen vom Typ
 $(+[A])(+[B]) + (+[A])(+[B]) = 0$ auf, so kann die Wahl der Art der
 Abbildungsvorschrift von $\chi\mapsto\pm\chi$ als nicht richtig angesehen
-werden, da nichtsingul"are Matrizen A und B diese Gleichung nicht erf"ullen
-k"onnen.\\
-Genauer ergibt sich f"ur die dreisummandigen Gleichungen so, da"s die
-Vorzeichen der Determinanten derart gegeben sind, da"s entweder genau ein
+werden, da nichtsinguläre Matrizen A und B diese Gleichung nicht erfüllen
+können.\\
+Genauer ergibt sich für die dreisummandigen Gleichungen so, daß die
+Vorzeichen der Determinanten derart gegeben sind, daß entweder genau ein
 Summand (ein Bracketprodukt) positiv oder genau einer negativ ist. Ist ein
 Summand 0, so sind die anderen beiden von entgegengesetztem Vorzeichen, denn nur
-so ist zu erreichen, da"s die Gleichung zu Null werden kann, wenn alle
-Determinanten nichtnull sind. F"ur die Gleichungen
+so ist zu erreichen, daß die Gleichung zu Null werden kann, wenn alle
+Determinanten nichtnull sind. Für die Gleichungen
 $$ A + (-B) + C = 0$$
 ergeben sich so die Vorzeichen der Bracketprodukte A, $-$B und C zu
 $$(+,-,+),~(+,-,-),~(+,+,-),~(-,-,+),~(-,+,+),~(-,+,-)$$
 Solche Konstellationen gilt es nun im vorgelegten Gleichungssystem zu erzeugen.
-Dazu bedienen wir uns zun"achst wieder der Gleichungen, die nach dem Ersetzen
-der Brackets durch ihre Repr"asentanten unter G nur noch zwei Summanden
-enthalten, die nichtnull sind, w"ahrend der dritte durch eine Nichtbasis des
+Dazu bedienen wir uns zunächst wieder der Gleichungen, die nach dem Ersetzen
+der Brackets durch ihre Repräsentanten unter G nur noch zwei Summanden
+enthalten, die nichtnull sind, während der dritte durch eine Nichtbasis des
 zugrunde liegenden Matroids verschwunden ist. Wieder kann bei Gleichungen
 vom Typ AB + AC auf das Verhalten von B und C geschlossen werden, wenn A
 gesetzt wurde.
 
-Grunds"atzlich ergeben sich aus den zweisummandigen Gleichungen folgende zu
-be\-r"ucksichtigenden M"oglichkeiten:
+Grundsätzlich ergeben sich aus den zweisummandigen Gleichungen folgende zu
+be\-rücksichtigenden Möglichkeiten:
 {\small
 $$
 \begin{array}{|l|l|l|l|}
-\multicolumn{4}{l}{A=+ \mbox{ f"ur }} \\
+\multicolumn{4}{l}{A=+ \mbox{ für }} \\
 \hline
 -(A+)~+~(BB) & -(+A)~+~(BB) & (A-)~+~(BB) & (-A)~+~(BB) \\
 \hline
-\multicolumn{4}{l}{B=+ \mbox{ f"ur }} \\
+\multicolumn{4}{l}{B=+ \mbox{ für }} \\
 \hline
 -(AA)~+~(+B) & -(AA)~+~(B+) & (AA)~+~(-B) & (AA)~+~(B-) \\
 \hline
-\multicolumn{4}{l}{A=- \mbox{ f"ur }} \\
+\multicolumn{4}{l}{A=- \mbox{ für }} \\
 \hline
 -(A-)~+~(BB) & (A+)~+~(BB) & -(-A)~+~(BB) & (+A)~+~(BB) \\
 \hline
-\multicolumn{4}{l}{B=- \mbox{ f"ur }} \\
+\multicolumn{4}{l}{B=- \mbox{ für }} \\
 \hline
 -(AA)~+~(-B) & (AA)~+~(+B) & -(AA)~+~(B-) & (AA)~+~(B+) \\
 \hline
-\multicolumn{4}{l}{A=B \mbox{ f"ur }} \\
+\multicolumn{4}{l}{A=B \mbox{ für }} \\
 \hline
  (+A)~+~(-B) &  (+A)~+~(B-) &  (-A)~+~(+B) &  (-A)~+~(B+) \\
  (A+)~+~(-B) &  (A+)~+~(B-) &  (A-)~+~(+B) &  (A-)~+~(B+) \\
 -(+A)~+~(+B) & -(+A)~+~(B+) & -(-A)~+~(-B) & -(-A)~+~(B-) \\
 -(A+)~+~(+B) & -(A+)~+~(B+) & -(A-)~+~(-B) & -(A-)~+~(B-) \\
 \hline
-\multicolumn{4}{l}{A=-B \mbox{ f"ur }} \\
+\multicolumn{4}{l}{A=-B \mbox{ für }} \\
 \hline
 -(A+)~+~(B-) &  (A+)~+~(+B) & -(A-)~+~(B+) &  (A-)~+~(-B) \\
  (+A)~+~(+B) & -(+A)~+~(B-) & -(-A)~+~(B+) &  (-A)~+~(-B) \\
  (A+)~+~(B+) & -(A+)~+~(-B) & -(A-)~+~(+B) &  (A-)~+~(B-) \\
  (+A)~+~(B+) & -(+A)~+~(-B) & -(-A)~+~(+B) &  (-A)~+~(B-) \\
 \hline
-\multicolumn{4}{l}{A=B \mbox{ oder } A=-B \mbox{ f"ur }} \\
+\multicolumn{4}{l}{A=B \mbox{ oder } A=-B \mbox{ für }} \\
 \hline
 -(AA)~+~(BB) & & & \\
 \hline
 \end{array}
 $$}
 
-Weiterhin lassen sich Vorzeichen aus dreisummandigen Gleichungen erschlie"sen,
-wenn genau ein Bracketvorzeichen unbestimmt ist. Gilt dann, da"s das Vorzeichen
-der beiden anderen Summanden gleich ist, so mu"s mit dem ungesetzten das
+Weiterhin lassen sich Vorzeichen aus dreisummandigen Gleichungen erschließen,
+wenn genau ein Bracketvorzeichen unbestimmt ist. Gilt dann, daß das Vorzeichen
+der beiden anderen Summanden gleich ist, so muß mit dem ungesetzten das
 Vorzeichen des noch unbestimmten Summanden negativ dem der anderen sein.
-Etwa gilt f"ur $(++)~+~(--)~+~(-A)\fol (+,+,?)$, da"s $A=+$ sein mu"s, damit
-der letzte Summand negatives Vorzeichen erh"alt. Frei ist die Wahl von A, wenn
+Etwa gilt für $(++)~+~(--)~+~(-A)\fol (+,+,?)$, daß $A=+$ sein muß, damit
+der letzte Summand negatives Vorzeichen erhält. Frei ist die Wahl von A, wenn
 die bestimmten Summanden entgegengesetztes Vorzeichen besitzen.
 
-Ist in einer Gleichung mehr als ein Vorzeichen unbestimmt, so k"onnen die
-jeweils ungesetzen Bracketvorzeichen als Freiheitsgrade f"ur die Vorzeichenwahl
-angesehen werden. Ein Setzen dieser, sowie ein Erschlie"sen weiterer Vorzeichen
+Ist in einer Gleichung mehr als ein Vorzeichen unbestimmt, so können die
+jeweils ungesetzen Bracketvorzeichen als Freiheitsgrade für die Vorzeichenwahl
+angesehen werden. Ein Setzen dieser, sowie ein Erschließen weiterer Vorzeichen
 nach obiger Auswahl, liefert bei rekursiver Bearbeitung des Gleichungssystems
-wie bei der Matroiderzeugung eine Baumstruktur, in der alle vertr"aglichen
-orientierten Matroide mit der gew"unschten Symmetrieeigenschaft erzeugt werden.
+wie bei der Matroiderzeugung eine Baumstruktur, in der alle verträglichen
+orientierten Matroide mit der gewünschten Symmetrieeigenschaft erzeugt werden.
 
-Mittels eines so aufgebauten Such- und Ersetzprogramms k"onnen nun die
-zuvor bereitgestellten Matroide orientiert werden, was f"ur das Torusbeispiel
-f"ur die vier orientierbaren Matroide zu den Vorzeichenlisten aus den Tabellen
-\ref{torusom1} bis \ref{torusom6} f"uhrt. Hierbei ergibt sich zun"achst, das
+Mittels eines so aufgebauten Such- und Ersetzprogramms können nun die
+zuvor bereitgestellten Matroide orientiert werden, was für das Torusbeispiel
+für die vier orientierbaren Matroide zu den Vorzeichenlisten aus den Tabellen
+\ref{torusom1} bis \ref{torusom6} führt. Hierbei ergibt sich zunächst, das
 bei Vorgabe der Symmetriegruppe G mit dem erzeugenden Element
-$\sigma = (132)(495768)$ folgende Symmetrietypen zul"a"sig sind:
+$\sigma = (132)(495768)$ folgende Symmetrietypen zuläßig sind:
 $$\begin{array}{c|c|c|c|c|c}
 \mbox{id} & \sigma & \sigma^2 & \sigma^3 & \sigma^4 & \sigma^5 \\
 \hline
@@ -1362,25 +1362,25 @@ $$\begin{array}{c|c|c|c|c|c}
 + & - & - & - & + & + \\
 \end{array}$$
 Hierbei bedeutet $+$ die Wirkung von $\sigma^i$ als Rotation und $-$ als
-Reflektion auf die zu entstehenden $\chi$. Besonders wichtig ist, da"s man
-den gew"ahlten Symmetrietyp beim Ermitteln der vollst"andigen Vorzeichenliste
-wieder ber"ucksichtigt, wenn man aus den Bracketorbitrepr"asentanten die
-"ubrigen Brackets rekonstruiert. Ber"ucksichtigt man noch, da"s der Symmetrietyp
+Reflektion auf die zu entstehenden $\chi$. Besonders wichtig ist, daß man
+den gewählten Symmetrietyp beim Ermitteln der vollständigen Vorzeichenliste
+wieder berücksichtigt, wenn man aus den Bracketorbitrepräsentanten die
+übrigen Brackets rekonstruiert. Berücksichtigt man noch, daß der Symmetrietyp
 von Quadraten von Permutationen eindeutig als Rotation festgelegt ist
-($\mbox{typ}(\sigma)^{2k}=1$), so bleibt hier als einzig zul"a"siger
+($\mbox{typ}(\sigma)^{2k}=1$), so bleibt hier als einzig zuläßiger
 Symmetrietyp
 $$\begin{array}{c|c|c|c|c|c}
 \mbox{id} & \sigma & \sigma^2 & \sigma^3 & \sigma^4 & \sigma^5 \\
 \hline
 + & - & + & - & + & -
 \end{array}$$
-"ubrig. Was bei kleinen vorgelegten Gruppen, noch leicht von Hand zu l"osen
-ist, ist bei gr"o"seren Gruppen, deren Elemente zusammengesetzt sind, zwar
-auch, aber mit ungleich h"oherem Aufwand zu bewerkstelligen, was so zur Zeit
+übrig. Was bei kleinen vorgelegten Gruppen, noch leicht von Hand zu lösen
+ist, ist bei größeren Gruppen, deren Elemente zusammengesetzt sind, zwar
+auch, aber mit ungleich höherem Aufwand zu bewerkstelligen, was so zur Zeit
 noch nicht implementiert ist.
 
 \begin{table}[htb]
-Gew"ahltes Matroid:
+Gewähltes Matroid:
 \begin{center}
 {\scriptsize\tt
 \begin{tabular}{c}
@@ -1455,7 +1455,7 @@ Erzeugte Chirotope:
 ++-++--0-++--0--++-++-0-++-+-++0-+--++-++---0+-+---0++-0+---0--\\
 \end{tabular}}
 \end{center}
-\caption{\label{torusom5} Chirotope zum f"unften Torusmatroid}
+\caption{\label{torusom5} Chirotope zum fünften Torusmatroid}
 \end{table}
 
 \begin{table}[htb]
@@ -1545,30 +1545,30 @@ Erzeugte Chirotope:
 \section{Zusammenfassung der Vorgehensweise}
 
 Da nun alle Schritte abgearbeitet wurden, die zu einem vorgelegten CW-Komplex
-(angegebenen Aufbaus) "uber Symmetrie(unter)gruppen vertr"agliche orientierte
+(angegebenen Aufbaus) über Symmetrie(unter)gruppen verträgliche orientierte
 Matroide in Form von Chirotopen erzeugen, ist das Ziel dieser Arbeit erreicht.
 
-Zusammenfassend kann die "`vertr"agliche Chirotoperzeugung"' nun wie folgt
+Zusammenfassend kann die "`verträgliche Chirotoperzeugung"' nun wie folgt
 beschrieben werden:
 
 \begin{itemize}
 \item Gegeben sei ein CW-Komplex $\C$, mit (im Fall eines 2-Komplexes)
       polygonal berandeten 2-Zellen.
 \item Bestimme zu $\C$ dessen kombinatorische Symmetriegruppe Aut($\C$).
-\item Bestimme eine Grundstruktur f"ur die vertr"aglichen Matroide.
-\item W"ahle aus Aut($\C$) eine "`geeignete"' Untergruppe aus und lege
-      diese als feste (Untergruppe einer) Symmetriegruppe G vertr"aglicher
+\item Bestimme eine Grundstruktur für die verträglichen Matroide.
+\item Wähle aus Aut($\C$) eine "`geeignete"' Untergruppe aus und lege
+      diese als feste (Untergruppe einer) Symmetriegruppe G verträglicher
       orientierter Matroide vor.
-\item Erzeuge rekursiv bez"uglich G vertr"agliche Matroide $\ul{\cal M}$
-      mit der gew"unschten Grundstruktur.
-\item Versuche jedes so entstandene vertr"agliche Matroid $\ul{\cal M}$ zu
-      orientieren, so da"s $\ul{\cal M}$ zu bez"uglich G vertr"aglichen
+\item Erzeuge rekursiv bezüglich G verträgliche Matroide $\ul{\cal M}$
+      mit der gewünschten Grundstruktur.
+\item Versuche jedes so entstandene verträgliche Matroid $\ul{\cal M}$ zu
+      orientieren, so daß $\ul{\cal M}$ zu bezüglich G verträglichen
       orientierten Matroiden $\cal M$ in Form von Chirotopen $\chi$ wird.
 \item Nach der Bearbeitung liegen nun zu $\C$ im Existenzfall alle
-      bez"uglich $G\leq \mbox{Aut}(\C)$ vertr"aglichen Chirotope $\chi$ vor,
-      deren zugrunde liegendes Matroid die gew"unschte Grundstruktur besitzt
-      und eine Symmetriegruppe aufweisen, die zumindest G enth"alt.
+      bezüglich $G\leq \mbox{Aut}(\C)$ verträglichen Chirotope $\chi$ vor,
+      deren zugrunde liegendes Matroid die gewünschte Grundstruktur besitzt
+      und eine Symmetriegruppe aufweisen, die zumindest G enthält.
 \end{itemize}
 
-In dem nun anschlie"senden letzten Kapitel sollen dazu noch einige Beispiele
+In dem nun anschließenden letzten Kapitel sollen dazu noch einige Beispiele
 bearbeitet werden.

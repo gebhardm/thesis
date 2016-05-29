@@ -1,5 +1,5 @@
 \documentstyle[12pt,german,makeidx]{bk}%{book}
-\newfont{\athene}{athene scaled 1000}
+%\newfont{\athene}{athene scaled 1000}
 \pagestyle{headings}
 
 \topmargin-1.04cm
@@ -68,11 +68,12 @@ Fachbereich Mathematik
 
 der\vskip1.5cm
 
-\begin{minipage}{2cm}
-{\athene A}
-\end{minipage}
+%\begin{minipage}{2cm}
+%{\athene A}
+%\end{minipage}
 
-Technischen Hochschule Darmstadt
+%Technischen Hochschule Darmstadt
+Technischen Universität Darmstadt
 \vskip1cm
 
 Vorgelegt bei
@@ -89,44 +90,44 @@ Vorgelegt bei
 \thispagestyle{plain}
 \section*{Einleitung}
 
-In dieser Arbeit sind "Uberlegungen aufgezeigt, wie sich zu beliebig
-vorgegebenen kombinatorischen Komplexen zugeh"orige orientierte Matroide
+In dieser Arbeit sind Überlegungen aufgezeigt, wie sich zu beliebig
+vorgegebenen kombinatorischen Komplexen zugehörige orientierte Matroide
 finden lassen, mittels derer gegebenenfalls die Einbettbarkeit der
 gegebenen Komplexe in den euklidischen Raum entschieden werden kann.\\
 Dazu wird nach Bereitstellung der topologischen Grundlagen von CW-Komplexen, die
-Vertr"aglichkeit dieser mit orientierten Matroide untersucht. Als Zugang wird
-dabei eine Kopplung von CW-Komplexen "uber deren kombinatorische
+Verträglichkeit dieser mit orientierten Matroide untersucht. Als Zugang wird
+dabei eine Kopplung von CW-Komplexen über deren kombinatorische
 Symmetriegruppen mit der Struktur von Chirotopen erreicht.
 
-Die Vorstellung eines Algorithmus soll es dann erm"oglichen, zu einem gegebenen
-kombinatorischen Komplex "uber dessen Symmetrien zun"achst zu
-"`symmetriever\-tr"ag\-lichen"' Matroiden und durch deren Orientierung zu
-entsprechenden orientierten Matroiden zu gelangen, die m"oglicherweise
+Die Vorstellung eines Algorithmus soll es dann ermöglichen, zu einem gegebenen
+kombinatorischen Komplex über dessen Symmetrien zunächst zu
+"`symmetriever\-träg\-lichen"' Matroiden und durch deren Orientierung zu
+entsprechenden orientierten Matroiden zu gelangen, die möglicherweise
 Matrizen und damit Punktkonfigurationen induzieren, die einen vorgelegten
 Komplex im euklidischen Raum metrisch beschreibbar machen.
 
-Entgegen den in fr"uheren Arbeiten oftmals untersuchten simplizialen Komplexen
-soll dazu eine m"oglichst generelle Verbindung zwischen allgemeinen CW-Komplexen
+Entgegen den in früheren Arbeiten oftmals untersuchten simplizialen Komplexen
+soll dazu eine möglichst generelle Verbindung zwischen allgemeinen CW-Komplexen
 und orientierten Matroiden in ihrer Form als Chirotope geschaffen werden.
 
-Fettgedruckte W"orter bezeichnen Definitionen und wichtige Passagen, die
-Einsch"ube in kleingedruckter Schrift sollen zus"atzliche Informationen
+Fettgedruckte Wörter bezeichnen Definitionen und wichtige Passagen, die
+Einschübe in kleingedruckter Schrift sollen zusätzliche Informationen
 bereitstellen, die als bekannt vorausgesetzte Definitionen betreffen oder
-aber auch sonst f"ur das Verst"andnis hilfreich sind.
+aber auch sonst für das Verständnis hilfreich sind.
 
 \section*{Danksagung}
 
-Als demjenigen, der mich in die Welt der orientierten Matroide eingef"uhrt
+Als demjenigen, der mich in die Welt der orientierten Matroide eingeführt
 und auch sonst viele interessante Aspekte der angewandten Geometrie vorgestellt
-hat, m"ochte ich Herrn Prof. Dr. J"urgen Bokowski meinen besonderen Dank
+hat, möchte ich Herrn Prof. Dr. Jürgen Bokowski meinen besonderen Dank
 aussprechen. Auch seinen Mitarbeitern, Peter Schuchert und Torsten-Karl Strempel,
-geb"uhrt mein Dank, da sie bei Fragen und Unklarheiten immer zu einer
-Diskussion und L"osung beigetragen haben. Meinen Eltern danke ich, da"s sie
-mir mein Studium erm"oglicht haben, meiner Freundin Sylke f"ur ihre Geduld,
-wenn alles etwas hektisch wurde. Weiterhin danke ich Torsten Trothe f"ur die
-Tips, die die Lauff"ahigkeit der entstandenen C-Programme wesentlich erh"ohten.
+gebührt mein Dank, da sie bei Fragen und Unklarheiten immer zu einer
+Diskussion und Lösung beigetragen haben. Meinen Eltern danke ich, daß sie
+mir mein Studium ermöglicht haben, meiner Freundin Sylke für ihre Geduld,
+wenn alles etwas hektisch wurde. Weiterhin danke ich Torsten Trothe für die
+Tips, die die Lauffähigkeit der entstandenen C-Programme wesentlich erhöhten.
 Gewidmet sei diese Arbeit meinem Mathematiklehrer Robert Morgenstern, der
-durch seine Art ein Mathematikstudium erst lohnenswert erscheinen lie"s.
+durch seine Art ein Mathematikstudium erst lohnenswert erscheinen ließ.
 
 \input{dip_kap1}
 \input{dip_kap2}

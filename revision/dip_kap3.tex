@@ -1,6 +1,6 @@
 \chapter{Beispiele}
 
-In diesem abschlie"senden dritten Kapitel sollen nun mittels des Schemas aus
+In diesem abschließenden dritten Kapitel sollen nun mittels des Schemas aus
 Kapitel 2 einige CW-Komplexe bearbeitet und als Beispiele dargestellt werden.
 
 \section{Die Papposkonfiguration in der Ebene}
@@ -61,7 +61,7 @@ $$
 Aus der Abbildung kann man diese Indizierung etwa nach $A_1\hat{=}1$,
 $B_1\hat{=}2$, $C_1\hat{=}3$, $A_2\hat{=}4$, $B_2\hat{=}5$, $C_2\hat{=}6$,
 $A\hat{=}7$, $B\hat{=}8$ und $C\hat{=}9$ anbringen. Zur Bestimmung der
-Symmetriegruppe "uberlegt man sich, da"s in diesem Fall jedes
+Symmetriegruppe überlegt man sich, daß in diesem Fall jedes
 0-Zellen-Tripel einer Geraden auf ein anderes 0-Zellen-Tripel, welches
 ebenfalls auf einer Geraden liegen soll, abzubilden ist.\\
 Es sind also jene Permutationen aus der ${\cal S}_9$ gesucht, die
@@ -71,7 +71,7 @@ $$\left\{\{1,2,3\},\{1,4,8\},\{1,5,9\},\{2,4,7\},\{2,6,9\},\{3,5,7\},
 auf sich abbilden.
 
 Testet man nun mit einem Programm alle 9! Permutationen der 0-Zellen, so
-erh"alt man 108 Automorphismen, die die Automorphismengruppe des Papposkomplexes
+erhält man 108 Automorphismen, die die Automorphismengruppe des Papposkomplexes
 darstellen. Diese sind in Tabelle \ref{papposaut} aufgezeigt.
 
 \begin{table}%[htb]
@@ -134,14 +134,14 @@ werden, aus Tabelle \ref{papposgrp} abzulesen.
 \end{table}
 
 Nach der Bestimmung dieser Gruppen zum Papposkomplex kann nun begonnen werden
-zugeh"orige Matroide zu suchen. Dazu betrachten wir zuerst die Gestalt des
+zugehörige Matroide zu suchen. Dazu betrachten wir zuerst die Gestalt des
 vorgelegten CW-Komplexes, nach dem im Rang 3 die drei Punkte auf einer Geraden
 sicher eine Nichtbasis des Matroids liefern. Damit stehen folgende Brackets
-sicher f"ur die Determinanten singul"arer Matrizen und k"onnen als Nichtbasen
+sicher für die Determinanten singulärer Matrizen und können als Nichtbasen
 sicher zu Null gesetzt werden:
 $$[123],[148],[159],[247],[269],[357],[368],[456]\mbox{ und }[789]$$
-Aus den "`benachbarten 1-Zellen"' folgt nun eine Wahl f"ur Basen, die
-ein vertr"agliches Matroid sicherlich besitzt, womit sich eine
+Aus den "`benachbarten 1-Zellen"' folgt nun eine Wahl für Basen, die
+ein verträgliches Matroid sicherlich besitzt, womit sich eine
 Grundstruktur zu
 {\tt $$
 \begin{array}{c}
@@ -150,7 +150,7 @@ Grundstruktur zu
 \end{array}
 $$}
 
-ergibt. Mittels {\sc Sym2mat} erh"alt man hierzu bei Vorgabe der vollen
+ergibt. Mittels {\sc Sym2mat} erhält man hierzu bei Vorgabe der vollen
 Symmetriegruppe Aut($\cal C$) die beiden Matroide
 {\tt $$
 \begin{array}{c}
@@ -173,7 +173,7 @@ Automorphismengruppe des Papposkomplexes enthalten beziehungsweise zu dieser
 identisch sind.
 
 Zur Symmetrieuntergruppe mit dem erzeugenden Element $\sigma=(298354)(67)$
-erh"alt man zwei weitere, n"amlich
+erhält man zwei weitere, nämlich
 {\tt $$
 \begin{array}{c}
 011111111111111101111001111111111111011111\\
@@ -188,15 +188,15 @@ sowie
 \end{array}
 $$}
 
-Bez"uglich der Symmetriegruppe $G=\{<(298354)(67)>\}$ sind diese Matroide
+Bezüglich der Symmetriegruppe $G=\{<(298354)(67)>\}$ sind diese Matroide
 allerdings mittels des vorgestellten Algorithmus nicht orientierbar.
 
 \clearpage
-\section{Der dreidimensionale W"urfel}
+\section{Der dreidimensionale Würfel}
 
 Ein vielverwendetes Beispiel (vgl. \cite{Bj:93}) stellt der dreidimensionale
-W"urfel dar, der auch hier behandelt werden soll. Gegeben als ein aus
-Vierecken aufgebauter CW-Komplex, l"a"st er sich durch die Liste der Polygonz"uge
+Würfel dar, der auch hier behandelt werden soll. Gegeben als ein aus
+Vierecken aufgebauter CW-Komplex, läßt er sich durch die Liste der Polygonzüge
 $$\left\{\{1264\},\{2586\},\{5378\},\{3147\},\{4687\},\{1253\}\right\}$$
 beschreiben.
 
@@ -220,21 +220,21 @@ $$
 \put {4} [bl] at 2.05 0.55 \put {7} [br] at 3.45 0.55
 \endpicture
 $$
-\caption{CW-Komplex zum 3-W"urfel}
+\caption{CW-Komplex zum 3-Würfel}
 \label{wuerfel}
 \end{figure}
 
 Seine Symmetriegruppe hat die Ordnung 48 und setzt sich aus den
 Permutationen aus Tabelle \ref{cubeaut} zusammen. Betrachet man nun
-noch den Komplex zur Erzeugung einer Grundstruktur f"ur die vertr"aglichen
+noch den Komplex zur Erzeugung einer Grundstruktur für die verträglichen
 Matroide, so ist diese wie folgt gegeben:
 
 {\small\tt
 $$10111101111111?11011111?111?111?111111?111?111?11111011?11111110111101$$
 }
 
-Bez"uglich der Symmetriegruppe $\{<(147852)(36)>\}$ erh"alt man daraus folgende
-vertr"aglichen Matroide
+Bezüglich der Symmetriegruppe $\{<(147852)(36)>\}$ erhält man daraus folgende
+verträglichen Matroide
 {\small\tt
 $$\begin{array}{c}
 1011110111111101101111101110111011111101110111011111011011111110111101\\[1mm]
@@ -264,12 +264,12 @@ $$
 (17)(28)&(17)(28)(34)(56)&(18)(25)(36)(47)&(18)(264735)&(18)(253746)\\
 (18)(26)(37)(45)&(18)(27)(35)(46)&(18)(27)(36)(45)
 \end{array}$$}
-\caption{Die Automorphismengruppe des 3-W"urfels}
+\caption{Die Automorphismengruppe des 3-Würfels}
 \label{cubeaut}
 \end{table}
 
-Legt man wiederum $\{<(147852)(36)>\}$ als Symmetriegruppe f"ur vertr"agliche
-orientierte Matroide vor, so erh"alt man nur f"ur eins der oben bestimmten Matroide
+Legt man wiederum $\{<(147852)(36)>\}$ als Symmetriegruppe für verträgliche
+orientierte Matroide vor, so erhält man nur für eins der oben bestimmten Matroide
 Vorzeichenlisten:
 
 {\small\tt
@@ -282,18 +282,18 @@ $$\begin{tabular}{c}
 $$
 }
 
-Diese orientierten Matroiden besitzen die Grundstruktur des "`echten"' W"urfelmatroids
+Diese orientierten Matroiden besitzen die Grundstruktur des "`echten"' Würfelmatroids
 (siehe Abbildung \ref{cube}). Dabei ist die zweite Vorzeichenliste die negative der ersten,
 sowie die vierte die negative der dritten, es liegen also nur zwei verschiedene
-Orientierungen zum CW-Komplex "`W"urfel"' mit der gegebenen Symmetriegruppe vor. Interessant
-ist hier zu erw"ahnen, da"s die erste Orientierungsvariante eine Symmetriegruppe
-der Ordnung 12 besitzt, w"ahrend die zweite Variante die volle Symmetriegruppe des
-W"urfelkomplexes der Ordnung 48 aufweist.
+Orientierungen zum CW-Komplex "`Würfel"' mit der gegebenen Symmetriegruppe vor. Interessant
+ist hier zu erwähnen, daß die erste Orientierungsvariante eine Symmetriegruppe
+der Ordnung 12 besitzt, während die zweite Variante die volle Symmetriegruppe des
+Würfelkomplexes der Ordnung 48 aufweist.
 
 \clearpage
 \section{Ein weiterer Torus}
 
-Als n"achstes Beispiel sei ein weiterer Torus in Gestalt des CW-Komplexes
+Als nächstes Beispiel sei ein weiterer Torus in Gestalt des CW-Komplexes
 in Abbildung \ref{tor2} vorgelegt.
 
 \begin{figure}[htb]
@@ -331,10 +331,10 @@ $$
 Dieser CW-Komplex, der auch einen simplizialen Komplex darstellt, besitzt
 eine Symmetriegruppe der Ordnung 108. Aus dieser legen wir die Untergruppe der
 Ordnung 6 mit den Erzeugenden (123)(456)(789) und (16)(25)(34)(78)(9) als
-Symmetriegruppe vor, bez"uglich der vertr"agliche orientierte Matroide erzeugt
+Symmetriegruppe vor, bezüglich der verträgliche orientierte Matroide erzeugt
 werden sollen.
 
-Aus den Zellenberandungen l"a"st sich f"ur vertr"agliche Matroide zun"achst
+Aus den Zellenberandungen läßt sich für verträgliche Matroide zunächst
 folgende Grundstruktur angeben,
 
 \begin{center}
@@ -344,39 +344,39 @@ folgende Grundstruktur angeben,
 \end{tabular}}
 \end{center}
 
-mittels der sich mit {\sc Sym2mat} insgesamt 52 vertr"agliche Matroide
+mittels der sich mit {\sc Sym2mat} insgesamt 52 verträgliche Matroide
 erzeugen lassen. Diese Matroide sind in den Tabellen \ref{tor6matA}
 und \ref{tor6matB} aufgezeigt.
 
 Zu diesen 52 Matroiden lassen sich nun mittels eines Orientierungsprogramms,
-welches in der in Kapitel 2 vorgestellten Vorgehensweise fu"st, zu insgesamt
-17 Matroiden Vorzeichenlisten erzeugen. Von diesen 17 sind 7 unzul"a"sig,
+welches in der in Kapitel 2 vorgestellten Vorgehensweise fußt, zu insgesamt
+17 Matroiden Vorzeichenlisten erzeugen. Von diesen 17 sind 7 unzuläßig,
 da sie zu mehr als einen Symmetrietyp Vorzeichenlisten liefern, also nicht
-eindeutig bez"uglich einer Symmetriegruppe orientierbar sind.
+eindeutig bezüglich einer Symmetriegruppe orientierbar sind.
 Die 10 verbliebenen orientierbaren Matroide sind in Tabelle \ref{mattor}
 aufgezeigt.
 
-Stellvertretend f"ur alle erzeugten Orientierungen der vertr"aglichen Matroide
-sind in Tabelle \ref{orimattor} die Orientierungen des f"unften Matroids
+Stellvertretend für alle erzeugten Orientierungen der verträglichen Matroide
+sind in Tabelle \ref{orimattor} die Orientierungen des fünften Matroids
 von Tabelle \ref{mattor} aufgezeigt. Hierbei wurden die erzeugten negativen
 Listen zu bereits vorkommenden weggelassen.
 
-Die Auswahl gerade dieses Matroids ist nicht willk"urlich, sondern entlehnt
-sich der Kenntnis, da"s eine nichtsimpliziale Realisierung des Torus von
+Die Auswahl gerade dieses Matroids ist nicht willkürlich, sondern entlehnt
+sich der Kenntnis, daß eine nichtsimpliziale Realisierung des Torus von
 Abbildung \ref{tor2} existiert, die gerade ein solches zugrunde liegendes
 Matroid besitzt. Mit dem Programm {\sc Chiman} zur Manipulation von Chirotopen
-von Peter Schuchert l"a"st sich zu den erzeugten orientierten Matroiden der
-Aufbau der induzierten konvexen H"ulle einer entsprechenden Punktkonfiguration
-ermitteln. Dadurch ist bestimmt, welche formalen Punkte die konvexe H"ulle einer
+von Peter Schuchert läßt sich zu den erzeugten orientierten Matroiden der
+Aufbau der induzierten konvexen Hülle einer entsprechenden Punktkonfiguration
+ermitteln. Dadurch ist bestimmt, welche formalen Punkte die konvexe Hülle einer
 entsprechenden Punktkonfiguration zum vorliegenden orientierten Matroid
-aufspannen. F"ur die orientierten Matroide aus Tabelle \ref{orimattor} sind
-dies f"ur das erste, zweite, vierte und f"unfte alle 9 Punkte, f"ur das dritte
-und sechste nur die Punkte 1 bis 6. F"ur die "ubrigen orientierten Matroide
+aufspannen. Für die orientierten Matroide aus Tabelle \ref{orimattor} sind
+dies für das erste, zweite, vierte und fünfte alle 9 Punkte, für das dritte
+und sechste nur die Punkte 1 bis 6. Für die übrigen orientierten Matroide
 liefert {\sc Chiman} keine Ergebnisse.
 
-Abbildung \ref{tor2real} zeigt das "au"sere Erscheinungsbild der Realisierung
-des Torus in Form eines Oktaeder, in dem zwei gegen"uberliegende Dreiecke
-die "Offnungen des Henkels bilden. Im Innern befinden sich die restlichen
+Abbildung \ref{tor2real} zeigt das äußere Erscheinungsbild der Realisierung
+des Torus in Form eines Oktaeder, in dem zwei gegenüberliegende Dreiecke
+die Öffnungen des Henkels bilden. Im Innern befinden sich die restlichen
 drei Punkte, die auch die Spiegelsymmetrie induzieren.
 
 \begin{figure}[htb]
@@ -587,17 +587,17 @@ $$
 -0+-+++-++-0+0-+-+-+-+-++-+-++-0++-+-+0+-+-++-+-+++++-++++-++++
 \end{tabular}}
 \end{center}
-\caption{\label{orimattor}Orientierungen f"ur ein Matroid zum zweiten Torus}
+\caption{\label{orimattor}Orientierungen für ein Matroid zum zweiten Torus}
 \end{table}
 
 \clearpage
 \section{Das Dodekaeder}
 
-Als weiteren Vertreter f"ur die nichtsimplizialen Platonischen K"orper sei
-nun ein Dodekaeder als Beispiel-Komplex gew"ahlt. Mit seinen 20 Punkten stellt
+Als weiteren Vertreter für die nichtsimplizialen Platonischen Körper sei
+nun ein Dodekaeder als Beispiel-Komplex gewählt. Mit seinen 20 Punkten stellt
 dieser Komplex schon eine Herausforderung an die Rechenzeit der implementierten
 Programme dar, was gerade bei der Bestimmung der Symmetriegruppe und der
-Erzeugung von Orientierungen von Matroiden als Behinderung ins Auge f"allt.
+Erzeugung von Orientierungen von Matroiden als Behinderung ins Auge fällt.
 
 \begin{figure}[htb]
 $$
@@ -644,10 +644,10 @@ $$
 \label{dodeka}
 \end{figure}
 
-Von Vorteil ist allerdings, da"s die Symmetriegruppe als die Duale der
+Von Vorteil ist allerdings, daß die Symmetriegruppe als die Duale der
 Ikosaedergruppe der Ordnung 120 bekannt ist. Trotzdem ist bei ${20\choose 4}
-=4845$ Elementen f"ur die Matroide mit erheblichem Aufwand zu rechnen.
-Deshalb soll zun"achst die Grundstruktur der Matroide nach der Erscheinung des
+=4845$ Elementen für die Matroide mit erheblichem Aufwand zu rechnen.
+Deshalb soll zunächst die Grundstruktur der Matroide nach der Erscheinung des
 vorgelegten Komplexes angegeben werden. Diese ist in Abbildung \ref{dodegrs}
 zu sehen.
 
@@ -727,14 +727,14 @@ zu sehen.
 
 Betrachtet man sich diese Grundstruktur, so erscheint es wenig sinnvoll,
 dieses Beispiel testen zu wollen, da hierzu derzeitige Computer eine
-Rechenzeit ben"otigen w"urden, die den zeitlichen Rahmen dieser Diplomarbeit
-sprengen w"urde.
+Rechenzeit benötigen würden, die den zeitlichen Rahmen dieser Diplomarbeit
+sprengen würde.
 
 \clearpage
 \section{Die Dycksche Karte}
 
 In \cite{Bo:91} stellte Bokowski eine Realisierung der Dyckschen Karte
-vor, deren zugeh"origer CW-Komplex in Abbildung \ref{dyck} zu sehen ist.
+vor, deren zugehöriger CW-Komplex in Abbildung \ref{dyck} zu sehen ist.
 
 \begin{figure}[htb]
 $$
@@ -814,11 +814,11 @@ $$
 \label{dyck}
 \end{figure}
 
-Als Analogon zu den Platonischen K"orpern besitzt die Dycksche regul"are Karte,
-die in der "ublichen Notation f"ur kombinatorische 2-Mannigfaltigkeiten mit
+Als Analogon zu den Platonischen Körpern besitzt die Dycksche reguläre Karte,
+die in der üblichen Notation für kombinatorische 2-Mannigfaltigkeiten mit
 $\{3,8\}_6$ bezeichnet wird, eine flaggentransitive Automorphismengruppe.
-Ihr Aufbau ist bestimmt durch zw"olf Ecken, die mit der Valenz 8 "uber 48 Kanten
-32 Seiten in Form von Dreiecken bilden. "Uber die Eulerformel l"a"st sich hier
+Ihr Aufbau ist bestimmt durch zwölf Ecken, die mit der Valenz 8 über 48 Kanten
+32 Seiten in Form von Dreiecken bilden. Über die Eulerformel läßt sich hier
 als Geschlecht 3 bestimmen.\\
 Bei Vorlage einer 2-Mannigfaltigkeit als kombinatorischem Komplex, ist es
 interessant zu erfahren, ob eine Einbettung dieser in den dreidimensionalen
@@ -828,11 +828,11 @@ kombinatorischen Mannigfaltigkeit korrespondiert.\\
 Im Jahre 1986 fand nun Bokowski eine Einbettung oben beschriebener
 Karte (beschrieben in \cite{Bo:86} und \cite{HoWi:91}), die allerdings keine
 Symmetrien aufweist. Mit Hilfe des vorgestellten Schemas soll nun nach
-orientierten Matroiden gesucht werden, die eine m"ogliche symmetrische
-Einbettung der Dyckschen Karte induzieren k"onnten.
+orientierten Matroiden gesucht werden, die eine mögliche symmetrische
+Einbettung der Dyckschen Karte induzieren könnten.
 
-"Uber den Komplex l"a"st sich zun"achst aussagen, da"s aufgrund des Aufbaus
-aus Dreiecken keine offensichtlichen Nichtbasen f"ur vertr"agliche Matroide
+Über den Komplex läßt sich zunächst aussagen, daß aufgrund des Aufbaus
+aus Dreiecken keine offensichtlichen Nichtbasen für verträgliche Matroide
 existieren, aber anhand der benachbarten Zellen wohl eine (wenn auch nicht
 allzu stark besetzte) Grundstruktur induziert werden kann, die in der
 folgenden Form gegeben ist:
@@ -851,8 +851,8 @@ folgenden Form gegeben ist:
 \end{array}
 $$}
 
-Als Symmetriegruppe f"ur den Komplex erh"alt man eine Gruppe der Ordnung 192,
-deren Elemente in Tabelle \ref{dyckaut} aufgef"uhrt sind.
+Als Symmetriegruppe für den Komplex erhält man eine Gruppe der Ordnung 192,
+deren Elemente in Tabelle \ref{dyckaut} aufgeführt sind.
 
 \begin{table}[p]
 {\scsi $$
@@ -926,12 +926,12 @@ deren Elemente in Tabelle \ref{dyckaut} aufgef"uhrt sind.
 \label{dyckaut}
 \end{table}
 
-Zur Erzeugung vertr"aglicher Matroide sei hieraus eine zyklische
+Zur Erzeugung verträglicher Matroide sei hieraus eine zyklische
 Untergruppe der Ordnung sechs, etwa $\{<(1C8792)(3A65B4)>\}$
-als Symmetriegruppe ausgew"ahlt. Zu dieser wurden nach 10 Stunden Rechenzeit
-auf einem i486-66 bereits 1332 verschiedene vertr"agliche Matroide mit oben
-angegebener Grundstruktur erzeugt, wobei noch nicht alle zugeh"origen
-Matroide erzeugt wurden. Vier willk"urlich ausgew"ahlte von diesen sind in
+als Symmetriegruppe ausgewählt. Zu dieser wurden nach 10 Stunden Rechenzeit
+auf einem i486-66 bereits 1332 verschiedene verträgliche Matroide mit oben
+angegebener Grundstruktur erzeugt, wobei noch nicht alle zugehörigen
+Matroide erzeugt wurden. Vier willkürlich ausgewählte von diesen sind in
 Abbildung \ref{dyckmat} als Beispiele angegeben.
 
 \begin{figure}%[htb]
@@ -979,16 +979,16 @@ $$\begin{array}{c}
 1111111111111111111101111111111111111101011111111111111\\
 1111101111111111111111111111110101011011111110111110111\\
 \end{array}$$}
-\caption{Vertr"agliche Matroide zur Dyckschen Karte}
+\caption{Verträgliche Matroide zur Dyckschen Karte}
 \label{dyckmat}
 \end{figure}
 
 Versucht man nun der Reihe nach alle erzeugten Matroide zu orientieren,
-so erh"alt man schon f"ur die ersten beiden mit {\sc Sym2mat} erzeugten
-Matroide vertr"agliche Vorzeichenlisten, die in den Tabellen \ref{dyckori1}
+so erhält man schon für die ersten beiden mit {\sc Sym2mat} erzeugten
+Matroide verträgliche Vorzeichenlisten, die in den Tabellen \ref{dyckori1}
 bis \ref{dyckori2B} zu sehen sind.
-Hier wurden wiederum nur die "'positiven"' Listen aufgef"uhrt, so da"s sich
-im ersten Fall zwei vertr"agliche Chirotope und im zweiten Fall acht
+Hier wurden wiederum nur die "'positiven"' Listen aufgeführt, so daß sich
+im ersten Fall zwei verträgliche Chirotope und im zweiten Fall acht
 verschiedene Vorzeichenlisten ergeben.
 
 \begin{table}%[htb]
@@ -1121,73 +1121,73 @@ verschiedene Vorzeichenlisten ergeben.
 \end{table}
 
 Es gilt abzuwarten, wieviele orientierte Matroide zur Dyckschen Karte
-insgesamt existieren, die bez"uglich der vorgelegten Symmetriegruppe
-vertr"aglich sind. Schon aufgrund des Ergebnisses f"ur die ersten beiden
-erzeugten Matroide kann man optimistisch sein, da"s eine symmetrische
+insgesamt existieren, die bezüglich der vorgelegten Symmetriegruppe
+verträglich sind. Schon aufgrund des Ergebnisses für die ersten beiden
+erzeugten Matroide kann man optimistisch sein, daß eine symmetrische
 Einbettung zumindest nicht ausgeschlossen ist. (U. Brehm gibt eine symmetrische
 Einbettung der Dyckschen Karte mit einer Symmetrie der Ordnung sechs an, die
 sicher auch hier zu finden ist.)
 
 \clearpage
-\section{Schlu"sgedanken}
+\section{Schlußgedanken}
 
 Bei der Bearbeitung der Dyckschen Karte, oder beim Herangehen an einen
-Komplex der Gr"o"senordnung eines Dodekaeder, zeigt sich, da"s sich unter
-Ber"ucksichtigung von Symmetrieeigenschaften die aufzuwendende Rechenzeit
-zur Bearbeitung eines solchen Komplexes um Potenzen verringern l"a"st.
-Gerade bei der Bereitstellung einer Grundstruktur f"ur vertr"agliche Matroide
-l"a"st sich hier mittels der Ber"ucksichtigung von Symmetrien mehr erreichen,
-als zur Zeit implementiert ist. Nutzt man weitere m"ogliche Vereinfachungen und
+Komplex der Größenordnung eines Dodekaeder, zeigt sich, daß sich unter
+Berücksichtigung von Symmetrieeigenschaften die aufzuwendende Rechenzeit
+zur Bearbeitung eines solchen Komplexes um Potenzen verringern läßt.
+Gerade bei der Bereitstellung einer Grundstruktur für verträgliche Matroide
+läßt sich hier mittels der Berücksichtigung von Symmetrien mehr erreichen,
+als zur Zeit implementiert ist. Nutzt man weitere mögliche Vereinfachungen und
 Reduktionen aus, so kann hier weiter optimiert werden, gerade wenn es um
-gr"o"sere Beispiele geht.
+größere Beispiele geht.
 Kleine Beispiele lassen sich aber ohne weiteres mittels des vorgestellten
-Vorgehens in vertretbarer Zeit interessanten Ergebnissen zuf"uhren.
+Vorgehens in vertretbarer Zeit interessanten Ergebnissen zuführen.
 
-Hat man vertr"agliche orientierte Matroide zu einem Komplex erzeugt,
+Hat man verträgliche orientierte Matroide zu einem Komplex erzeugt,
 stellt sich nun die Frage, wie man die erzeugten orientierten Matroide
 realisiert, um letztendlich Einbettungen zu den vorgelegten Komplexen zu
 bekommen.\\
-In Anbetracht dessen, da"s die erforderliche Rechenzeit f"ur Komplexe mit mehr
+In Anbetracht dessen, daß die erforderliche Rechenzeit für Komplexe mit mehr
 als zehn 0-Zellen weiter verringert werden kann und der technische
-Fortschritt stetig schnellere Prozessoren f"ur "`Rechenmaschinen"' liefert,
-wird es in absehbarer Zeit auch m"oglich sein, etwa die duale
+Fortschritt stetig schnellere Prozessoren für "`Rechenmaschinen"' liefert,
+wird es in absehbarer Zeit auch möglich sein, etwa die duale
 Mannigfaltigkeit zur Dyckschen Karte mit immerhin schon 32 0-Zellen und
-Achtecken als 2-Zellenberandungen f"ur die Welt der orientierten Matroide zu
-erschlie"sen und "uber diese die noch offene Frage der Einbettbarkeit zu
-kl"aren.
+Achtecken als 2-Zellenberandungen für die Welt der orientierten Matroide zu
+erschließen und über diese die noch offene Frage der Einbettbarkeit zu
+klären.
 
 \section{Die verwendeten Programme}
 
 Die in dieser Arbeit vorgestellten Algorithmen sind als ANSI-C Programme
 implementiert und sollten mit einem ANSI-C Compiler (etwa GCC) auf jeder
-Rechnerplattform lauff"ahig sein.
+Rechnerplattform lauffähig sein.
 
-Trotz sorgf"altiger Tests kann es passiert sein, das die Programme nicht
-v"ollig fehlerfrei sind, gerade da bei der Speicherausnutzung zur h"oheren
-Effizienz auf Pointer und dynamische Allokierung zur"uckgegriffen wurde.
+Trotz sorgfältiger Tests kann es passiert sein, das die Programme nicht
+völlig fehlerfrei sind, gerade da bei der Speicherausnutzung zur höheren
+Effizienz auf Pointer und dynamische Allokierung zurückgegriffen wurde.
 Daher ist die Nutzung der erstellten Programme -- es handelt sich
-schlie"slich um Mittel zum Zweck -- auf eigene Gefahr und ohne jegliche
-Gew"ahr von Seiten des Autors. Sollten Fehler aufgetreten sein, so ist
-der Autor f"ur jeden Hinweis dankbar. Der Quelltext zu den Programmen
+schließlich um Mittel zum Zweck -- auf eigene Gefahr und ohne jegliche
+Gewähr von Seiten des Autors. Sollten Fehler aufgetreten sein, so ist
+der Autor für jeden Hinweis dankbar. Der Quelltext zu den Programmen
 ist, da auf keinerlei Urheberrechte geachtet wurde, im Rahmen weiterer
-Forschung frei zu ver"andern und weiterzugeben -- ein Urheberrechtsanspruch
+Forschung frei zu verändern und weiterzugeben -- ein Urheberrechtsanspruch
 besteht von Seiten des Autors nicht.
 
-Folgende Programme fanden f"ur diese Arbeit Verwendung:
+Folgende Programme fanden für diese Arbeit Verwendung:
 
 \begin{verbatim}
-VRZSYM.C      berechnet zu einer Vorzeichenliste (Chirotop) deren
+vrzsym.c      berechnet zu einer Vorzeichenliste (Chirotop) deren
               Symmetrien
               Format der Eingabedatei: Name.chi
               #n Anzahl der Punkte
               #d Rang
               ............... (n ueber d) Vorzeichen +,-,0 *
 
-MATSYM.C      berechnet zu einer Matroidliste deren Symmetrien
+matsym.c      berechnet zu einer Matroidliste deren Symmetrien
               Format der Eingabedatei: Name.mat wie Name.chi,
               Liste besteht aus Eintraegen 0 und 1
 
-GONSYM.C      berechnet zu einem Polygon-Komplex dessen
+gonsym.c      berechnet zu einem Polygon-Komplex dessen
               Automorphismen
               Format der Eingabedatei: Name.gon
               #n Anzahl der Punkte pro 2-Zelle
@@ -1195,16 +1195,16 @@ GONSYM.C      berechnet zu einem Polygon-Komplex dessen
               (Liste der Polygone mit Umlaufsinn)
               a_i kann 0..9A..Z sein
 
-SUREBASE.C    berechnet zu einer Datei Name.gon eine Grundstruktur
+surebase.c    berechnet zu einer Datei Name.gon eine Grundstruktur
               fuer zugehoerige Matroide
 
-SYM2MAT.C     Erzeugt Matroide zu einer Automorphismendatei
+sym2mat.c     Erzeugt Matroide zu einer Automorphismendatei
               Name.aut : #n Anzahl der Punkte
                          #m Anzahl der folgenden Symmetrien
                          1  2  3  4  5  ...  n  (Identitaet)
                          s1 s2 s3 s4 s5 ...  sn (eine Permutation)
                          usw.
 
-ORIMAT.C      Erzeugt orientierte Matroide zu einer Datei Name.mat
+orimat.c      Erzeugt orientierte Matroide zu einer Datei Name.mat
               mit einer Automorphismendatei Name.aut
 \end{verbatim}
